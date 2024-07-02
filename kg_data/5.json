@@ -1,0 +1,106 @@
+{
+    "文档节点": {
+      "ID": "2406.13692v1",
+      "标题": "Synchronous Faithfulness Monitoring for Trustworthy Retrieval-Augmented Generation",
+      "作者": ["Di Wu", "Jia-Chen Gu", "Fan Yin", "Nanyun Peng", "Kai-Wei Chang"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Faithfulness Monitoring", "Synchronous Detection", "Long-form Generation", "Faithfulness-Oriented Decoding"],
+      "摘要": "This paper proposes SYNCHECK, a lightweight monitor that leverages fine-grained decoding dynamics to synchronously detect unfaithful sentences in retrieval-augmented language models (RALMs). It also introduces FOD, a faithfulness-oriented decoding algorithm guided by beam search for long-form retrieval-augmented generation. Empirical results show that SYNCHECK outperforms prior methods in detecting faithfulness errors, and FOD significantly improves the faithfulness of generated outputs across multiple datasets.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.13692v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": null,
+      "重排方法": null,
+      "生成方法": "Llama 2 7B Chat, Mistral 7B Instruct",
+      "评估指标": ["AUROC", "Faithfulness", "Informativeness"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_di_wu",
+        "姓名": "Di Wu",
+        "所属机构": "University of California, Los Angeles",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "author_jia_chen_gu",
+        "姓名": "Jia-Chen Gu",
+        "所属机构": "University of California, Los Angeles",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13692v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "keyword_faithfulness_monitoring",
+        "名称": "Faithfulness Monitoring",
+        "使用频率": null,
+        "相关文档列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "keyword_synchronous_detection",
+        "名称": "Synchronous Detection",
+        "使用频率": null,
+        "相关文档列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "keyword_long_form_generation",
+        "名称": "Long-form Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "keyword_faithfulness_oriented_decoding",
+        "名称": "Faithfulness-Oriented Decoding",
+        "使用频率": null,
+        "相关文档列表": ["2406.13692v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_syncheck",
+        "名称": "SYNCHECK",
+        "类型": "faithfulness monitoring",
+        "描述": "A lightweight monitor that uses fine-grained decoding dynamics to detect unfaithful sentences in RALMs synchronously.",
+        "使用的算法或模型": ["Likelihood", "Uncertainty Quantification", "Context Influence", "Semantic Alignment"],
+        "性能指标": {"AUROC": 0.85},
+        "相关文档列表": ["2406.13692v1"]
+      },
+      {
+        "ID": "component_fod",
+        "名称": "Faithfulness-Oriented Decoding (FOD)",
+        "类型": "decoding",
+        "描述": "A decoding algorithm that uses SYNCHECK to guide beam search for more faithful long-form generation.",
+        "使用的算法或模型": ["Beam Search", "Backtracking"],
+        "性能指标": {"Faithfulness Improvement": "10%"},
+        "相关文档列表": ["2406.13692v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_syncheck_fod",
+      "名称": "SYNCHECK-FOD Framework",
+      "描述": "A framework combining SYNCHECK for faithfulness monitoring and FOD for faithfulness-oriented decoding in RALMs.",
+      "索引构建组件ID": null,
+      "检索组件ID": null,
+      "重排组件ID": null,
+      "生成组件ID": "component_fod",
+      "整体性能指标": {
+        "AUROC": 0.85,
+        "Faithfulness Improvement": "10%"
+      },
+      "应用场景": ["Long-form Question Answering", "Summarization", "Data-to-Text Generation", "Biography Generation"],
+      "相关文档列表": ["2406.13692v1"]
+    }
+  }

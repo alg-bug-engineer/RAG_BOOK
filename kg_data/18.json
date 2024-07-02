@@ -1,0 +1,114 @@
+{
+    "文档节点": {
+      "ID": "2406.16167v1",
+      "标题": "FS-RAG: A Frame Semantics Based Approach for Improved Factual Accuracy in Large Language Models",
+      "作者": ["Harish Tayyar Madabushi"],
+      "发表时间": "2024-06-23",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Frame Semantics", "Retrieval Augmented Generation", "Large Language Models", "Factual Accuracy", "Information Retrieval", "Question Answering"],
+      "摘要": "This paper presents FS-RAG, a novel extension to Retrieval Augmented Generation that uses frame semantics for indexing and retrieving factual information to mitigate factual inaccuracies in large language models. The approach is evaluated on a closed domain question answering task, showing significant improvements over traditional search systems and LLM-based search. The method also offers potential for providing data-driven insights into frame semantics theory.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.16167v1",
+      "引用数": 0,
+      "索引方法": "component_frame_semantic_indexing",
+      "检索方法": "component_frame_semantic_retrieval",
+      "重排方法": null,
+      "生成方法": "component_llm_generation",
+      "评估指标": ["Retrieval@k"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_harish_tayyar_madabushi",
+        "姓名": "Harish Tayyar Madabushi",
+        "所属机构": "The University of Bath, Bath, UK",
+        "研究领域": ["Natural Language Processing", "Information Retrieval", "Large Language Models"],
+        "h指数": 0,
+        "发表文章列表": ["2406.16167v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_frame_semantics",
+        "名称": "Frame Semantics",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "keyword_large_language_models",
+        "名称": "Large Language Models",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "keyword_factual_accuracy",
+        "名称": "Factual Accuracy",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "keyword_information_retrieval",
+        "名称": "Information Retrieval",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "keyword_question_answering",
+        "名称": "Question Answering",
+        "使用频率": 1,
+        "相关文档列表": ["2406.16167v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_frame_semantic_indexing",
+        "名称": "Frame Semantic Indexing",
+        "类型": "索引构建",
+        "描述": "Uses frame semantics theory to index factual information in the corpus, assigning frames to facts and questions.",
+        "使用的算法或模型": ["GPT-4", "Sentence-BERT"],
+        "性能指标": null,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "component_frame_semantic_retrieval",
+        "名称": "Frame Semantic Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves relevant facts based on frame overlap and frame relations with the question frame.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.16167v1"]
+      },
+      {
+        "ID": "component_llm_generation",
+        "名称": "LLM Generation",
+        "类型": "生成",
+        "描述": "Uses a large language model to generate answers based on retrieved facts.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.16167v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_fs_rag",
+      "名称": "FS-RAG",
+      "描述": "A frame semantics based approach for retrieval augmented generation to improve factual accuracy in large language models.",
+      "索引构建组件ID": "component_frame_semantic_indexing",
+      "检索组件ID": "component_frame_semantic_retrieval",
+      "重排组件ID": null,
+      "生成组件ID": "component_llm_generation",
+      "整体性能指标": {
+        "Retrieval@35": "0.439",
+        "Retrieval@40": "0.464",
+        "Retrieval@45": "0.473"
+      },
+      "应用场景": ["Closed-domain Question Answering", "Factual Information Retrieval"],
+      "相关文档列表": ["2406.16167v1"]
+    }
+  }

@@ -1,0 +1,121 @@
+{
+    "文档节点": {
+      "ID": "2406.12566v1",
+      "标题": "RichRAG: Crafting Rich Responses for Multi-faceted Queries in Retrieval-Augmented Generation",
+      "作者": ["Shuting Wang", "Xin Xu", "Mang Wang", "Weipeng Chen", "Yutao Zhu", "Zhicheng Dou"],
+      "发表时间": "2024-06-18",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["retrieval-augmented generation", "multi-faceted queries", "generative list-wise ranker", "sub-aspect explorer", "multi-faceted retriever"],
+      "摘要": "We propose a novel RAG framework, namely RichRAG. It includes a sub-aspect explorer to identify potential sub-aspects of input questions, a multi-faceted retriever to build a candidate pool of diverse external documents related to these sub-aspects, and a generative list-wise ranker, which is a key module to provide the top-k most valuable documents for the final generator. These ranked documents sufficiently cover various query aspects and are aware of the generator's preferences, hence incentivizing it to produce rich and comprehensive responses for users. The training of our ranker involves a supervised fine-tuning stage to ensure the basic coverage of documents, and a reinforcement learning stage to align downstream LLM's preferences to the ranking of documents. Experimental results on two publicly available datasets prove that our framework effectively and efficiently provides comprehensive and satisfying responses to users.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.12566v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["Multi-faceted retriever"],
+      "重排方法": ["Generative list-wise ranker"],
+      "生成方法": ["Large Language Model (LLM)"],
+      "评估指标": ["Rouge-1", "Rouge-2", "Rouge-L", "Com-Rouge-1", "Com-Rouge-2", "Com-Rouge-L"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_shuting_wang",
+        "姓名": "Shuting Wang",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "author_zhicheng_dou",
+        "姓名": "Zhicheng Dou",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Information Retrieval", "Natural Language Processing"],
+        "h指数": null,
+        "发表文章列表": ["2406.12566v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "retrieval-augmented generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "keyword_multi_faceted_queries",
+        "名称": "multi-faceted queries",
+        "使用频率": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "keyword_generative_list_wise_ranker",
+        "名称": "generative list-wise ranker",
+        "使用频率": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "keyword_sub_aspect_explorer",
+        "名称": "sub-aspect explorer",
+        "使用频率": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "keyword_multi_faceted_retriever",
+        "名称": "multi-faceted retriever",
+        "使用频率": null,
+        "相关文档列表": ["2406.12566v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_sub_aspect_explorer",
+        "名称": "Sub-aspect Explorer",
+        "类型": "检索",
+        "描述": "Identifies potential sub-aspects of input questions using LLMs.",
+        "使用的算法或模型": ["Large Language Models"],
+        "性能指标": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "component_multi_faceted_retriever",
+        "名称": "Multi-faceted Retriever",
+        "类型": "检索",
+        "描述": "Builds a candidate pool of diverse external documents related to identified sub-aspects.",
+        "使用的算法或模型": ["Vector similarity search"],
+        "性能指标": null,
+        "相关文档列表": ["2406.12566v1"]
+      },
+      {
+        "ID": "component_generative_list_wise_ranker",
+        "名称": "Generative List-wise Ranker",
+        "类型": "重排",
+        "描述": "Provides the top-k most valuable documents for the final generator, considering query aspects and generator preferences.",
+        "使用的算法或模型": ["T5", "FiD structure", "DPO algorithm"],
+        "性能指标": null,
+        "相关文档列表": ["2406.12566v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_richrag",
+      "名称": "RichRAG",
+      "描述": "A novel RAG framework designed to offer diverse external knowledge that comprehensively covers various sub-aspects of multi-faceted queries, enhancing the downstream generator to yield rich responses.",
+      "索引构建组件ID": null,
+      "检索组件ID": ["component_sub_aspect_explorer", "component_multi_faceted_retriever"],
+      "重排组件ID": ["component_generative_list_wise_ranker"],
+      "生成组件ID": null,
+      "整体性能指标": {
+        "WikiPassageQA": {
+          "Rouge-L": 0.3055,
+          "Com-Rouge-L": 0.4015
+        },
+        "WikiAsp": {
+          "Rouge-L": 0.1456,
+          "Com-Rouge-L": 0.1863
+        }
+      },
+      "应用场景": ["Multi-faceted question answering", "Long-form response generation"],
+      "相关文档列表": ["2406.12566v1"]
+    }
+  }

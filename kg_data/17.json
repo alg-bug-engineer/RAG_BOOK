@@ -1,0 +1,139 @@
+{
+    "文档节点": {
+      "ID": "2407.00361v1",
+      "标题": "From RAG to RICHES: Retrieval Interlaced with Sequence Generation",
+      "作者": ["Palak Jain", "Livio Baldini Soares", "Tom Kwiatkowski"],
+      "发表时间": "2024-06-29",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Sequence Generation", "Open-Domain Question Answering", "Language Models", "Constrained Decoding", "Information Retrieval"],
+      "摘要": "This paper introduces RICHES, a novel approach that interleaves retrieval with sequence generation tasks. RICHES eliminates the need for separate retriever and generator in conventional RAG systems by retrieving documents through direct decoding of their contents, constrained on the corpus. This unified approach allows adaptation to diverse new tasks via prompting alone, without additional training. RICHES can work with any Instruction-tuned model, provides attributed evidence, supports multi-hop retrievals, and interleaves thoughts to plan retrievals, all within a single decoding pass of the LLM. The authors demonstrate RICHES' strong performance across open-domain question answering tasks, including attributed and multi-hop QA.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2407.00361v1",
+      "引用数": 0,
+      "索引方法": "component_fm_index",
+      "检索方法": "component_constrained_beam_search",
+      "重排方法": null,
+      "生成方法": "component_generator",
+      "评估指标": ["F1 Score", "AutoAIS"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_palak_jain",
+        "姓名": "Palak Jain",
+        "所属机构": "Google DeepMind",
+        "研究领域": ["Natural Language Processing", "Information Retrieval", "Machine Learning"],
+        "h指数": 0,
+        "发表文章列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "author_livio_baldini_soares",
+        "姓名": "Livio Baldini Soares",
+        "所属机构": "Google DeepMind",
+        "研究领域": ["Natural Language Processing", "Machine Learning"],
+        "h指数": 0,
+        "发表文章列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "author_tom_kwiatkowski",
+        "姓名": "Tom Kwiatkowski",
+        "所属机构": "Google DeepMind",
+        "研究领域": ["Natural Language Processing", "Question Answering", "Machine Learning"],
+        "h指数": 0,
+        "发表文章列表": ["2407.00361v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "keyword_sequence_generation",
+        "名称": "Sequence Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "keyword_open_domain_question_answering",
+        "名称": "Open-Domain Question Answering",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "keyword_language_models",
+        "名称": "Language Models",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "keyword_constrained_decoding",
+        "名称": "Constrained Decoding",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "keyword_information_retrieval",
+        "名称": "Information Retrieval",
+        "使用频率": 1,
+        "相关文档列表": ["2407.00361v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_fm_index",
+        "名称": "FM-Index",
+        "类型": "索引构建",
+        "描述": "A compressed suffix array augmented with additional data structures to support fast substring search operations, used for efficient indexing and continuations computation.",
+        "使用的算法或模型": ["FM-Index"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "component_constrained_beam_search",
+        "名称": "Constrained Beam Search",
+        "类型": "检索",
+        "描述": "A modified beam search algorithm that constrains the decoding process to only generate sequences that exist in the corpus.",
+        "使用的算法或模型": ["Beam Search", "Constrained Decoding"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00361v1"]
+      },
+      {
+        "ID": "component_generator",
+        "名称": "Generator",
+        "类型": "生成",
+        "描述": "Uses large language models to generate responses and interleave thoughts with retrieval actions.",
+        "使用的算法或模型": ["PALM2-M", "PALM2-L"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00361v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_riches",
+      "名称": "RICHES",
+      "描述": "A novel approach that interleaves retrieval with sequence generation tasks, eliminating the need for separate retriever and generator in conventional RAG systems.",
+      "索引构建组件ID": "component_fm_index",
+      "检索组件ID": "component_constrained_beam_search",
+      "重排组件ID": null,
+      "生成组件ID": "component_generator",
+      "整体性能指标": {
+        "NaturalQuestions": {
+          "F1": "46.7%",
+          "AutoAIS": "59.6%"
+        },
+        "HotpotQA": {
+          "F1": "51.1%",
+          "AutoAIS": "35.6%"
+        },
+        "Musique": {
+          "F1": "28.2%",
+          "AutoAIS": "37.5%"
+        }
+      },
+      "应用场景": ["Open-domain Question Answering", "Attributed Question Answering", "Multi-hop Question Answering"],
+      "相关文档列表": ["2407.00361v1"]
+    }
+  }

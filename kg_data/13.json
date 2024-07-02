@@ -1,0 +1,103 @@
+{
+    "文档节点": {
+      "ID": "2404.16130v1",
+      "标题": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+      "作者": ["Darren Edge", "Ha Trinh", "Newman Cheng", "Joshua Bradley", "Alex Chao", "Apurva Mody", "Steven Truitt", "Jonathan Larson"],
+      "发表时间": "2024-04-24",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Graph RAG", "Query-Focused Summarization", "Retrieval-Augmented Generation", "Large Language Models", "Knowledge Graph", "Community Detection"],
+      "摘要": "This work presents a Graph RAG approach to question answering over private text corpora that scales with both the generality of user questions and the quantity of source text to be indexed. The approach uses an LLM to build a graph-based text index in two stages: first to derive an entity knowledge graph from the source documents, then to pre-generate community summaries for all groups of closely-related entities. Given a question, each community summary is used to generate a partial response, before all partial responses are again summarized in a final response to the user. For a class of global sensemaking questions over datasets in the 1 million token range, the approach shows substantial improvements over a naïve RAG baseline for both the comprehensiveness and diversity of generated answers.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2404.16130v1",
+      "引用数": null,
+      "索引方法": "graph_based_indexing",
+      "检索方法": "community_summary_retrieval",
+      "重排方法": null,
+      "生成方法": "hierarchical_summarization",
+      "评估指标": ["Comprehensiveness", "Diversity", "Empowerment", "Directness"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_darren_edge",
+        "姓名": "Darren Edge",
+        "所属机构": "Microsoft Research",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2404.16130v1"]
+      },
+      {
+        "ID": "author_ha_trinh",
+        "姓名": "Ha Trinh",
+        "所属机构": "Microsoft Research",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2404.16130v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_graph_rag",
+        "名称": "Graph RAG",
+        "使用频率": null,
+        "相关文档列表": ["2404.16130v1"]
+      },
+      {
+        "ID": "keyword_query_focused_summarization",
+        "名称": "Query-Focused Summarization",
+        "使用频率": null,
+        "相关文档列表": ["2404.16130v1"]
+      },
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2404.16130v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_graph_based_indexing",
+        "名称": "Graph-based Indexing",
+        "类型": "索引构建",
+        "描述": "Uses an LLM to build a graph-based text index by deriving an entity knowledge graph from source documents and pre-generating community summaries for groups of closely-related entities.",
+        "使用的算法或模型": ["Large Language Model", "Community Detection (e.g., Leiden algorithm)"],
+        "性能指标": null,
+        "相关文档列表": ["2404.16130v1"]
+      },
+      {
+        "ID": "component_community_summary_retrieval",
+        "名称": "Community Summary Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves relevant community summaries based on the user query.",
+        "使用的算法或模型": null,
+        "性能指标": null,
+        "相关文档列表": ["2404.16130v1"]
+      },
+      {
+        "ID": "component_hierarchical_summarization",
+        "名称": "Hierarchical Summarization",
+        "类型": "生成",
+        "描述": "Generates partial responses from community summaries and then summarizes all partial responses into a final response.",
+        "使用的算法或模型": ["Large Language Model"],
+        "性能指标": null,
+        "相关文档列表": ["2404.16130v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_graph_rag",
+      "名称": "Graph RAG",
+      "描述": "A global approach to RAG that combines knowledge graph generation, retrieval-augmented generation, and query-focused summarization to support human sensemaking over entire text corpora.",
+      "索引构建组件ID": "component_graph_based_indexing",
+      "检索组件ID": "component_community_summary_retrieval",
+      "重排组件ID": null,
+      "生成组件ID": "component_hierarchical_summarization",
+      "整体性能指标": {
+        "Comprehensiveness": "Substantial improvements over naïve RAG baseline",
+        "Diversity": "Substantial improvements over naïve RAG baseline"
+      },
+      "应用场景": ["Global sensemaking questions over datasets in the 1 million token range"],
+      "相关文档列表": ["2404.16130v1"]
+    }
+  }

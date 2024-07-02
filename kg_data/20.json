@@ -1,0 +1,130 @@
+{
+    "文档节点": {
+      "ID": "2406.05085v1",
+      "标题": "Multi-Head RAG: Solving Multi-Aspect Problems with LLMs",
+      "作者": ["Maciej Besta", "Ales Kubicek", "Roman Niggli", "Robert Gerstenberger", "Lucas Weitzendorf", "Mingyuan Chi", "Patrick Iff", "Joanna Gajda", "Piotr Nyczyk", "Jürgen Müller", "Hubert Niewiadomski", "Marcin Chrapek", "Michał Podstawski", "Torsten Hoefler"],
+      "发表时间": "2024-06-07",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval Augmented Generation", "Large Language Models", "Multi-Aspect Problems", "Multi-Head Attention", "Vector Databases", "Information Retrieval"],
+      "摘要": "This paper introduces Multi-Head RAG (MRAG), a novel scheme designed to address the challenge of retrieving multiple documents with substantially different contents for complex queries. MRAG leverages activations of Transformer's multi-head attention layer, instead of the decoder layer, as keys for fetching multi-aspect documents. The approach is based on the idea that different attention heads can learn to capture different data aspects. The paper provides an evaluation methodology, metrics, synthetic datasets, and real-world use cases to demonstrate MRAG's effectiveness, showing improvements of up to 20% in relevance over standard RAG baselines.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.05085v1",
+      "引用数": 0,
+      "索引方法": "component_multi_head_embedding",
+      "检索方法": "component_multi_head_retrieval",
+      "重排方法": "component_voting_strategy",
+      "生成方法": "component_llm_generation",
+      "评估指标": ["Retrieval Success Ratio", "Category Retrieval Success Ratio", "Weighted Retrieval Success Ratio"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_maciej_besta",
+        "姓名": "Maciej Besta",
+        "所属机构": "ETH Zurich",
+        "研究领域": ["Large Language Models", "Information Retrieval", "Distributed Systems"],
+        "h指数": 0,
+        "发表文章列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "author_torsten_hoefler",
+        "姓名": "Torsten Hoefler",
+        "所属机构": "ETH Zurich",
+        "研究领域": ["High Performance Computing", "Machine Learning Systems", "Distributed Algorithms"],
+        "h指数": 0,
+        "发表文章列表": ["2406.05085v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "keyword_large_language_models",
+        "名称": "Large Language Models",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "keyword_multi_aspect_problems",
+        "名称": "Multi-Aspect Problems",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "keyword_multi_head_attention",
+        "名称": "Multi-Head Attention",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "keyword_vector_databases",
+        "名称": "Vector Databases",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "keyword_information_retrieval",
+        "名称": "Information Retrieval",
+        "使用频率": 1,
+        "相关文档列表": ["2406.05085v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_multi_head_embedding",
+        "名称": "Multi-Head Embedding Generation",
+        "类型": "索引构建",
+        "描述": "Generates embeddings for data items using activations from multiple attention heads of the Transformer's multi-head attention layer.",
+        "使用的算法或模型": ["Transformer", "Multi-Head Attention"],
+        "性能指标": null,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "component_multi_head_retrieval",
+        "名称": "Multi-Head Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves relevant documents by comparing query embeddings with document embeddings across multiple attention head spaces.",
+        "使用的算法或模型": ["Cosine Similarity", "Nearest Neighbor Search"],
+        "性能指标": null,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "component_voting_strategy",
+        "名称": "Voting Strategy for Document Ranking",
+        "类型": "重排",
+        "描述": "Ranks retrieved documents using a voting strategy that considers importance scores of attention heads and document positions in retrieval lists.",
+        "使用的算法或模型": ["Weighted Voting"],
+        "性能指标": null,
+        "相关文档列表": ["2406.05085v1"]
+      },
+      {
+        "ID": "component_llm_generation",
+        "名称": "LLM-based Text Generation",
+        "类型": "生成",
+        "描述": "Generates responses using a large language model based on the retrieved and ranked documents.",
+        "使用的算法或模型": ["GPT-3.5", "GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.05085v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_mrag",
+      "名称": "Multi-Head RAG (MRAG)",
+      "描述": "A novel RAG scheme that uses multi-head attention layer activations for embedding generation and retrieval to better handle multi-aspect queries and documents.",
+      "索引构建组件ID": "component_multi_head_embedding",
+      "检索组件ID": "component_multi_head_retrieval",
+      "重排组件ID": "component_voting_strategy",
+      "生成组件ID": "component_llm_generation",
+      "整体性能指标": {
+        "Retrieval Success Ratio Improvement": "10-20% over standard RAG baselines",
+        "Relevance Improvement": "up to 20% over standard RAG baselines"
+      },
+      "应用场景": ["Multi-aspect query answering", "Complex information retrieval tasks", "Handling queries requiring diverse document retrieval"],
+      "相关文档列表": ["2406.05085v1"]
+    }
+  }

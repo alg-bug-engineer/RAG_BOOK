@@ -1,0 +1,143 @@
+{
+    "文档节点": {
+      "ID": "2406.11147v2",
+      "标题": "Vul-RAG: Enhancing LLM-based Vulnerability Detection via Knowledge-level RAG",
+      "作者": ["Xueying Du", "Geng Zheng", "Kaixin Wang", "Jiayi Feng", "Wentai Deng", "Mingwei Liu", "Bihuan Chen", "Xin Peng", "Tao Ma", "Yiling Lou"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Vulnerability Detection", "Large Language Models", "Retrieval-Augmented Generation", "Frame Semantics", "Knowledge Base", "Software Security"],
+      "摘要": "This paper presents Vul-RAG, a novel LLM-based vulnerability detection technique that leverages a knowledge-level retrieval-augmented generation (RAG) framework. Vul-RAG constructs a vulnerability knowledge base by extracting multi-dimensional knowledge from existing CVE instances, retrieves relevant knowledge for a given code snippet, and uses LLMs to reason about the presence of vulnerabilities. The approach is evaluated on a new benchmark PairVul, showing substantial improvements over baselines in distinguishing vulnerable code from similar non-vulnerable code. Vul-RAG outperforms baselines by 12.96%/110% relative improvement in accuracy/pairwise-accuracy. A user study also demonstrates that the generated vulnerability knowledge can improve manual detection accuracy from 0.60 to 0.77.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.11147v2",
+      "引用数": 0,
+      "索引方法": "component_knowledge_base_construction",
+      "检索方法": "component_knowledge_retrieval",
+      "重排方法": "component_knowledge_reranking",
+      "生成方法": "component_llm_reasoning",
+      "评估指标": ["Accuracy", "Pairwise Accuracy", "Precision", "Recall", "F1-score"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_xueying_du",
+        "姓名": "Xueying Du",
+        "所属机构": "Fudan University",
+        "研究领域": ["Software Security", "Vulnerability Detection", "Machine Learning"],
+        "h指数": 0,
+        "发表文章列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "author_geng_zheng",
+        "姓名": "Geng Zheng",
+        "所属机构": "Alibaba Group",
+        "研究领域": ["Software Security", "Vulnerability Detection"],
+        "h指数": 0,
+        "发表文章列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "author_bihuan_chen",
+        "姓名": "Bihuan Chen",
+        "所属机构": "Fudan University",
+        "研究领域": ["Software Engineering", "Program Analysis", "Machine Learning"],
+        "h指数": 0,
+        "发表文章列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "author_xin_peng",
+        "姓名": "Xin Peng",
+        "所属机构": "Fudan University",
+        "研究领域": ["Software Engineering", "Artificial Intelligence"],
+        "h指数": 0,
+        "发表文章列表": ["2406.11147v2"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_vulnerability_detection",
+        "名称": "Vulnerability Detection",
+        "使用频率": 1,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "keyword_large_language_models",
+        "名称": "Large Language Models",
+        "使用频率": 1,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "keyword_knowledge_base",
+        "名称": "Knowledge Base",
+        "使用频率": 1,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "keyword_software_security",
+        "名称": "Software Security",
+        "使用频率": 1,
+        "相关文档列表": ["2406.11147v2"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_knowledge_base_construction",
+        "名称": "Vulnerability Knowledge Base Construction",
+        "类型": "索引构建",
+        "描述": "Constructs a vulnerability knowledge base by extracting multi-dimensional knowledge (functional semantics, vulnerability causes, and fixing solutions) from existing CVE instances using LLMs.",
+        "使用的算法或模型": ["GPT-3.5-turbo"],
+        "性能指标": null,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "component_knowledge_retrieval",
+        "名称": "Vulnerability Knowledge Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves relevant vulnerability knowledge items from the constructed knowledge base using BM25 similarity and multi-dimension queries (code, abstract purpose, and detailed behavior).",
+        "使用的算法或模型": ["BM25", "Elasticsearch"],
+        "性能指标": null,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "component_knowledge_reranking",
+        "名称": "Knowledge Re-ranking",
+        "类型": "重排",
+        "描述": "Re-ranks retrieved knowledge items using the Reciprocal Rank Fusion (RRF) strategy.",
+        "使用的算法或模型": ["Reciprocal Rank Fusion"],
+        "性能指标": null,
+        "相关文档列表": ["2406.11147v2"]
+      },
+      {
+        "ID": "component_llm_reasoning",
+        "名称": "LLM-based Vulnerability Detection",
+        "类型": "生成",
+        "描述": "Uses GPT-4 to reason about the presence of vulnerabilities in the given code snippet based on retrieved knowledge.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.11147v2"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_vul_rag",
+      "名称": "Vul-RAG",
+      "描述": "A novel LLM-based vulnerability detection technique that leverages knowledge-level retrieval-augmented generation (RAG) framework to detect vulnerabilities in given code snippets.",
+      "索引构建组件ID": "component_knowledge_base_construction",
+      "检索组件ID": "component_knowledge_retrieval",
+      "重排组件ID": "component_knowledge_reranking",
+      "生成组件ID": "component_llm_reasoning",
+      "整体性能指标": {
+        "Accuracy": "0.61",
+        "Pairwise Accuracy": "0.21",
+        "Precision": "0.61",
+        "Recall": "0.61",
+        "F1-score": "0.61"
+      },
+      "应用场景": ["Vulnerability Detection in Source Code", "Distinguishing Vulnerable Code from Similar Non-vulnerable Code"],
+      "相关文档列表": ["2406.11147v2"]
+    }
+  }

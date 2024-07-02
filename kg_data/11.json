@@ -1,0 +1,118 @@
+{
+    "文档节点": {
+      "ID": "2406.11424v1",
+      "标题": "Evaluating the Efficacy of Open-Source LLMs in Enterprise-Specific RAG Systems: A Comparative Study of Performance and Scalability",
+      "作者": ["Gautam B", "Anupam Purwar"],
+      "发表时间": "2024-06-17",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Large language models", "Retrieval Augmented Generation", "Natural language processing", "information retriever", "ROUGE score", "cosine similarity", "top-k", "Llama3", "Mistral", "Generative Pre-Trained Transformers", "Generative AI", "Cosine Similarity with Groundtruth Answer"],
+      "摘要": "This paper presents an analysis of open-source large language models (LLMs) and their application in Retrieval-Augmented Generation (RAG) tasks, specific for enterprise-specific data sets scraped from their websites. This study examines various open-source LLMs, explores their integration into RAG frameworks using enterprise-specific data, and assesses the performance of different open-source embeddings in enhancing the retrieval and generation process. Our findings indicate that open-source LLMs, combined with effective embedding techniques, can significantly improve the accuracy and efficiency of RAG systems, offering a viable alternative to proprietary solutions for enterprises.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.11424v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["BM25", "FAISS"],
+      "重排方法": ["Hybrid retriever"],
+      "生成方法": ["Llama3-8B", "Mistral-8x7B"],
+      "评估指标": ["ROUGE scores", "cosine similarity", "unigram precision", "unigram recall", "contextual precision", "contextual recall", "contextual relevancy", "answer relevancy", "Cosine Similarity with Groundtruth Answer (CSGA)"],
+      "向量表示": "BAAI/bge-large-en-v1.5"
+    },
+    "作者节点": [
+      {
+        "ID": "author_gautam_b",
+        "姓名": "Gautam B",
+        "所属机构": "Indian Institute of Technology Madras",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "author_anupam_purwar",
+        "姓名": "Anupam Purwar",
+        "所属机构": "Independent",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.11424v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_llm",
+        "名称": "Large language models",
+        "使用频率": null,
+        "相关文档列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "keyword_nlp",
+        "名称": "Natural language processing",
+        "使用频率": null,
+        "相关文档列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "keyword_csga",
+        "名称": "Cosine Similarity with Groundtruth Answer",
+        "使用频率": null,
+        "相关文档列表": ["2406.11424v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_hybrid_retriever",
+        "名称": "Hybrid Retriever",
+        "类型": "检索",
+        "描述": "Combines BM25 and FAISS retrievers to enhance retrieval accuracy",
+        "使用的算法或模型": ["BM25", "FAISS"],
+        "性能指标": null,
+        "相关文档列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "component_llama3_8b",
+        "名称": "Llama3-8B",
+        "类型": "生成",
+        "描述": "Open-source LLM used for RAG tasks",
+        "使用的算法或模型": ["Llama3"],
+        "性能指标": {
+          "Unigram Precision": "0.737-0.82",
+          "Contextual Recall": "0.916-0.98",
+          "Contextual Relevancy": "0.636-0.947",
+          "Answer Relevancy": "0.93-1.00"
+        },
+        "相关文档列表": ["2406.11424v1"]
+      },
+      {
+        "ID": "component_mistral_8x7b",
+        "名称": "Mistral-8x7B",
+        "类型": "生成",
+        "描述": "Open-source LLM used for RAG tasks",
+        "使用的算法或模型": ["Mistral"],
+        "性能指标": {
+          "Unigram Precision": "0.67-0.73",
+          "Contextual Recall": "0.91-0.98",
+          "Contextual Relevancy": "0.56-0.92",
+          "Answer Relevancy": "0.87-0.95"
+        },
+        "相关文档列表": ["2406.11424v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_enterprise_rag",
+      "名称": "Enterprise-Specific RAG Flow",
+      "描述": "RAG framework for enterprise-specific data using open-source LLMs and embeddings",
+      "索引构建组件ID": null,
+      "检索组件ID": ["component_hybrid_retriever"],
+      "重排组件ID": null,
+      "生成组件ID": ["component_llama3_8b", "component_mistral_8x7b"],
+      "整体性能指标": {
+        "Cosine Similarity with Groundtruth Answer": "0.84-1.0"
+      },
+      "应用场景": ["Enterprise-specific question answering", "Information retrieval from company websites"],
+      "相关文档列表": ["2406.11424v1"]
+    }
+  }

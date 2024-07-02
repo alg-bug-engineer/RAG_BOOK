@@ -1,0 +1,193 @@
+{
+    "文档节点": {
+      "ID": "2407.00072v1",
+      "标题": "Pistis-RAG: A Scalable Cascading Framework Towards Trustworthy Retrieval-Augmented Generation",
+      "作者": ["Yu Bai", "Yukai Miao", "Li Chen", "Dan Li", "Yanyu Ren", "Hongtao Xie", "Ce Yang", "Xuhui Cai"],
+      "发表时间": "2024-06-21",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "RAG", "Cascading Framework", "Large Language Models", "Information Retrieval", "Content-Centric Approach", "Listwide Learning to Rank"],
+      "摘要": "This paper introduces Pistis-RAG, a scalable multi-stage framework for large-scale retrieval-augmented generation (RAG). The framework addresses challenges in RAG systems through a content-centric approach, implementing distinct stages for matching, pre-ranking, ranking, re-ranking, reasoning, and aggregating. It emphasizes the importance of aligning retrieved information with LLM preferences and user feedback.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2407.00072v1",
+      "引用数": null,
+      "索引方法": "BEG-M3 with Milvus",
+      "检索方法": "BEG-M3",
+      "重排方法": "BEG-reranker-larger",
+      "生成方法": "Llama-2-13B-chat",
+      "评估指标": ["Precision", "Recall", "F1-score"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_yu_bai",
+        "姓名": "Yu Bai",
+        "所属机构": "Zhongguancun Laboratory",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_yukai_miao",
+        "姓名": "Yukai Miao",
+        "所属机构": "Zhongguancun Laboratory",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_li_chen",
+        "姓名": "Li Chen",
+        "所属机构": "Zhongguancun Laboratory",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_dan_li",
+        "姓名": "Dan Li",
+        "所属机构": ["Zhongguancun Laboratory", "Tsinghua University"],
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_yanyu_ren",
+        "姓名": "Yanyu Ren",
+        "所属机构": ["Zhongguancun Laboratory", "Tsinghua University"],
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_hongtao_xie",
+        "姓名": "Hongtao Xie",
+        "所属机构": "China Mobile Communications Group Co., Ltd.",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_ce_yang",
+        "姓名": "Ce Yang",
+        "所属机构": "China Mobile Communications Group Co., Ltd.",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "author_xuhui_cai",
+        "姓名": "Xuhui Cai",
+        "所属机构": "China Mobile Communications Group Co., Ltd.",
+        "研究领域": ["Retrieval-Augmented Generation", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.00072v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "keyword_cascading_framework",
+        "名称": "Cascading Framework",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "keyword_large_language_models",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "keyword_information_retrieval",
+        "名称": "Information Retrieval",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "keyword_content_centric_approach",
+        "名称": "Content-Centric Approach",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "keyword_listwide_learning_to_rank",
+        "名称": "Listwide Learning to Rank",
+        "使用频率": null,
+        "相关文档列表": ["2407.00072v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_matching",
+        "名称": "Matching Service",
+        "类型": "matching",
+        "描述": "Responsible for understanding user intent and swiftly retrieving the most relevant information using various IR techniques.",
+        "使用的算法或模型": ["TF-IDF", "BM25", "ANN", "BEG-M3"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "component_pre_ranking",
+        "名称": "Pre-Ranking Service",
+        "类型": "pre-ranking",
+        "描述": "Enhances the scoring process by refining it based on the complete document obtained through the retrieved fragment.",
+        "使用的算法或模型": ["BEG-reranker-larger", "Cross-Encoder"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "component_ranking",
+        "名称": "Ranking Service",
+        "类型": "ranking",
+        "描述": "Refines the document ranking by aligning with the preferences of the LLM and user feedback.",
+        "使用的算法或模型": ["Listwise Transformer", "Learning to Rank"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "component_re_ranking",
+        "名称": "Re-Ranking Service",
+        "类型": "re-ranking",
+        "描述": "Adjusts ranking based on domain-specific requirements like assessing the credibility of information sources.",
+        "使用的算法或模型": ["Pointwise ranking algorithms"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "component_reasoning",
+        "名称": "Reasoning Service",
+        "类型": "reasoning",
+        "描述": "Generates multiple response sequences using Chain of Thought and parallel inference across LLMs.",
+        "使用的算法或模型": ["Llama-2-13B-chat", "Multi-Path Chain of Thought"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      },
+      {
+        "ID": "component_aggregating",
+        "名称": "Aggregating Service",
+        "类型": "aggregating",
+        "描述": "Synthesizes the outputs from the Reasoning stage using sophisticated voting methods.",
+        "使用的算法或模型": ["Consistency checks", "Voting methods"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00072v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_pistis_rag",
+      "名称": "Pistis-RAG Framework",
+      "描述": "A scalable multi-stage framework for large-scale retrieval-augmented generation, including matching, pre-ranking, ranking, re-ranking, reasoning, and aggregating stages.",
+      "索引构建组件ID": "component_matching",
+      "检索组件ID": "component_ranking",
+      "重排组件ID": "component_re_ranking",
+      "生成组件ID": "component_reasoning",
+      "整体性能指标": {"F1-score": "54.65%"},
+      "应用场景": ["Open-Domain Question Answering", "Large-scale content generation"],
+      "相关文档列表": ["2407.00072v1"]
+    }
+  }

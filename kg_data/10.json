@@ -1,0 +1,134 @@
+{
+    "文档节点": {
+      "ID": "2406.13629v1",
+      "标题": "INSTRUCTRAG: Instructing Retrieval-Augmented Generation with Explicit Denoising",
+      "作者": ["Zhepei Wei", "Wei-Lin Chen", "Yu Meng"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["retrieval-augmented generation", "explicit denoising", "rationale generation", "in-context learning", "supervised fine-tuning"],
+      "摘要": "We propose INSTRUCTRAG, where LMs explicitly learn the denoising process through self-synthesized rationales — First, we instruct the LM to explain how the ground-truth answer is derived from retrieved documents. Then, these rationales can be used either as demonstrations for in-context learning of explicit denoising or as supervised fine-tuning data to train the model. Compared to standard RAG approaches, INSTRUCTRAG requires no additional supervision, allows for easier verification of the predicted answers, and effectively improves generation accuracy. Experiments show INSTRUCTRAG consistently outperforms existing RAG methods in both training-free and trainable scenarios, achieving a relative improvement of 8.3% over the best baseline method on average across five knowledge-intensive benchmarks.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.13629v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["Contriever-MS MARCO", "DPR", "GTR", "BM25"],
+      "重排方法": ["bge-reranker-large"],
+      "生成方法": ["Llama-3-Instruct-8B", "Llama-3-Instruct-70B"],
+      "评估指标": ["accuracy", "em", "pre", "rec"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_zhepei_wei",
+        "姓名": "Zhepei Wei",
+        "所属机构": "Department of Computer Science, University of Virginia",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "author_wei_lin_chen",
+        "姓名": "Wei-Lin Chen",
+        "所属机构": "Department of Computer Science, University of Virginia",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "author_yu_meng",
+        "姓名": "Yu Meng",
+        "所属机构": "Department of Computer Science, University of Virginia",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13629v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "retrieval-augmented generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "keyword_explicit_denoising",
+        "名称": "explicit denoising",
+        "使用频率": null,
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "keyword_rationale_generation",
+        "名称": "rationale generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "keyword_in_context_learning",
+        "名称": "in-context learning",
+        "使用频率": null,
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "keyword_supervised_fine_tuning",
+        "名称": "supervised fine-tuning",
+        "使用频率": null,
+        "相关文档列表": ["2406.13629v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_rationale_generator",
+        "名称": "Rationale Generator",
+        "类型": "生成",
+        "描述": "Generates rationales that explain how the ground-truth answer is derived from retrieved documents",
+        "使用的算法或模型": ["Llama-3-Instruct-8B", "Llama-3-Instruct-70B"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "component_instructrag_icl",
+        "名称": "INSTRUCTRAG-ICL",
+        "类型": "生成",
+        "描述": "Uses generated rationales as demonstrations for in-context learning of explicit denoising",
+        "使用的算法或模型": ["Llama-3-Instruct-8B", "Llama-3-Instruct-70B"],
+        "性能指标": {
+          "PopQA accuracy": 65.5,
+          "TriviaQA accuracy": 81.2,
+          "Natural Questions accuracy": 66.5,
+          "2WikiMultiHopQA accuracy": 57.3,
+          "ASQA em": 47.8
+        },
+        "相关文档列表": ["2406.13629v1"]
+      },
+      {
+        "ID": "component_instructrag_ft",
+        "名称": "INSTRUCTRAG-FT",
+        "类型": "生成",
+        "描述": "Uses generated rationales as supervised fine-tuning data to train the model",
+        "使用的算法或模型": ["Llama-3-Instruct-8B"],
+        "性能指标": {
+          "PopQA accuracy": 66.2,
+          "TriviaQA accuracy": 78.5,
+          "Natural Questions accuracy": 65.7,
+          "2WikiMultiHopQA accuracy": 57.2,
+          "ASQA em": 47.6
+        },
+        "相关文档列表": ["2406.13629v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_instructrag",
+      "名称": "INSTRUCTRAG Flow",
+      "描述": "A novel RAG framework that explicitly denoises retrieved contents by generating and learning from rationales",
+      "索引构建组件ID": null,
+      "检索组件ID": null,
+      "重排组件ID": null,
+      "生成组件ID": ["component_rationale_generator", "component_instructrag_icl", "component_instructrag_ft"],
+      "整体性能指标": {
+        "Average Improvement": "8.3%"
+      },
+      "应用场景": ["Knowledge-intensive question answering", "Multi-hop reasoning"],
+      "相关文档列表": ["2406.13629v1"]
+    }
+  }

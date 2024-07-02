@@ -1,0 +1,148 @@
+{
+    "文档节点": {
+      "ID": "2405.18414v1",
+      "标题": "Don't Forget to Connect! Improving RAG with Graph-based Reranking",
+      "作者": ["Jialin Dong", "Bahare Fatemi", "Bryan Perozzi", "Lin F. Yang", "Anton Tsitsulin"],
+      "发表时间": "2024-05-28",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval Augmented Generation", "Graph Neural Networks", "Open-Domain Question Answering", "Reranking", "Abstract Meaning Representation"],
+      "摘要": "This paper introduces G-RAG, a novel approach that uses graph neural networks (GNNs) for reranking in Retrieval Augmented Generation (RAG) systems. G-RAG leverages connections between documents and semantic information from Abstract Meaning Representation (AMR) graphs to provide context-informed ranking. The method outperforms state-of-the-art approaches while having a smaller computational footprint. The authors also assess the performance of PaLM 2 as a reranker and find it significantly underperforms G-RAG, emphasizing the importance of specialized reranking even when using Large Language Models.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2405.18414v1",
+      "引用数": 0,
+      "索引方法": "component_amr_graph_construction",
+      "检索方法": "component_graph_based_retrieval",
+      "重排方法": "component_gnn_reranker",
+      "生成方法": "component_llm_generation",
+      "评估指标": ["Mean Reciprocal Rank (MRR)", "Mean Hits@10 (MHits@10)", "Mean Tied Reciprocal Ranking (MTRR)", "Tied Mean Hits@10 (TMHits@10)"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_jialin_dong",
+        "姓名": "Jialin Dong",
+        "所属机构": "UCLA",
+        "研究领域": ["Natural Language Processing", "Graph Neural Networks", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "author_bahare_fatemi",
+        "姓名": "Bahare Fatemi",
+        "所属机构": "Google Research",
+        "研究领域": ["Machine Learning", "Natural Language Processing", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "author_bryan_perozzi",
+        "姓名": "Bryan Perozzi",
+        "所属机构": "Google Research",
+        "研究领域": ["Graph Representation Learning", "Machine Learning", "Data Mining"],
+        "h指数": 0,
+        "发表文章列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "author_lin_f_yang",
+        "姓名": "Lin F. Yang",
+        "所属机构": "UCLA",
+        "研究领域": ["Machine Learning", "Optimization", "Statistical Learning Theory"],
+        "h指数": 0,
+        "发表文章列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "author_anton_tsitsulin",
+        "姓名": "Anton Tsitsulin",
+        "所属机构": "Google Research",
+        "研究领域": ["Graph Machine Learning", "Network Analysis", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.18414v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "keyword_graph_neural_networks",
+        "名称": "Graph Neural Networks",
+        "使用频率": 1,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "keyword_open_domain_question_answering",
+        "名称": "Open-Domain Question Answering",
+        "使用频率": 1,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "keyword_reranking",
+        "名称": "Reranking",
+        "使用频率": 1,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "keyword_abstract_meaning_representation",
+        "名称": "Abstract Meaning Representation",
+        "使用频率": 1,
+        "相关文档列表": ["2405.18414v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_amr_graph_construction",
+        "名称": "AMR Graph Construction",
+        "类型": "索引构建",
+        "描述": "Constructs Abstract Meaning Representation (AMR) graphs for question-document pairs using AMRBART.",
+        "使用的算法或模型": ["AMRBART"],
+        "性能指标": null,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "component_graph_based_retrieval",
+        "名称": "Graph-based Document Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves relevant documents based on the document graph structure and node features derived from AMR graphs.",
+        "使用的算法或模型": ["Graph Neural Networks", "Cosine Similarity"],
+        "性能指标": null,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "component_gnn_reranker",
+        "名称": "GNN-based Reranker",
+        "类型": "重排",
+        "描述": "Uses a Graph Neural Network to rerank retrieved documents based on their connections and semantic information from AMR graphs.",
+        "使用的算法或模型": ["Graph Convolutional Networks", "Graph Attention Networks", "GraphSAGE", "Graph Isomorphism Networks"],
+        "性能指标": null,
+        "相关文档列表": ["2405.18414v1"]
+      },
+      {
+        "ID": "component_llm_generation",
+        "名称": "LLM-based Answer Generation",
+        "类型": "生成",
+        "描述": "Generates final answers using a large language model based on the reranked documents.",
+        "使用的算法或模型": ["PaLM 2"],
+        "性能指标": null,
+        "相关文档列表": ["2405.18414v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_g_rag",
+      "名称": "G-RAG",
+      "描述": "A graph-based reranking approach for Retrieval Augmented Generation that leverages document connections and AMR semantic information to improve reranking performance.",
+      "索引构建组件ID": "component_amr_graph_construction",
+      "检索组件ID": "component_graph_based_retrieval",
+      "重排组件ID": "component_gnn_reranker",
+      "生成组件ID": "component_llm_generation",
+      "整体性能指标": {
+        "MRR Improvement": "Up to 20% over standard RAG baselines",
+        "MHits@10 Improvement": "Up to 20% over standard RAG baselines"
+      },
+      "应用场景": ["Open-Domain Question Answering", "Multi-hop reasoning tasks", "Complex query understanding"],
+      "相关文档列表": ["2405.18414v1"]
+    }
+  }

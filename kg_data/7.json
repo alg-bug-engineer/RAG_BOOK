@@ -1,0 +1,108 @@
+{
+    "文档节点": {
+      "ID": "2406.13213v1",
+      "标题": "Multi-Meta-RAG: Improving RAG for Multi-Hop Queries using Database Filtering with LLM-Extracted Metadata",
+      "作者": ["Mykhailo Poliakov", "Nadiya Shvai"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["large language models", "retrieval augmented generation", "multi hop question answering"],
+      "摘要": "We introduce a new method called Multi-Meta-RAG, which uses database filtering with LLM-extracted metadata to improve the RAG selection of the relevant documents from various sources, relevant to the question. While database filtering is specific to a set of questions from a particular domain and format, we found out that Multi-Meta-RAG greatly improves the results on the MultiHop-RAG benchmark.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.13213v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["Vector similarity search", "Metadata filtering"],
+      "重排方法": ["bge-reranker-large"],
+      "生成方法": ["GPT-4", "Google PaLM"],
+      "评估指标": ["Mean Average Precision at K (MAP@K)", "Mean Reciprocal Rank at K (MRR@K)", "Hit Rate at K (Hit@K)", "Accuracy"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_mykhailo_poliakov",
+        "姓名": "Mykhailo Poliakov",
+        "所属机构": "National University of Kyiv-Mohyla Academy",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13213v1"]
+      },
+      {
+        "ID": "author_nadiya_shvai",
+        "姓名": "Nadiya Shvai",
+        "所属机构": "National University of Kyiv-Mohyla Academy",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13213v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_llm",
+        "名称": "large language models",
+        "使用频率": null,
+        "相关文档列表": ["2406.13213v1"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "retrieval augmented generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13213v1"]
+      },
+      {
+        "ID": "keyword_multi_hop_qa",
+        "名称": "multi hop question answering",
+        "使用频率": null,
+        "相关文档列表": ["2406.13213v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_metadata_extraction",
+        "名称": "LLM-based Metadata Extraction",
+        "类型": "检索",
+        "描述": "Extracts relevant query metadata (article sources and publication dates) using a few-shot prompt with ChatGPT.",
+        "使用的算法或模型": ["ChatGPT (gpt-3.5-turbo-1106)"],
+        "性能指标": {"Average extraction time": "0.7 seconds per query"},
+        "相关文档列表": ["2406.13213v1"]
+      },
+      {
+        "ID": "component_db_filtering",
+        "名称": "Database Filtering",
+        "类型": "检索",
+        "描述": "Filters chunks in the vector database using extracted metadata before similarity search.",
+        "使用的算法或模型": ["Neo4j vector store"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13213v1"]
+      },
+      {
+        "ID": "component_chunk_retrieval",
+        "名称": "Chunk Retrieval",
+        "类型": "检索",
+        "描述": "Retrieves top-K most relevant chunks using embedding similarity and metadata filtering.",
+        "使用的算法或模型": ["bge-large-en-v1.5", "voyage-02"],
+        "性能指标": {
+          "MRR@10": 0.6748,
+          "MAP@10": 0.3388,
+          "Hits@10": 0.9042,
+          "Hits@4": 0.792
+        },
+        "相关文档列表": ["2406.13213v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_multi_meta_rag",
+      "名称": "Multi-Meta-RAG",
+      "描述": "An improved RAG method using database filtering with LLM-extracted metadata for multi-hop queries.",
+      "索引构建组件ID": null,
+      "检索组件ID": ["component_metadata_extraction", "component_db_filtering", "component_chunk_retrieval"],
+      "重排组件ID": null,
+      "生成组件ID": null,
+      "整体性能指标": {
+        "GPT-4 Accuracy": 0.63,
+        "PaLM Accuracy": 0.61
+      },
+      "应用场景": ["Multi-hop question answering"],
+      "相关文档列表": ["2406.13213v1"]
+    }
+  }

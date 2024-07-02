@@ -1,0 +1,125 @@
+{
+    "文档节点": {
+      "ID": "2406.13779v1",
+      "标题": "FoRAG: Factuality-optimized Retrieval Augmented Generation for Web-enhanced Long-form Question Answering",
+      "作者": ["Tianchi Cai", "Zhiwen Tan", "Xierui Song", "Tao Sun", "Jiyan Jiang", "Yunqi Xu", "Yinger Zhang", "Jinjie Gu"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Long-form Question Answering", "Factuality Optimization", "Outline-enhanced Generation", "Doubly Fine-grained RLHF"],
+      "摘要": "This paper introduces FoRAG, a novel approach to web-enhanced long-form question answering (LFQA) that addresses issues of factuality and logical structure in existing methods. It proposes an outline-enhanced generator for clear logic in long-form answers and a factuality optimization method based on a doubly fine-grained RLHF framework. The method achieves state-of-the-art performance on both English and Chinese benchmarks.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.13779v1",
+      "引用数": null,
+      "索引方法": "BM-25 re-ranking algorithm",
+      "检索方法": "StackExchange API, Pinecone Vector Database",
+      "重排方法": "Maximum Marginal Relevance (MMR)",
+      "生成方法": "Llama2-7B-chat, ChatGLM2-6B",
+      "评估指标": ["Coherence", "Helpfulness", "Factuality"],
+      "向量表示": "text-embedding-ada-002 model"
+    },
+    "作者节点": [
+      {
+        "ID": "author_tianchi_cai",
+        "姓名": "Tianchi Cai",
+        "所属机构": "Ant Group, Hangzhou, China",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "author_zhiwen_tan",
+        "姓名": "Zhiwen Tan",
+        "所属机构": "Ant Group, Hangzhou, China",
+        "研究领域": ["Natural Language Processing", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.13779v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "keyword_lfqa",
+        "名称": "Long-form Question Answering",
+        "使用频率": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "keyword_factuality_optimization",
+        "名称": "Factuality Optimization",
+        "使用频率": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "keyword_outline_enhanced_generation",
+        "名称": "Outline-enhanced Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "keyword_doubly_fine_grained_rlhf",
+        "名称": "Doubly Fine-grained RLHF",
+        "使用频率": null,
+        "相关文档列表": ["2406.13779v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_keyword_extractor",
+        "名称": "Keyword Extractor",
+        "类型": "preprocessing",
+        "描述": "Extracts keywords from the user's query, potentially breaking down complex queries into sub-questions.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "component_search_and_storage",
+        "名称": "Search and Storage",
+        "类型": "retrieval",
+        "描述": "Searches and retrieves relevant questions and answers from Stack Overflow, storing them in a vector database.",
+        "使用的算法或模型": ["BM-25", "text-embedding-ada-002", "Pinecone Vector Database"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "component_evidence_gatherer",
+        "名称": "Evidence Gatherer",
+        "类型": "filtering",
+        "描述": "Gathers and scores the most relevant pieces of information from the stored data.",
+        "使用的算法或模型": ["Maximum Marginal Relevance (MMR)", "GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13779v1"]
+      },
+      {
+        "ID": "component_answer_generator",
+        "名称": "Answer Generator",
+        "类型": "generation",
+        "描述": "Generates the final answer based on the gathered evidence and user's query.",
+        "使用的算法或模型": ["Llama2-7B-chat", "ChatGLM2-6B"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13779v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_forag",
+      "名称": "FoRAG Framework",
+      "描述": "A factuality-optimized RAG framework for web-enhanced long-form question answering, featuring outline-enhanced generation and doubly fine-grained RLHF.",
+      "索引构建组件ID": "component_search_and_storage",
+      "检索组件ID": "component_evidence_gatherer",
+      "重排组件ID": "component_evidence_gatherer",
+      "生成组件ID": "component_answer_generator",
+      "整体性能指标": {
+        "Coherence": 0.9889,
+        "Helpfulness": 0.9595,
+        "Factuality": 0.9894
+      },
+      "应用场景": ["Web-enhanced Long-form Question Answering", "Factual Information Retrieval"],
+      "相关文档列表": ["2406.13779v1"]
+    }
+  }

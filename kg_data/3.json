@@ -1,0 +1,126 @@
+{
+    "文档节点": {
+      "ID": "2406.13840v1",
+      "标题": "StackRAG Agent: Improving Developer Answers with Retrieval-Augmented Generation",
+      "作者": ["Davit Abrahamyan", "Fatemeh H. Fard"],
+      "发表时间": "2024-06-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Large Language Models", "Stack Overflow", "Multiagent tool", "Software Development"],
+      "摘要": "This paper presents StackRAG, a retrieval-augmented Multiagent generation tool based on LLMs that combines the knowledge from Stack Overflow to enhance the reliability of generated answers for developers. Initial evaluations show that the generated answers are correct, accurate, relevant, and useful.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.13840v1",
+      "引用数": null,
+      "索引方法": "BM-25 re-ranking algorithm",
+      "检索方法": "StackExchange API, Pinecone Vector Database",
+      "重排方法": "Maximum Marginal Relevance (MMR)",
+      "生成方法": "GPT-4",
+      "评估指标": ["Correctness", "Accuracy", "Relevance", "Usefulness"],
+      "向量表示": "text-embedding-ada-3-small model by OpenAI"
+    },
+    "作者节点": [
+      {
+        "ID": "author_davit_abrahamyan",
+        "姓名": "Davit Abrahamyan",
+        "所属机构": "Department of Computer Science, University of British Columbia, Kelowna, Canada",
+        "研究领域": ["Software Engineering", "Natural Language Processing"],
+        "h指数": null,
+        "发表文章列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "author_fatemeh_h_fard",
+        "姓名": "Fatemeh H. Fard",
+        "所属机构": "Department of Computer Science, University of British Columbia, Kelowna, Canada",
+        "研究领域": ["Software Engineering", "Artificial Intelligence"],
+        "h指数": null,
+        "发表文章列表": ["2406.13840v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "keyword_stack_overflow",
+        "名称": "Stack Overflow",
+        "使用频率": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "keyword_multiagent_tool",
+        "名称": "Multiagent tool",
+        "使用频率": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "keyword_software_development",
+        "名称": "Software Development",
+        "使用频率": null,
+        "相关文档列表": ["2406.13840v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_keyword_extractor",
+        "名称": "Keyword Extractor",
+        "类型": "preprocessing",
+        "描述": "Extracts keywords from the user's query, potentially breaking down complex queries into sub-questions.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "component_search_and_storage",
+        "名称": "Search and Storage",
+        "类型": "retrieval",
+        "描述": "Searches and retrieves relevant questions and answers from Stack Overflow, storing them in a vector database.",
+        "使用的算法或模型": ["BM-25", "text-embedding-ada-3-small", "Pinecone Vector Database"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "component_evidence_gatherer",
+        "名称": "Evidence Gatherer",
+        "类型": "filtering",
+        "描述": "Gathers and scores the most relevant pieces of information from the stored data.",
+        "使用的算法或模型": ["Maximum Marginal Relevance (MMR)", "GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13840v1"]
+      },
+      {
+        "ID": "component_answer_generator",
+        "名称": "Answer Generator",
+        "类型": "generation",
+        "描述": "Generates the final answer based on the gathered evidence and user's query.",
+        "使用的算法或模型": ["GPT-4"],
+        "性能指标": null,
+        "相关文档列表": ["2406.13840v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_stackrag",
+      "名称": "StackRAG Framework",
+      "描述": "A Multiagent LLM-based tool that combines knowledge from Stack Overflow with the generation capability of GPT to provide reliable and up-to-date answers to developers' queries.",
+      "索引构建组件ID": "component_search_and_storage",
+      "检索组件ID": "component_evidence_gatherer",
+      "重排组件ID": "component_evidence_gatherer",
+      "生成组件ID": "component_answer_generator",
+      "整体性能指标": {
+        "Correctness": 4.66,
+        "Accuracy": 4.55,
+        "Relevance": 4.55,
+        "Usefulness": 4.55
+      },
+      "应用场景": ["Software Development", "Developer Q&A"],
+      "相关文档列表": ["2406.13840v1"]
+    }
+  }

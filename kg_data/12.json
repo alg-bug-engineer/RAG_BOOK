@@ -1,0 +1,117 @@
+{
+    "文档节点": {
+      "ID": "2406.07348v3",
+      "标题": "DR-RAG: Applying Dynamic Document Relevance to Retrieval-Augmented Generation for Question-Answering",
+      "作者": ["Zijian Hei", "Weiling Liu", "Wenjie Ou", "Juyi Qiao", "Junming Jiao", "Guowen Song", "Ting Tian", "Yi Lin"],
+      "发表时间": "2024-06-16",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Question-Answering", "Dynamic Document Relevance", "Multi-hop QA", "Large Language Models"],
+      "摘要": "We propose a novel two-stage retrieval framework called Dynamic-Relevant Retrieval-Augmented Generation (DR-RAG) to improve document retrieval recall and the accuracy of answers while maintaining efficiency. Additionally, a compact classifier is applied to two different selection strategies to determine the contribution of the retrieved documents to answering the query and retrieve the relatively relevant documents. Meanwhile, DR-RAG call the LLMs only once, which significantly improves the efficiency of the experiment. The experimental results on multi-hop QA datasets show that DR-RAG can significantly improve the accuracy of the answers and achieve new progress in QA systems.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.07348v3",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["Similarity Matching (SM)", "BM25"],
+      "重排方法": ["Classifier Inverse Selection (CIS)", "Classifier Forward Selection (CFS)"],
+      "生成方法": ["GPT-3.5-turbo", "Llama3-8B", "GPT-4-turbo"],
+      "评估指标": ["Exact Match (EM)", "F1", "Accuracy (Acc)", "Recall"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_zijian_hei",
+        "姓名": "Zijian Hei",
+        "所属机构": ["Li Auto Inc.", "Sun Yat-sen University"],
+        "研究领域": ["Natural Language Processing", "Question Answering"],
+        "h指数": null,
+        "发表文章列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "author_guowen_song",
+        "姓名": "Guowen Song",
+        "所属机构": "Li Auto Inc.",
+        "研究领域": ["Natural Language Processing", "Question Answering"],
+        "h指数": null,
+        "发表文章列表": ["2406.07348v3"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "keyword_qa",
+        "名称": "Question-Answering",
+        "使用频率": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "keyword_dynamic_document_relevance",
+        "名称": "Dynamic Document Relevance",
+        "使用频率": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "keyword_multi_hop_qa",
+        "名称": "Multi-hop QA",
+        "使用频率": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2406.07348v3"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_qdc",
+        "名称": "Query Documents Concatenation",
+        "类型": "检索",
+        "描述": "Concatenates query with retrieved documents to form multiple pairs for second-stage retrieval",
+        "使用的算法或模型": ["Similarity Matching"],
+        "性能指标": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "component_cis",
+        "名称": "Classifier Inverse Selection",
+        "类型": "重排",
+        "描述": "Excludes irrelevant documents from the retrieved k documents to minimize document redundancy",
+        "使用的算法或模型": ["bigbird-roberta-base"],
+        "性能指标": null,
+        "相关文档列表": ["2406.07348v3"]
+      },
+      {
+        "ID": "component_cfs",
+        "名称": "Classifier Forward Selection",
+        "类型": "重排",
+        "描述": "Removes irrelevant dynamic-relevant documents in the second-retrieval stage",
+        "使用的算法或模型": ["bigbird-roberta-base"],
+        "性能指标": null,
+        "相关文档列表": ["2406.07348v3"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_dr_rag",
+      "名称": "DR-RAG Flow",
+      "描述": "A two-stage retrieval framework that applies dynamic document relevance to improve document retrieval recall and answer accuracy",
+      "索引构建组件ID": null,
+      "检索组件ID": ["component_qdc"],
+      "重排组件ID": ["component_cis", "component_cfs"],
+      "生成组件ID": null,
+      "整体性能指标": {
+        "Recall Improvement": "86.75%",
+        "Accuracy Improvement": "6.17%",
+        "EM Improvement": "7.34%",
+        "F1 Improvement": "9.36%"
+      },
+      "应用场景": ["Multi-hop question answering", "Complex and multilevel problems"],
+      "相关文档列表": ["2406.07348v3"]
+    }
+  }

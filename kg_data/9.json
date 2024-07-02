@@ -1,0 +1,102 @@
+{
+    "文档节点": {
+      "ID": "2406.12430v1",
+      "标题": "PlanRAG: A Plan-then-Retrieval Augmented Generation for Generative Large Language Models as Decision Makers",
+      "作者": ["Myeonghwa Lee", "Seonho An", "Min-Soo Kim"],
+      "发表时间": "2024-06-18",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Decision QA", "retrieval-augmented generation", "plan-then-retrieval", "multi-hop reasoning"],
+      "摘要": "We define Decision QA as the task of answering the best decision, d_best, for a decision-making question Q, business rules R and a database D. We propose Decision QA benchmark, DQA, with two scenarios, Locating and Building, constructed from two video games that have almost the same goal as Decision QA. To address Decision QA effectively, we also propose a new RAG technique called the iterative plan-then-retrieval augmented generation (PlanRAG). Our PlanRAG-based LM generates the plan for decision making as the first step, and the retriever generates the queries for data analysis as the second step. The proposed method outperforms the state-of-the-art iterative RAG method by 15.8% in the Locating scenario and by 7.4% in the Building scenario, respectively.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2406.12430v1",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": ["Multi-faceted retriever"],
+      "重排方法": null,
+      "生成方法": ["GPT-4", "Llama 2 (70B)", "Llama 2 (13B)", "Phi-2"],
+      "评估指标": ["Accuracy"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_myeonghwa_lee",
+        "姓名": "Myeonghwa Lee",
+        "所属机构": "School of Computing, KAIST",
+        "研究领域": ["Natural Language Processing", "Decision Making", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.12430v1"]
+      },
+      {
+        "ID": "author_seonho_an",
+        "姓名": "Seonho An",
+        "所属机构": "School of Computing, KAIST",
+        "研究领域": ["Natural Language Processing", "Decision Making", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.12430v1"]
+      },
+      {
+        "ID": "author_min_soo_kim",
+        "姓名": "Min-Soo Kim",
+        "所属机构": "School of Computing, KAIST",
+        "研究领域": ["Natural Language Processing", "Decision Making", "Retrieval-Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2406.12430v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_decision_qa",
+        "名称": "Decision QA",
+        "使用频率": null,
+        "相关文档列表": ["2406.12430v1"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "retrieval-augmented generation",
+        "使用频率": null,
+        "相关文档列表": ["2406.12430v1"]
+      },
+      {
+        "ID": "keyword_plan_then_retrieval",
+        "名称": "plan-then-retrieval",
+        "使用频率": null,
+        "相关文档列表": ["2406.12430v1"]
+      },
+      {
+        "ID": "keyword_multi_hop_reasoning",
+        "名称": "multi-hop reasoning",
+        "使用频率": null,
+        "相关文档列表": ["2406.12430v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_planrag",
+        "名称": "PlanRAG",
+        "类型": "检索",
+        "描述": "An iterative plan-then-retrieval augmented generation technique that generates a plan for decision making first, then retrieves data for analysis.",
+        "使用的算法或模型": ["GPT-4", "Llama 2", "Phi-2"],
+        "性能指标": {
+          "Locating Accuracy": 0.643,
+          "Building Accuracy": 0.450
+        },
+        "相关文档列表": ["2406.12430v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_planrag",
+      "名称": "PlanRAG Flow",
+      "描述": "A novel RAG framework that involves planning, retrieving & answering, and re-planning steps to make decisions based on complex data analysis.",
+      "索引构建组件ID": null,
+      "检索组件ID": ["component_planrag"],
+      "重排组件ID": null,
+      "生成组件ID": null,
+      "整体性能指标": {
+        "Locating Accuracy Improvement": "15.8%",
+        "Building Accuracy Improvement": "7.4%"
+      },
+      "应用场景": ["Decision making", "Complex data analysis", "Multi-hop reasoning"],
+      "相关文档列表": ["2406.12430v1"]
+    }
+  }

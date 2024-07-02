@@ -1,0 +1,191 @@
+{
+    "文档节点": {
+      "ID": "2405.13576v1",
+      "标题": "FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation Research",
+      "作者": ["Jiajie Jin", "Yutao Zhu", "Xinyu Yang", "Chenghao Zhang", "Zhicheng Dou"],
+      "发表时间": "2024-05-22",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Large Language Models", "Natural Language Processing", "Information Retrieval", "Open-source Toolkit", "Modular Framework", "Benchmark Datasets", "Evaluation Metrics"],
+      "摘要": "This paper introduces FlashRAG, an efficient and modular open-source toolkit designed to assist researchers in reproducing existing RAG methods and in developing their own RAG algorithms within a unified framework. The toolkit implements 12 advanced RAG methods, has gathered and organized 32 benchmark datasets, and features customizable modular framework, rich collection of pre-implemented RAG works, comprehensive datasets, efficient auxiliary pre-processing scripts, and extensive and standard evaluation metrics.",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2405.13576v1",
+      "引用数": 0,
+      "索引方法": "component_indexing",
+      "检索方法": "component_retriever",
+      "重排方法": "component_reranker",
+      "生成方法": "component_generator",
+      "评估指标": ["Exact Match", "F1 Score", "BLEU", "ROUGE-L", "Recall@k", "Precision@k", "MAP"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_jiajie_jin",
+        "姓名": "Jiajie Jin",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval", "Retrieval-Augmented Generation"],
+        "h指数": 0,
+        "发表文章列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "author_yutao_zhu",
+        "姓名": "Yutao Zhu",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "author_xinyu_yang",
+        "姓名": "Xinyu Yang",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "author_chenghao_zhang",
+        "姓名": "Chenghao Zhang",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval"],
+        "h指数": 0,
+        "发表文章列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "author_zhicheng_dou",
+        "姓名": "Zhicheng Dou",
+        "所属机构": "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "研究领域": ["Natural Language Processing", "Information Retrieval", "Retrieval-Augmented Generation"],
+        "h指数": 0,
+        "发表文章列表": ["2405.13576v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_retrieval_augmented_generation",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_large_language_models",
+        "名称": "Large Language Models",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_natural_language_processing",
+        "名称": "Natural Language Processing",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_information_retrieval",
+        "名称": "Information Retrieval",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_open_source_toolkit",
+        "名称": "Open-source Toolkit",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_modular_framework",
+        "名称": "Modular Framework",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_benchmark_datasets",
+        "名称": "Benchmark Datasets",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "keyword_evaluation_metrics",
+        "名称": "Evaluation Metrics",
+        "使用频率": 1,
+        "相关文档列表": ["2405.13576v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_judger",
+        "名称": "Judger",
+        "类型": "检索",
+        "描述": "Assesses whether a query necessitates retrieval, based on the SKR method using a curated set of LLM self-knowledge data.",
+        "使用的算法或模型": ["SKR"],
+        "性能指标": null,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "component_retriever",
+        "名称": "Retriever",
+        "类型": "检索",
+        "描述": "Implements various retrieval methods including sparse (BM25) and dense (BERT-based) retrievers.",
+        "使用的算法或模型": ["BM25", "DPR", "E5", "BGE", "ANCE"],
+        "性能指标": null,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "component_reranker",
+        "名称": "Reranker",
+        "类型": "重排",
+        "描述": "Refines the order of results returned by the retriever to enhance retrieval accuracy.",
+        "使用的算法或模型": ["Cross-Encoder models", "Bi-Encoder models"],
+        "性能指标": null,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "component_refiner",
+        "名称": "Refiner",
+        "类型": "生成",
+        "描述": "Refines the input text for generators to reduce token usage and noise from retrieved documents.",
+        "使用的算法或模型": ["Extractive Refiner", "Abstractive Refiner", "LLMLingua Refiner", "Selective-Context Refiner"],
+        "性能指标": null,
+        "相关文档列表": ["2405.13576v1"]
+      },
+      {
+        "ID": "component_generator",
+        "名称": "Generator",
+        "类型": "生成",
+        "描述": "Generates the final output based on the refined input and retrieved information.",
+        "使用的算法或模型": ["vllm", "FastChat", "Transformers library", "Fusion in Decoder (FiD)"],
+        "性能指标": null,
+        "相关文档列表": ["2405.13576v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_flashrag",
+      "名称": "FlashRAG",
+      "描述": "A modular toolkit for efficient Retrieval-Augmented Generation research, implementing various RAG processes including Sequential, Branching, Conditional, and Loop pipelines.",
+      "索引构建组件ID": "component_retriever",
+      "检索组件ID": "component_retriever",
+      "重排组件ID": "component_reranker",
+      "生成组件ID": "component_generator",
+      "整体性能指标": {
+        "NaturalQuestions": {
+          "ExactMatch": "35.1%"
+        },
+        "TriviaQA": {
+          "ExactMatch": "58.8%"
+        },
+        "HotpotQA": {
+          "F1": "35.3%"
+        },
+        "2WikiMultihopQA": {
+          "F1": "21.0%"
+        },
+        "PopQA": {
+          "F1": "36.7%"
+        },
+        "WebQuestions": {
+          "ExactMatch": "15.7%"
+        }
+      },
+      "应用场景": ["Open-domain Question Answering", "Multi-hop Question Answering", "Fact Verification", "Dialog Generation", "Long-form Question Answering", "Entity Linking", "Slot Filling"],
+      "相关文档列表": ["2405.13576v1"]
+    }
+  }
