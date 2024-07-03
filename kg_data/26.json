@@ -1,0 +1,114 @@
+{
+    "文档节点": {
+      "ID": "2403.10131v2",
+      "标题": "RAFT: Adapting Language Model to Domain Specific RAG",
+      "作者": ["Tianjun Zhang", "Shishir G. Patil", "Naman Jain", "Sheng Shen", "Matei Zaharia", "Ion Stoica", "Joseph E. Gonzalez"],
+      "发表时间": "2024-06-05",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval Augmented Generation", "Domain Adaptation", "Large Language Models", "Fine-tuning", "Open-book Exam"],
+      "摘要": "本文提出了检索增强微调(RAFT)方法,旨在提高大语言模型在特定领域的检索增强生成(RAG)任务中的表现。RAFT通过训练模型识别和忽略无关文档(称为干扰文档),并从相关文档中引用适当的片段来回答问题,从而改善模型在'开卷考试'式的特定领域设置中的问题回答能力。RAFT的链式思考风格回答进一步提高了模型的推理能力。在PubMed、HotpotQA和Gorilla等特定领域RAG数据集上,RAFT持续提升了模型性能,为改进预训练大语言模型在特定领域RAG中的表现提供了一种训练后的方法。",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2403.10131v2",
+      "引用数": null,
+      "索引方法": null,
+      "检索方法": "Retrieval Augmented Generation",
+      "重排方法": null,
+      "生成方法": "LLaMA-2",
+      "评估指标": ["Accuracy", "Final Accuracy"],
+      "向量表示": null
+    },
+    "作者节点": [
+      {
+        "ID": "author_tianjun_zhang",
+        "姓名": "Tianjun Zhang",
+        "所属机构": "UC Berkeley",
+        "研究领域": ["Natural Language Processing", "Machine Learning"],
+        "h指数": null,
+        "发表文章列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "author_shishir_g_patil",
+        "姓名": "Shishir G. Patil",
+        "所属机构": "UC Berkeley",
+        "研究领域": ["Natural Language Processing", "Machine Learning"],
+        "h指数": null,
+        "发表文章列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "author_naman_jain",
+        "姓名": "Naman Jain",
+        "所属机构": "UC Berkeley",
+        "研究领域": ["Natural Language Processing", "Machine Learning"],
+        "h指数": null,
+        "发表文章列表": ["2403.10131v2"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "keyword_domain_adaptation",
+        "名称": "Domain Adaptation",
+        "使用频率": null,
+        "相关文档列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "keyword_fine_tuning",
+        "名称": "Fine-tuning",
+        "使用频率": null,
+        "相关文档列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "keyword_open_book_exam",
+        "名称": "Open-book Exam",
+        "使用频率": null,
+        "相关文档列表": ["2403.10131v2"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_raft",
+        "名称": "Retrieval Augmented Fine Tuning (RAFT)",
+        "类型": "训练方法",
+        "描述": "一种新的训练方法,通过在训练数据中加入干扰文档和黄金文档的混合,提高模型在特定领域RAG任务中的表现",
+        "使用的算法或模型": ["LLaMA-2"],
+        "性能指标": null,
+        "相关文档列表": ["2403.10131v2"]
+      },
+      {
+        "ID": "component_cot",
+        "名称": "Chain-of-Thought",
+        "类型": "推理方法",
+        "描述": "一种推理方法,通过生成详细的推理过程来提高模型的回答质量",
+        "使用的算法或模型": ["GPT-4-1106"],
+        "性能指标": null,
+        "相关文档列表": ["2403.10131v2"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_raft",
+      "名称": "RAFT Framework",
+      "描述": "一个用于适应大语言模型到特定领域RAG任务的框架,通过在训练中引入干扰文档和使用链式思考方法来提高模型性能",
+      "索引构建组件ID": null,
+      "检索组件ID": null,
+      "重排组件ID": null,
+      "生成组件ID": "component_raft",
+      "整体性能指标": {
+        "Accuracy": "73.30% on PubMed",
+        "Final Accuracy": "0.32 on Natural Questions"
+      },
+      "应用场景": ["Domain-specific Question Answering", "Medical QA", "API Documentation QA"],
+      "相关文档列表": ["2403.10131v2"]
+    }
+  }

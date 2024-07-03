@@ -1,0 +1,267 @@
+{
+    "文档节点": {
+        "ID": "2404.03302v1",
+        "标题": "How Easily do Irrelevant Inputs Skew the Responses of Large Language Models?",
+        "作者": [
+            "Siye Wu",
+            "Jian Xie",
+            "Jiangjie Chen",
+            "Tinghui Zhu",
+            "Kai Zhang",
+            "Yanghua Xiao"
+        ],
+        "发表时间": "2024-04-04",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Large Language Models",
+            "Irrelevant Information",
+            "Robustness",
+            "Retrieval-Augmented Generation",
+            "Question Answering"
+        ],
+        "摘要": "本文对大型语言模型(LLMs)在面对不同类型的不相关信息时的鲁棒性进行了全面的调查。研究者首先提出了一个框架,用于构建从语义上不相关、部分相关到与问题相关的高质量不相关信息。分析表明,构建的不相关信息不仅在相似度指标上得分很高,容易被现有系统检索,而且与上下文存在语义联系。研究发现,当前的LLMs在区分高度语义相关的信息方面仍面临挑战,容易被这些不相关但具有误导性的内容分散注意力。此外,研究还发现,当前处理不相关信息的解决方案在提高LLMs对此类干扰的鲁棒性方面存在局限性。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2404.03302v1",
+        "引用数": 0,
+        "索引方法": "Contriever-MS MARCO",
+        "检索方法": "Dense Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo, GPT-4-turbo, Gemini Pro, Llama2-7B",
+        "评估指标": [
+            "Misrepresentation Ratio",
+            "Uncertainty Ratio"
+        ],
+        "向量表示": "Dense Representations"
+    },
+    "作者节点": [
+        {
+            "ID": "author_siye_wu",
+            "姓名": "Siye Wu",
+            "所属机构": "Wuhan University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "author_jian_xie",
+            "姓名": "Jian Xie",
+            "所属机构": "School of Computer Science, Fudan University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "author_jiangjie_chen",
+            "姓名": "Jiangjie Chen",
+            "所属机构": "School of Computer Science, Fudan University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "author_tinghui_zhu",
+            "姓名": "Tinghui Zhu",
+            "所属机构": "School of Computer Science, Fudan University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "author_kai_zhang",
+            "姓名": "Kai Zhang",
+            "所属机构": "The Ohio State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "author_yanghua_xiao",
+            "姓名": "Yanghua Xiao",
+            "所属机构": "School of Computer Science, Fudan University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.03302v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "keyword_irrelevant_information",
+            "名称": "Irrelevant Information",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "keyword_robustness",
+            "名称": "Robustness",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "keyword_qa",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_contriever_msmarco",
+            "名称": "Contriever-MS MARCO",
+            "类型": "索引构建",
+            "描述": "用于构建文档索引的无监督密集检索模型",
+            "使用的算法或模型": [
+                "Dense Retrieval"
+            ],
+            "性能指标": {
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "component_gpt35turbo",
+            "名称": "GPT-3.5-turbo",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型,用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Misrepresentation Ratio": null,
+                "Uncertainty Ratio": null
+            },
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "component_gpt4turbo",
+            "名称": "GPT-4-turbo",
+            "类型": "生成",
+            "描述": "OpenAI开发的最新大型语言模型,用于生成高质量文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Misrepresentation Ratio": null,
+                "Uncertainty Ratio": null
+            },
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "component_geminipro",
+            "名称": "Gemini Pro",
+            "类型": "生成",
+            "描述": "Google开发的大型语言模型,用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Misrepresentation Ratio": null,
+                "Uncertainty Ratio": null
+            },
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        },
+        {
+            "ID": "component_llama2_7b",
+            "名称": "Llama2-7B",
+            "类型": "生成",
+            "描述": "Meta开发的开源大型语言模型,用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Misrepresentation Ratio": null,
+                "Uncertainty Ratio": null
+            },
+            "相关文档列表": [
+                "2404.03302v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_irrelevant_information_evaluation",
+        "名称": "不相关信息对LLM影响评估流程",
+        "描述": "通过构建不同语义相关度的不相关信息,评估其对LLM响应的影响",
+        "索引构建组件ID": "component_contriever_msmarco",
+        "检索组件ID": "component_contriever_msmarco",
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_gpt35turbo",
+            "component_gpt4turbo",
+            "component_geminipro",
+            "component_llama2_7b"
+        ],
+        "整体性能指标": {
+            "Misrepresentation Ratio": null,
+            "Uncertainty Ratio": null
+        },
+        "应用场景": [
+            "问答系统",
+            "信息检索",
+            "语言模型鲁棒性评估"
+        ],
+        "相关文档列表": [
+            "2404.03302v1"
+        ]
+    }
+}

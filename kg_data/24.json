@@ -1,0 +1,131 @@
+{
+    "文档节点": {
+      "ID": "2407.01080v1",
+      "标题": "Face4RAG: Factual Consistency Evaluation for Retrieval Augmented Generation in Chinese",
+      "作者": ["Yunqi Xu", "Tianchi Cai", "Jiyan Jiang", "Xierui Song"],
+      "发表时间": "2024-07-01",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Factual Consistency Evaluation", "Retrieval Augmented Generation", "Large Language Models", "Benchmark", "Chinese NLP"],
+      "摘要": "本文提出了Face4RAG,这是首个针对检索增强生成(RAG)的全面事实一致性评估基准。Face4RAG包括一个精心设计的事实不一致错误类型学,一个基于该类型学构建的合成数据集,以及一个由六种常用大语言模型构建的真实世界数据集。这使得Face4RAG能够独立于底层语言模型评估事实一致性评估方法在特定错误类型或真实错误分布上的表现。在提出的基准上,我们发现现有的事实一致性评估方法无法检测逻辑谬误,即答案与检索参考之间的逻辑结构不匹配。为解决这个问题,我们进一步提出了一种名为L-Face4RAG的新方法,其中包含两个新颖的设计:逻辑保持的答案分解和事实-逻辑一致性评估。大量实验表明,L-Face4RAG在广泛的任务中显著优于以前的事实不一致检测方法,尤其是在RAG任务之外。基准和我们提出的方法都已公开发布。",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2407.01080v1",
+      "引用数": null,
+      "索引方法": "BM25",
+      "检索方法": "Cosine Similarity",
+      "重排方法": "Multi-modal Information Similarity (MIS)",
+      "生成方法": "GPT-4",
+      "评估指标": ["Accuracy", "Recall@x"],
+      "向量表示": "text-embedding-ada-002"
+    },
+    "作者节点": [
+      {
+        "ID": "author_yunqi_xu",
+        "姓名": "Yunqi Xu",
+        "所属机构": "Ant Group",
+        "研究领域": ["Natural Language Processing", "Factual Consistency Evaluation"],
+        "h指数": null,
+        "发表文章列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "author_tianchi_cai",
+        "姓名": "Tianchi Cai",
+        "所属机构": "Ant Group",
+        "研究领域": ["Natural Language Processing", "Retrieval Augmented Generation"],
+        "h指数": null,
+        "发表文章列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "author_jiyan_jiang",
+        "姓名": "Jiyan Jiang",
+        "所属机构": "Tsinghua University",
+        "研究领域": ["Natural Language Processing", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "author_xierui_song",
+        "姓名": "Xierui Song",
+        "所属机构": "Ant Group",
+        "研究领域": ["Natural Language Processing", "Factual Consistency Evaluation"],
+        "h指数": null,
+        "发表文章列表": ["2407.01080v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_fce",
+        "名称": "Factual Consistency Evaluation",
+        "使用频率": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "keyword_benchmark",
+        "名称": "Benchmark",
+        "使用频率": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "keyword_chinese_nlp",
+        "名称": "Chinese NLP",
+        "使用频率": null,
+        "相关文档列表": ["2407.01080v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_error_typology",
+        "名称": "Error Typology",
+        "类型": "评估指标",
+        "描述": "一个全面的事实不一致错误类型学,包括三个主要类别和九种错误类型",
+        "使用的算法或模型": ["Manual Design"],
+        "性能指标": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "component_logic_preserving_decomposition",
+        "名称": "Logic-Preserving Answer Decomposition",
+        "类型": "预处理",
+        "描述": "基于语义联系和逻辑连接的答案分解方法,保留了原始答案中的逻辑关系",
+        "使用的算法或模型": ["GPT-4", "Prompt Engineering"],
+        "性能指标": null,
+        "相关文档列表": ["2407.01080v1"]
+      },
+      {
+        "ID": "component_fact_logic_fce",
+        "名称": "Fact-Logic FCE",
+        "类型": "评估",
+        "描述": "一个两阶段的事实一致性评估过程,分别评估事实一致性和逻辑一致性",
+        "使用的算法或模型": ["GPT-4", "Chain-of-Thought Prompting"],
+        "性能指标": null,
+        "相关文档列表": ["2407.01080v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_l_face4rag",
+      "名称": "L-Face4RAG",
+      "描述": "一种新的事实一致性评估方法,专门设计用于处理RAG中的逻辑谬误",
+      "索引构建组件ID": null,
+      "检索组件ID": null,
+      "重排组件ID": null,
+      "生成组件ID": null,
+      "整体性能指标": {
+        "Accuracy": "93.38%",
+        "Recall@5": "~0.8"
+      },
+      "应用场景": ["Factual Consistency Evaluation", "Retrieval Augmented Generation", "Summarization", "Dialogue", "Fact Verification"],
+      "相关文档列表": ["2407.01080v1"]
+    }
+  }

@@ -1,0 +1,248 @@
+{
+    "文档节点": {
+        "ID": "2404.10198v2",
+        "标题": "ClashEval: Quantifying the tug-of-war between an LLM's internal prior and external evidence",
+        "作者": [
+            "Kevin Wu",
+            "Eric Wu",
+            "James Zou"
+        ],
+        "发表时间": "2024-06-10",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Large Language Models",
+            "Question Answering",
+            "Model Evaluation",
+            "Context Bias"
+        ],
+        "摘要": "本文提出了ClashEval,一个包含1200多个问题的问答基准数据集,用于评估大型语言模型(LLMs)在内部知识与外部证据冲突时的表现。研究发现,即使是顶级LLMs在面对不正确的检索内容时,也有60%以上的概率会覆盖自身正确的先验知识。然而,检索内容与事实偏离越大,模型采纳该内容的可能性越小。此外,模型对其初始回答的置信度越低(通过测量token概率),越有可能采纳检索内容中的信息。研究者利用这一发现,展示了在存在冲突检索内容时提高模型准确性的简单方法。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2404.10198v2",
+        "引用数": 0,
+        "索引方法": null,
+        "检索方法": null,
+        "重排方法": null,
+        "生成方法": "GPT-4o, GPT-3.5, Llama-3-8b-instruct, Gemini 1.5, Claude Opus, Claude Sonnet",
+        "评估指标": [
+            "Accuracy",
+            "Prior Bias",
+            "Context Bias"
+        ],
+        "向量表示": null
+    },
+    "作者节点": [
+        {
+            "ID": "author_kevin_wu",
+            "姓名": "Kevin Wu",
+            "所属机构": "Stanford University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "author_eric_wu",
+            "姓名": "Eric Wu",
+            "所属机构": "Stanford University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "author_james_zou",
+            "姓名": "James Zou",
+            "所属机构": "Stanford University",
+            "研究领域": [
+                "Machine Learning",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.10198v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "keyword_qa",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "keyword_model_evaluation",
+            "名称": "Model Evaluation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "keyword_context_bias",
+            "名称": "Context Bias",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_gpt4o",
+            "名称": "GPT-4o",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.615,
+                "Context Bias": 0.304,
+                "Prior Bias": 0.021
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "component_gpt35",
+            "名称": "GPT-3.5",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.539,
+                "Context Bias": 0.313,
+                "Prior Bias": 0.028
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "component_llama3",
+            "名称": "Llama-3-8b-instruct",
+            "类型": "生成",
+            "描述": "Meta开发的开源大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.500,
+                "Context Bias": 0.264,
+                "Prior Bias": 0.021
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "component_gemini15",
+            "名称": "Gemini 1.5",
+            "类型": "生成",
+            "描述": "Google开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.624,
+                "Context Bias": 0.245,
+                "Prior Bias": 0.037
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "component_claude_opus",
+            "名称": "Claude Opus",
+            "类型": "生成",
+            "描述": "Anthropic开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.743,
+                "Context Bias": 0.157,
+                "Prior Bias": 0.021
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        },
+        {
+            "ID": "component_claude_sonnet",
+            "名称": "Claude Sonnet",
+            "类型": "生成",
+            "描述": "Anthropic开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": 0.658,
+                "Context Bias": 0.201,
+                "Prior Bias": 0.025
+            },
+            "相关文档列表": [
+                "2404.10198v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_clasheval",
+        "名称": "ClashEval",
+        "描述": "评估大型语言模型在内部知识与外部证据冲突时的表现",
+        "索引构建组件ID": null,
+        "检索组件ID": null,
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_gpt4o",
+            "component_gpt35",
+            "component_llama3",
+            "component_gemini15",
+            "component_claude_opus",
+            "component_claude_sonnet"
+        ],
+        "整体性能指标": null,
+        "应用场景": [
+            "问答系统评估",
+            "检索增强生成评估",
+            "大语言模型鲁棒性测试"
+        ],
+        "相关文档列表": [
+            "2404.10198v2"
+        ]
+    }
+}

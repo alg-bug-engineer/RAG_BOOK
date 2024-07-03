@@ -1,0 +1,142 @@
+{
+    "文档节点": {
+        "ID": "2311.04177v1",
+        "标题": "Enhancing LLM Intelligence with ARM-RAG: Auxiliary Rationale Memory for Retrieval Augmented Generation",
+        "作者": [
+            "Eric Melz"
+        ],
+        "发表时间": "2023-11-07",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Large Language Models",
+            "Retrieval Augmented Generation",
+            "Problem Solving",
+            "Auxiliary Rationale Memory",
+            "Chain-of-thought Reasoning"
+        ],
+        "摘要": "本文提出了ARM-RAG（Auxiliary Rationale Memory for Retrieval Augmented Generation）系统，旨在提高大型语言模型（LLMs）的问题解决能力。ARM-RAG利用神经信息检索来存储解决小学数学问题时产生的推理链。通过一系列实验，作者证明了ARM-RAG系统在性能上优于仅依赖LLMs的基线系统。实验结果显示，与基线相比，ARM-RAG在测试集上的准确率提高了2.1%，而使用查询模糊化技术的ARM-RAG系统则实现了4.2%的性能提升。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2311.04177v1",
+        "引用数": 0,
+        "索引方法": "Pyserini",
+        "检索方法": "Dense Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo",
+        "评估指标": [
+            "Accuracy"
+        ],
+        "向量表示": "Dense Representations"
+    },
+    "作者节点": [
+        {
+            "ID": "author_eric_melz",
+            "姓名": "Eric Melz",
+            "所属机构": "SearchStax",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2311.04177v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        },
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        },
+        {
+            "ID": "keyword_problem_solving",
+            "名称": "Problem Solving",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        },
+        {
+            "ID": "keyword_arm",
+            "名称": "Auxiliary Rationale Memory",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        },
+        {
+            "ID": "keyword_cot",
+            "名称": "Chain-of-thought Reasoning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_pyserini",
+            "名称": "Pyserini",
+            "类型": "索引构建",
+            "描述": "一个用于可重现信息检索研究的Python工具包，支持稀疏和密集表示",
+            "使用的算法或模型": [
+                "BM25",
+                "Dense Retrieval"
+            ],
+            "性能指标": {
+                "Accuracy": "77.4%"
+            },
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        },
+        {
+            "ID": "component_gpt35turbo",
+            "名称": "GPT-3.5-turbo",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型，用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": "73.2%"
+            },
+            "相关文档列表": [
+                "2311.04177v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_arm_rag",
+        "名称": "ARM-RAG",
+        "描述": "使用辅助理由记忆的检索增强生成系统",
+        "索引构建组件ID": "component_pyserini",
+        "检索组件ID": "component_pyserini",
+        "重排组件ID": null,
+        "生成组件ID": "component_gpt35turbo",
+        "整体性能指标": {
+            "Accuracy": "77.4%"
+        },
+        "应用场景": [
+            "数学问题求解",
+            "通用问题解答"
+        ],
+        "相关文档列表": [
+            "2311.04177v1"
+        ]
+    }
+}

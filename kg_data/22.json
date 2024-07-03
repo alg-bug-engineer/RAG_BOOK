@@ -1,0 +1,282 @@
+{
+    "文档节点": {
+        "ID": "2406.19251v1",
+        "标题": "AutoRAG-HP: Automatic Online Hyper-Parameter Tuning for Retrieval-Augmented Generation",
+        "作者": [
+            "Jia Fu",
+            "Xiaoting Qin",
+            "Fangkai Yang",
+            "Lu Wang",
+            "Jue Zhang",
+            "Qingwei Lin",
+            "Yubo Chen",
+            "Dongmei Zhang",
+            "Saravan Rajmohan",
+            "Qi Zhang"
+        ],
+        "发表时间": "2024-06-27",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Hyper-Parameter Optimization",
+            "Multi-Armed Bandit",
+            "Online Learning",
+            "Large Language Models"
+        ],
+        "摘要": "本文提出了AutoRAG-HP框架，用于检索增强生成（RAG）系统中的自动在线超参数调优。作者将超参数选择问题建模为多臂赌博机问题，并引入了一种新颖的两层层次化上置信界（Hier-UCB）方法，以高效探索参数空间。在多个超参数联合调优的实验中，基于多臂赌博机的在线学习方法仅使用了网格搜索所需LLM API调用次数的约20%，就达到了高性能。所提出的Hier-UCB方法在具有挑战性的优化场景中优于其他基线方法。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2406.19251v1",
+        "引用数": 0,
+        "索引方法": "BM-25",
+        "检索方法": "Maximum Marginal Relevance (MMR)",
+        "重排方法": "Maximum Marginal Relevance (MMR)",
+        "生成方法": "GPT-3.5-Turbo, GPT-4",
+        "评估指标": [
+            "Recall@3",
+            "Recall@5"
+        ],
+        "向量表示": "text-embedding-ada-3-small"
+    },
+    "作者节点": [
+        {
+            "ID": "author_jia_fu",
+            "姓名": "Jia Fu",
+            "所属机构": "Institute of Automation, Chinese Academy of Sciences, Beijing, China",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_xiaoting_qin",
+            "姓名": "Xiaoting Qin",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_fangkai_yang",
+            "姓名": "Fangkai Yang",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_lu_wang",
+            "姓名": "Lu Wang",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_jue_zhang",
+            "姓名": "Jue Zhang",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_qingwei_lin",
+            "姓名": "Qingwei Lin",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_yubo_chen",
+            "姓名": "Yubo Chen",
+            "所属机构": "Institute of Automation, Chinese Academy of Sciences, Beijing, China",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_dongmei_zhang",
+            "姓名": "Dongmei Zhang",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_saravan_rajmohan",
+            "姓名": "Saravan Rajmohan",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "author_qi_zhang",
+            "姓名": "Qi Zhang",
+            "所属机构": "Microsoft",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.19251v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "keyword_hpo",
+            "名称": "Hyper-Parameter Optimization",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "keyword_mab",
+            "名称": "Multi-Armed Bandit",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "keyword_online_learning",
+            "名称": "Online Learning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_hier_ucb",
+            "名称": "Hierarchical Upper Confidence Bound (Hier-UCB)",
+            "类型": "优化算法",
+            "描述": "一种新颖的两层层次化方法，用于在多臂赌博机问题中高效探索参数空间",
+            "使用的算法或模型": [
+                "Upper Confidence Bound (UCB)"
+            ],
+            "性能指标": {
+                "Recall@5": "~0.8"
+            },
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "component_ucb",
+            "名称": "Upper Confidence Bound (UCB)",
+            "类型": "优化算法",
+            "描述": "一种经典算法，用于在多臂赌博机问题中平衡探索和利用",
+            "使用的算法或模型": [
+                "UCB1"
+            ],
+            "性能指标": {
+                "Recall@5": "< 0.8"
+            },
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        },
+        {
+            "ID": "component_thompson_sampling",
+            "名称": "Thompson Sampling",
+            "类型": "优化算法",
+            "描述": "一种概率算法，用于在多臂赌博机问题中平衡探索和利用",
+            "使用的算法或模型": [
+                "Bayesian Inference"
+            ],
+            "性能指标": {
+                "Recall@5": "< 0.8"
+            },
+            "相关文档列表": [
+                "2406.19251v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_autorag_hp",
+        "名称": "AutoRAG-HP Framework",
+        "描述": "一个用于检索增强生成系统中自动在线超参数调优的框架",
+        "索引构建组件ID": "component_bm25",
+        "检索组件ID": "component_mmr",
+        "重排组件ID": "component_mmr",
+        "生成组件ID": "component_gpt",
+        "整体性能指标": {
+            "Recall@5": "~0.8"
+        },
+        "应用场景": [
+            "Hyper-parameter Optimization",
+            "Retrieval-Augmented Generation"
+        ],
+        "相关文档列表": [
+            "2406.19251v1"
+        ]
+    }
+}

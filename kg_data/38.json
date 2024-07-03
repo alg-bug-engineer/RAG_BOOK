@@ -1,0 +1,231 @@
+{
+    "文档节点": {
+        "ID": "2405.14831v1",
+        "标题": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+        "作者": [
+            "Bernal Jiménez Gutiérrez",
+            "Yiheng Shu",
+            "Yu Gu",
+            "Michihiro Yasunaga",
+            "Yu Su"
+        ],
+        "发表时间": "2024-05-23",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Long-Term Memory",
+            "Knowledge Graph",
+            "Personalized PageRank",
+            "Multi-hop Question Answering"
+        ],
+        "摘要": "本文提出了HippoRAG,一种受海马体记忆索引理论启发的新型检索框架,旨在实现大语言模型对新经验的更深入、更高效的知识整合。HippoRAG协同利用大语言模型、知识图谱和个性化PageRank算法,模仿人类记忆中新皮层和海马体的不同作用。我们在多跳问答任务上将HippoRAG与现有的RAG方法进行了比较,结果显示我们的方法显著优于最先进的方法,最高可提升20%。HippoRAG的单步检索性能可媲美甚至优于迭代检索方法(如IRCoT),同时成本降低10-30倍,速度提升6-13倍。将HippoRAG集成到IRCoT中可进一步带来显著的性能提升。最后,我们展示了该方法能够处理现有方法无法应对的新型场景。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.14831v1",
+        "引用数": 0,
+        "索引方法": "Knowledge Graph",
+        "检索方法": "Personalized PageRank",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo",
+        "评估指标": [
+            "Recall@K",
+            "Exact Match (EM)",
+            "F1 score",
+            "LLM-judge score"
+        ],
+        "向量表示": "Contriever, ColBERTv2"
+    },
+    "作者节点": [
+        {
+            "ID": "author_bernal_jimenez_gutierrez",
+            "姓名": "Bernal Jiménez Gutiérrez",
+            "所属机构": "The Ohio State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "author_yiheng_shu",
+            "姓名": "Yiheng Shu",
+            "所属机构": "The Ohio State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "author_yu_gu",
+            "姓名": "Yu Gu",
+            "所属机构": "The Ohio State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "author_michihiro_yasunaga",
+            "姓名": "Michihiro Yasunaga",
+            "所属机构": "Stanford University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "author_yu_su",
+            "姓名": "Yu Su",
+            "所属机构": "The Ohio State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.14831v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "keyword_long_term_memory",
+            "名称": "Long-Term Memory",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "keyword_knowledge_graph",
+            "名称": "Knowledge Graph",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "keyword_personalized_pagerank",
+            "名称": "Personalized PageRank",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "keyword_multi_hop_qa",
+            "名称": "Multi-hop Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_kg_construction",
+            "名称": "Knowledge Graph Construction",
+            "类型": "索引构建",
+            "描述": "使用LLM从检索语料库中提取知识图谱三元组",
+            "使用的算法或模型": [
+                "Open Information Extraction",
+                "GPT-3.5-turbo"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "component_personalized_pagerank",
+            "名称": "Personalized PageRank",
+            "类型": "检索",
+            "描述": "使用个性化PageRank算法在知识图谱上进行相关子图检索",
+            "使用的算法或模型": [
+                "Personalized PageRank"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "component_contriever",
+            "名称": "Contriever",
+            "类型": "索引构建",
+            "描述": "用于文本嵌入的预训练模型",
+            "使用的算法或模型": [
+                "Contrastive Learning"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        },
+        {
+            "ID": "component_colbertv2",
+            "名称": "ColBERTv2",
+            "类型": "索引构建",
+            "描述": "用于文本嵌入的预训练模型",
+            "使用的算法或模型": [
+                "BERT",
+                "Late Interaction"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14831v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_hipporag",
+        "名称": "HippoRAG",
+        "描述": "一种受海马体记忆索引理论启发的检索增强生成框架",
+        "索引构建组件ID": [
+            "component_kg_construction",
+            "component_contriever",
+            "component_colbertv2"
+        ],
+        "检索组件ID": [
+            "component_personalized_pagerank"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": null,
+        "整体性能指标": {
+            "Recall@2": 0.574,
+            "Recall@5": 0.729,
+            "F1": 48.1
+        },
+        "应用场景": [
+            "多跳问答",
+            "长文本生成"
+        ],
+        "相关文档列表": [
+            "2405.14831v1"
+        ]
+    }
+}

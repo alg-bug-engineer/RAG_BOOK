@@ -1,0 +1,243 @@
+{
+    "文档节点": {
+        "ID": "2403.14403v2",
+        "标题": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+        "作者": [
+            "Soyeong Jeong",
+            "Jinheon Baek",
+            "Sukmin Cho",
+            "Sung Ju Hwang",
+            "Jong C. Park"
+        ],
+        "发表时间": "2024-03-28",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Large Language Models",
+            "Question Answering",
+            "Adaptive Retrieval",
+            "Query Complexity"
+        ],
+        "摘要": "本文提出了一个新颖的自适应问答框架Adaptive-RAG,可以根据查询复杂度动态选择最合适的策略,从最简单到最复杂的retrieval-augmented大型语言模型。该选择过程通过一个分类器来操作,该分类器是一个较小的语言模型,经过训练可以预测输入查询的复杂度级别,其标签是自动收集的。这种方法在迭代和单步检索增强LLM以及无检索方法之间提供了平衡策略,以应对不同复杂度的查询。作者在一组开放域问答数据集上验证了该模型,涵盖多种查询复杂度,结果表明Adaptive-RAG相比相关基线(包括自适应检索方法)显著提高了问答系统的整体效率和准确性。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2403.14403v2",
+        "引用数": 0,
+        "索引方法": "BM25",
+        "检索方法": "Dense Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo, FLAN-T5-XL, FLAN-T5-XXL",
+        "评估指标": [
+            "F1",
+            "Exact Match (EM)",
+            "Accuracy",
+            "步数",
+            "每查询时间"
+        ],
+        "向量表示": "Dense Representations"
+    },
+    "作者节点": [
+        {
+            "ID": "author_soyeong_jeong",
+            "姓名": "Soyeong Jeong",
+            "所属机构": "Korea Advanced Institute of Science and Technology",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "author_jinheon_baek",
+            "姓名": "Jinheon Baek",
+            "所属机构": "Korea Advanced Institute of Science and Technology",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "author_sukmin_cho",
+            "姓名": "Sukmin Cho",
+            "所属机构": "Korea Advanced Institute of Science and Technology",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "author_sung_ju_hwang",
+            "姓名": "Sung Ju Hwang",
+            "所属机构": "Korea Advanced Institute of Science and Technology",
+            "研究领域": [
+                "Machine Learning",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "author_jong_c_park",
+            "姓名": "Jong C. Park",
+            "所属机构": "Korea Advanced Institute of Science and Technology",
+            "研究领域": [
+                "Natural Language Processing",
+                "Computational Linguistics"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.14403v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "keyword_qa",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "keyword_adaptive_retrieval",
+            "名称": "Adaptive Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "keyword_query_complexity",
+            "名称": "Query Complexity",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "索引构建",
+            "描述": "一种基于词频-逆文档频率的文本相关性排序算法",
+            "使用的算法或模型": [
+                "Term Frequency-Inverse Document Frequency"
+            ],
+            "性能指标": {
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "component_gpt35turbo",
+            "名称": "GPT-3.5-turbo",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型,用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "F1": null,
+                "EM": null,
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "component_flant5xl",
+            "名称": "FLAN-T5-XL",
+            "类型": "生成",
+            "描述": "Google开发的大型语言模型,基于T5架构",
+            "使用的算法或模型": [
+                "T5"
+            ],
+            "性能指标": {
+                "F1": null,
+                "EM": null,
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        },
+        {
+            "ID": "component_flant5xxl",
+            "名称": "FLAN-T5-XXL",
+            "类型": "生成",
+            "描述": "Google开发的更大规模FLAN-T5模型",
+            "使用的算法或模型": [
+                "T5"
+            ],
+            "性能指标": {
+                "F1": null,
+                "EM": null,
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2403.14403v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_adaptive_rag",
+        "名称": "Adaptive-RAG",
+        "描述": "根据查询复杂度自适应选择最合适的检索增强生成策略",
+        "索引构建组件ID": "component_bm25",
+        "检索组件ID": "component_bm25",
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_gpt35turbo",
+            "component_flant5xl",
+            "component_flant5xxl"
+        ],
+        "整体性能指标": {
+            "F1": null,
+            "EM": null,
+            "Accuracy": null
+        },
+        "应用场景": [
+            "开放域问答",
+            "多跳推理",
+            "单跳问答"
+        ],
+        "相关文档列表": [
+            "2403.14403v2"
+        ]
+    }
+}

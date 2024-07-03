@@ -1,0 +1,135 @@
+{
+    "文档节点": {
+      "ID": "2312.15883v2",
+      "标题": "HyKGE: A Hypothesis Knowledge Graph Enhanced Framework for Accurate and Reliable Medical LLMs Responses",
+      "作者": ["Xinke Jiang", "Ruizhe Zhang", "Yongxin Xu", "Rihong Qiu", "Yue Fang", "Zhiyuan Wang", "Jinyi Tang", "Hongxin Ding", "Xu Chu", "Junfeng Zhao", "Yasha Wang"],
+      "发表时间": "2024-04-19",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Large Language Models", "Retrieval-Augmented Generation", "Knowledge Graph", "Medical Question Answering", "Hypothesis Output"],
+      "摘要": "本文提出了一个基于知识图谱的检索增强生成(RAG)框架HyKGE,旨在提高大语言模型(LLMs)回答的准确性和可靠性。HyKGE利用LLMs强大的推理能力来补充用户查询的不完整性,优化与LLMs的交互过程,并提供多样化的检索知识。具体而言,HyKGE通过假设输出(Hypothesis Outputs)探索LLMs的零样本能力和丰富知识,以扩展知识图谱中的可行探索方向,并通过精心设计的提示来增强LLMs响应的密度和效率。此外,我们引入了HO Fragment Granularity-aware重排模块,在过滤噪声的同时确保检索知识的多样性和相关性之间的平衡。在两个中文医学选择题数据集和一个中文开放域医学问答数据集上的实验表明,HyKGE在准确性和可解释性方面优于现有方法。",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2312.15883v2",
+      "引用数": null,
+      "索引方法": "密集向量检索",
+      "检索方法": "假设输出导向的知识图谱检索",
+      "重排方法": "HO Fragment Granularity-aware Rerank",
+      "生成方法": "GPT-3.5, Baichuan 13B-Chat",
+      "评估指标": ["Exact Match (EM)", "Partial Correct Rate (PCR)", "Artificial Correlation Judgement (ACJ)", "Perplexity (PPL)", "ROUGE-Recall", "BLEU"],
+      "向量表示": "GTE embedding model"
+    },
+    "作者节点": [
+      {
+        "ID": "author_xinke_jiang",
+        "姓名": "Xinke Jiang",
+        "所属机构": "Peking University",
+        "研究领域": ["Natural Language Processing", "Knowledge Graph", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "author_ruizhe_zhang",
+        "姓名": "Ruizhe Zhang",
+        "所属机构": "Peking University",
+        "研究领域": ["Natural Language Processing", "Medical AI"],
+        "h指数": null,
+        "发表文章列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "author_yongxin_xu",
+        "姓名": "Yongxin Xu",
+        "所属机构": "Peking University",
+        "研究领域": ["Natural Language Processing", "Information Retrieval"],
+        "h指数": null,
+        "发表文章列表": ["2312.15883v2"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "keyword_kg",
+        "名称": "Knowledge Graph",
+        "使用频率": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "keyword_medical_qa",
+        "名称": "Medical Question Answering",
+        "使用频率": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "keyword_hypothesis_output",
+        "名称": "Hypothesis Output",
+        "使用频率": null,
+        "相关文档列表": ["2312.15883v2"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_hypothesis_output_module",
+        "名称": "Hypothesis Output Module",
+        "类型": "检索",
+        "描述": "利用LLMs的零样本能力生成假设输出,扩展知识图谱中的可行探索方向",
+        "使用的算法或模型": ["GPT-3.5", "Baichuan 13B-Chat"],
+        "性能指标": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "component_ner_module",
+        "名称": "NER Module",
+        "类型": "预处理",
+        "描述": "从假设输出和用户查询中提取医学实体",
+        "使用的算法或模型": ["W2NER"],
+        "性能指标": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "component_kg_retrieval",
+        "名称": "Knowledge Graph Retrieval Module",
+        "类型": "检索",
+        "描述": "基于提取的实体在知识图谱中检索相关的推理链",
+        "使用的算法或模型": ["GTE embedding model"],
+        "性能指标": null,
+        "相关文档列表": ["2312.15883v2"]
+      },
+      {
+        "ID": "component_ho_fragment_rerank",
+        "名称": "HO Fragment Granularity-aware Rerank Module",
+        "类型": "重排",
+        "描述": "基于假设输出和用户查询的片段对检索到的推理链进行重排和过滤",
+        "使用的算法或模型": ["bge_reranker_large"],
+        "性能指标": null,
+        "相关文档列表": ["2312.15883v2"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_hykge",
+      "名称": "HyKGE Framework",
+      "描述": "一个基于假设知识图谱增强的框架,用于提高医疗大语言模型回答的准确性和可靠性",
+      "索引构建组件ID": "component_kg_retrieval",
+      "检索组件ID": "component_hypothesis_output_module",
+      "重排组件ID": "component_ho_fragment_rerank",
+      "生成组件ID": null,
+      "整体性能指标": {
+        "EM": "49.65%",
+        "PCR": "57.82%",
+        "ACJ": "59.57%",
+        "PPL": "12.55",
+        "ROUGE-R": "26.89%"
+      },
+      "应用场景": ["Medical Question Answering", "Open-domain Medical Q&A"],
+      "相关文档列表": ["2312.15883v2"]
+    }
+  }

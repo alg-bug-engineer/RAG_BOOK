@@ -1,0 +1,290 @@
+{
+    "文档节点": {
+        "ID": "2405.06211v3",
+        "标题": "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models",
+        "作者": [
+            "Wenqi Fan",
+            "Yujuan Ding",
+            "Liangbo Ning",
+            "Shijie Wang",
+            "Hengyun Li",
+            "Dawei Yin",
+            "Tat-Seng Chua",
+            "Qing Li"
+        ],
+        "发表时间": "2024-06-17",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Large Language Models",
+            "Pre-training",
+            "Fine-tuning",
+            "In-context Learning",
+            "Prompting"
+        ],
+        "摘要": "本文全面回顾了检索增强大语言模型(RA-LLMs)的现有研究,涵盖三个主要技术视角:架构、训练策略和应用。首先简要介绍了LLMs的基础知识和最新进展。然后系统地回顾了主流相关工作,详细阐述了它们的架构、训练策略和应用领域,以及各自面临的挑战和RA-LLMs的相应能力。最后,讨论了当前的局限性和未来研究的几个有前景的方向。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.06211v3",
+        "引用数": 0,
+        "索引方法": null,
+        "检索方法": "Dense Retrieval, Sparse Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo, GPT-4, Llama",
+        "评估指标": [
+            "MRR",
+            "Recall@K",
+            "NDCG@K",
+            "BLEU",
+            "ROUGE",
+            "METEOR"
+        ],
+        "向量表示": "Dense Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_wenqi_fan",
+            "姓名": "Wenqi Fan",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Retrieval-Augmented Generation",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_yujuan_ding",
+            "姓名": "Yujuan Ding",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Retrieval-Augmented Generation",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_liangbo_ning",
+            "姓名": "Liangbo Ning",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Retrieval-Augmented Generation",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_shijie_wang",
+            "姓名": "Shijie Wang",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Retrieval-Augmented Generation",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_hengyun_li",
+            "姓名": "Hengyun Li",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Retrieval-Augmented Generation",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_dawei_yin",
+            "姓名": "Dawei Yin",
+            "所属机构": "Baidu Inc",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_tat_seng_chua",
+            "姓名": "Tat-Seng Chua",
+            "所属机构": "National University of Singapore",
+            "研究领域": [
+                "Information Retrieval",
+                "Multimedia Analysis"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "author_qing_li",
+            "姓名": "Qing Li",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Data Engineering",
+                "Multimedia Systems"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.06211v3"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "keyword_pre_training",
+            "名称": "Pre-training",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "keyword_fine_tuning",
+            "名称": "Fine-tuning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "keyword_in_context_learning",
+            "名称": "In-context Learning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "keyword_prompting",
+            "名称": "Prompting",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dense_retrieval",
+            "名称": "Dense Retrieval",
+            "类型": "检索",
+            "描述": "使用密集向量表示进行文档检索的方法",
+            "使用的算法或模型": [
+                "DPR",
+                "BERT",
+                "Contriever"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "component_sparse_retrieval",
+            "名称": "Sparse Retrieval",
+            "类型": "检索",
+            "描述": "使用稀疏向量表示进行文档检索的方法",
+            "使用的算法或模型": [
+                "TF-IDF",
+                "BM25"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "component_llm_generator",
+            "名称": "LLM Generator",
+            "类型": "生成",
+            "描述": "使用大型语言模型生成文本的组件",
+            "使用的算法或模型": [
+                "GPT-3.5-turbo",
+                "GPT-4",
+                "Llama"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        },
+        {
+            "ID": "component_knowledge_base",
+            "名称": "Knowledge Base",
+            "类型": "索引构建",
+            "描述": "存储和索引外部知识的数据库",
+            "使用的算法或模型": [
+                "Wikipedia",
+                "Domain-specific databases"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.06211v3"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_rag_llm",
+        "名称": "Retrieval-Augmented Large Language Model",
+        "描述": "结合检索和大型语言模型的生成流程",
+        "索引构建组件ID": [
+            "component_knowledge_base"
+        ],
+        "检索组件ID": [
+            "component_dense_retrieval",
+            "component_sparse_retrieval"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_llm_generator"
+        ],
+        "整体性能指标": null,
+        "应用场景": [
+            "开放域问答",
+            "对话系统",
+            "事实验证",
+            "推荐系统",
+            "软件工程",
+            "科学研究",
+            "金融分析"
+        ],
+        "相关文档列表": [
+            "2405.06211v3"
+        ]
+    }
+}

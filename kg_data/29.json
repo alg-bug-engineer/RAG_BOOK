@@ -1,0 +1,222 @@
+{
+    "文档节点": {
+        "ID": "2310.11511v1",
+        "标题": "SELF-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+        "作者": [
+            "Akari Asai",
+            "Zeqiu Wu",
+            "Yizhong Wang",
+            "Avirup Sil",
+            "Hannaneh Hajishirzi"
+        ],
+        "发表时间": "2023-10-17",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Self-Reflection",
+            "Large Language Models",
+            "Natural Language Processing",
+            "Factual Accuracy"
+        ],
+        "摘要": "本文提出了一个名为SELF-RAG的新框架,旨在通过按需检索和自我反思来提高大型语言模型(LLM)的生成质量和事实准确性。SELF-RAG训练一个任意的语言模型,通过预测来自其原始词汇表以及新添加的特殊标记(称为反思标记)的下一个标记来学习检索、生成和评判文本段落及其自身的生成。SELF-RAG还可以通过利用反思标记在测试时定制语言模型的行为。在六个任务上使用多个指标进行的全面评估表明,SELF-RAG显著优于具有更多参数的LLM或使用传统检索增强生成方法的方法。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2310.11511v1",
+        "引用数": 0,
+        "索引方法": "Contriever-MS MARCO",
+        "检索方法": "Dense Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5-turbo, GPT-4",
+        "评估指标": [
+            "Accuracy",
+            "FactScore",
+            "MAUVE",
+            "Citation Precision",
+            "Citation Recall"
+        ],
+        "向量表示": "Dense Representations"
+    },
+    "作者节点": [
+        {
+            "ID": "author_akari_asai",
+            "姓名": "Akari Asai",
+            "所属机构": "University of Washington",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "author_zeqiu_wu",
+            "姓名": "Zeqiu Wu",
+            "所属机构": "University of Washington",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "author_yizhong_wang",
+            "姓名": "Yizhong Wang",
+            "所属机构": "University of Washington, Allen Institute for AI",
+            "研究领域": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "author_avirup_sil",
+            "姓名": "Avirup Sil",
+            "所属机构": "IBM Research AI",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "author_hannaneh_hajishirzi",
+            "姓名": "Hannaneh Hajishirzi",
+            "所属机构": "University of Washington, Allen Institute for AI",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2310.11511v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "keyword_self_reflection",
+            "名称": "Self-Reflection",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "keyword_nlp",
+            "名称": "Natural Language Processing",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "keyword_factual_accuracy",
+            "名称": "Factual Accuracy",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_contriever_msmarco",
+            "名称": "Contriever-MS MARCO",
+            "类型": "索引构建",
+            "描述": "用于构建文档索引的无监督密集检索模型",
+            "使用的算法或模型": [
+                "Dense Retrieval"
+            ],
+            "性能指标": {
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "component_gpt35turbo",
+            "名称": "GPT-3.5-turbo",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型,用于生成文本",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        },
+        {
+            "ID": "component_gpt4",
+            "名称": "GPT-4",
+            "类型": "生成",
+            "描述": "OpenAI开发的最新大型语言模型,用于生成高质量文本和反思标记",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": {
+                "Accuracy": null
+            },
+            "相关文档列表": [
+                "2310.11511v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_self_rag",
+        "名称": "SELF-RAG",
+        "描述": "通过自我反思学习检索、生成和评判的框架",
+        "索引构建组件ID": "component_contriever_msmarco",
+        "检索组件ID": "component_contriever_msmarco",
+        "重排组件ID": null,
+        "生成组件ID": "component_gpt35turbo",
+        "整体性能指标": {
+            "Accuracy": null,
+            "FactScore": null,
+            "MAUVE": null,
+            "Citation Precision": null,
+            "Citation Recall": null
+        },
+        "应用场景": [
+            "开放域问答",
+            "事实验证",
+            "长文本生成",
+            "指令跟随任务"
+        ],
+        "相关文档列表": [
+            "2310.11511v1"
+        ]
+    }
+}

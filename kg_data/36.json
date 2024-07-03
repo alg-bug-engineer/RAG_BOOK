@@ -1,0 +1,257 @@
+{
+    "文档节点": {
+        "ID": "2404.17723v2",
+        "标题": "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering",
+        "作者": [
+            "Zhentao Xu",
+            "Mark Jerome Cruz",
+            "Matthew Guevara",
+            "Tie Wang",
+            "Manasi Deshpande",
+            "Xiaofeng Wang",
+            "Zheng Li"
+        ],
+        "发表时间": "2024-05-06",
+        "来源": "SIGIR '24",
+        "类型": "论文",
+        "关键词": [
+            "Large Language Model",
+            "Knowledge Graph",
+            "Question Answering",
+            "Retrieval-Augmented Generation"
+        ],
+        "摘要": "本文提出了一种新颖的客户服务问答方法，结合了检索增强生成(RAG)和知识图谱(KG)。该方法从历史问题跟踪票据构建KG用于检索，保留了问题内部结构和问题间关系。在问答阶段，该方法解析用户查询并从KG检索相关子图以生成答案。KG的整合不仅通过保留客户服务结构信息提高了检索准确性，还通过缓解文本分割的影响提高了回答质量。在基准数据集上的实证评估显示，该方法在MRR上比基线提高了77.6%，在BLEU上提高了0.32。该方法已在LinkedIn的客户服务团队部署约6个月，将每个问题的中位数解决时间减少了28.6%。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": "https://doi.org/10.1145/3626772.3661370",
+        "URL": "https://arxiv.org/abs/2404.17723v2",
+        "引用数": 0,
+        "索引方法": "Knowledge Graph",
+        "检索方法": "Embedding-based Retrieval, Graph-based Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-4",
+        "评估指标": [
+            "MRR",
+            "Recall@K",
+            "NDCG@K",
+            "BLEU",
+            "ROUGE",
+            "METEOR"
+        ],
+        "向量表示": "E5"
+    },
+    "作者节点": [
+        {
+            "ID": "author_zhentao_xu",
+            "姓名": "Zhentao Xu",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Large Language Models",
+                "Natural Language Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_mark_jerome_cruz",
+            "姓名": "Mark Jerome Cruz",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_matthew_guevara",
+            "姓名": "Matthew Guevara",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_tie_wang",
+            "姓名": "Tie Wang",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_manasi_deshpande",
+            "姓名": "Manasi Deshpande",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_xiaofeng_wang",
+            "姓名": "Xiaofeng Wang",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "author_zheng_li",
+            "姓名": "Zheng Li",
+            "所属机构": "LinkedIn Corporation",
+            "研究领域": [
+                "Information Retrieval",
+                "Question Answering"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.17723v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Model",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "keyword_kg",
+            "名称": "Knowledge Graph",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "keyword_qa",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_kg_construction",
+            "名称": "Knowledge Graph Construction",
+            "类型": "索引构建",
+            "描述": "从历史客户服务问题票据构建知识图谱",
+            "使用的算法或模型": [
+                "Rule-based Parsing",
+                "LLM-based Parsing"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "component_ebr",
+            "名称": "Embedding-based Retrieval",
+            "类型": "检索",
+            "描述": "使用文本嵌入模型进行相似度检索",
+            "使用的算法或模型": [
+                "E5",
+                "Cosine Similarity"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "component_graph_retrieval",
+            "名称": "Graph-based Retrieval",
+            "类型": "检索",
+            "描述": "使用图数据库查询语言从知识图谱中检索相关子图",
+            "使用的算法或模型": [
+                "Cypher"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        },
+        {
+            "ID": "component_answer_generation",
+            "名称": "Answer Generation",
+            "类型": "生成",
+            "描述": "使用LLM生成最终答案",
+            "使用的算法或模型": [
+                "GPT-4"
+            ],
+            "性能指标": {
+                "BLEU": 0.377,
+                "METEOR": 0.613,
+                "ROUGE": 0.546
+            },
+            "相关文档列表": [
+                "2404.17723v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_kg_rag",
+        "名称": "Knowledge Graph-enhanced RAG",
+        "描述": "结合知识图谱和检索增强生成的客户服务问答流程",
+        "索引构建组件ID": [
+            "component_kg_construction"
+        ],
+        "检索组件ID": [
+            "component_ebr",
+            "component_graph_retrieval"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": "component_answer_generation",
+        "整体性能指标": {
+            "MRR": 0.927,
+            "Recall@1": 0.860,
+            "Recall@3": 1.000,
+            "NDCG@1": 0.860,
+            "NDCG@3": 0.946
+        },
+        "应用场景": [
+            "客户服务问答",
+            "技术支持"
+        ],
+        "相关文档列表": [
+            "2404.17723v2"
+        ]
+    }
+}

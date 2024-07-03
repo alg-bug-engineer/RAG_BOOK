@@ -1,0 +1,146 @@
+{
+    "文档节点": {
+      "ID": "2407.00978v1",
+      "标题": "Hybrid RAG-empowered Multi-modal LLM for Secure Healthcare Data Management: A Diffusion-based Contract Theory Approach",
+      "作者": ["Cheng Su", "Jinbo Wen", "Jiawen Kang", "Yonghua Wang", "Hudan Pan", "M. Shamim Hossain"],
+      "发表时间": "2024-07-01",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Multi-modal LLMs", "Healthcare data sharing", "RAG", "Contract theory", "GDMs"],
+      "摘要": "本文提出了一个基于混合检索增强生成(RAG)的多模态大语言模型(MLLM)框架,用于安全的医疗数据管理。该框架利用分层跨链架构实现安全数据训练,并通过混合RAG提高MLLM的输出质量。此外,论文使用信息年龄(AoI)来评估数据新鲜度对MLLM的影响,并利用契约理论激励医疗数据持有者分享新鲜数据。最后,使用生成扩散模型(GDM)强化学习算法来寻找高效数据共享的最优契约。数值结果证明了所提方案的有效性,可实现安全高效的医疗数据管理。",
+      "DOI": null,
+      "URL": "https://arxiv.org/abs/2407.00978v1",
+      "引用数": null,
+      "索引方法": "Cosine Similarity",
+      "检索方法": "Hybrid RAG",
+      "重排方法": "Multi-modal Information Similarity (MIS)",
+      "生成方法": "LLaVA-Med",
+      "评估指标": ["RAI", "Semantic Similarity", "Relative LLM score"],
+      "向量表示": "text-embedding-ada-002"
+    },
+    "作者节点": [
+      {
+        "ID": "author_cheng_su",
+        "姓名": "Cheng Su",
+        "所属机构": "Guangdong University of Technology",
+        "研究领域": ["Automation", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "author_jinbo_wen",
+        "姓名": "Jinbo Wen",
+        "所属机构": "Nanjing University of Aeronautics and Astronautics",
+        "研究领域": ["Computer Science", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "author_jiawen_kang",
+        "姓名": "Jiawen Kang",
+        "所属机构": "Guangdong University of Technology",
+        "研究领域": ["Automation", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "author_yonghua_wang",
+        "姓名": "Yonghua Wang",
+        "所属机构": "Guangdong University of Technology",
+        "研究领域": ["Automation", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "author_hudan_pan",
+        "姓名": "Hudan Pan",
+        "所属机构": "Guangzhou University of Traditional Chinese Medicine",
+        "研究领域": ["Traditional Chinese Medicine", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "author_m_shamim_hossain",
+        "姓名": "M. Shamim Hossain",
+        "所属机构": "King Saud University",
+        "研究领域": ["Software Engineering", "Healthcare Data Management"],
+        "h指数": null,
+        "发表文章列表": ["2407.00978v1"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_mllm",
+        "名称": "Multi-modal LLMs",
+        "使用频率": null,
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "keyword_healthcare_data_sharing",
+        "名称": "Healthcare data sharing",
+        "使用频率": null,
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "keyword_rag",
+        "名称": "RAG",
+        "使用频率": null,
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "keyword_contract_theory",
+        "名称": "Contract theory",
+        "使用频率": null,
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "keyword_gdm",
+        "名称": "GDMs",
+        "使用频率": null,
+        "相关文档列表": ["2407.00978v1"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_hybrid_rag",
+        "名称": "Hybrid RAG",
+        "类型": "检索",
+        "描述": "结合多模态指标过滤各种单模态RAG结果,并将这些检索结果作为额外输入纳入MLLMs",
+        "使用的算法或模型": ["Cosine Similarity", "Multi-modal Information Similarity (MIS)"],
+        "性能指标": {"Relative LLM score": 0.96},
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "component_gdm_contract",
+        "名称": "GDM-based Contract Design",
+        "类型": "优化算法",
+        "描述": "使用生成扩散模型(GDM)强化学习算法来寻找高效数据共享的最优契约",
+        "使用的算法或模型": ["Generative Diffusion Model", "Reinforcement Learning"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00978v1"]
+      },
+      {
+        "ID": "component_aoi_metric",
+        "名称": "AoI-based Data Quality Metric",
+        "类型": "评估指标",
+        "描述": "使用信息年龄(AoI)间接评估数据新鲜度对MLLM的影响",
+        "使用的算法或模型": ["Age of Information"],
+        "性能指标": null,
+        "相关文档列表": ["2407.00978v1"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_hybrid_rag_mllm",
+      "名称": "Hybrid RAG-empowered Medical MLLM Framework",
+      "描述": "一个基于混合检索增强生成(RAG)的多模态大语言模型(MLLM)框架,用于安全的医疗数据管理",
+      "索引构建组件ID": "component_hybrid_rag",
+      "检索组件ID": "component_hybrid_rag",
+      "重排组件ID": "component_hybrid_rag",
+      "生成组件ID": "LLaVA-Med",
+      "整体性能指标": {
+        "Relative LLM score": 0.96
+      },
+      "应用场景": ["Healthcare Data Management", "Secure Data Sharing"],
+      "相关文档列表": ["2407.00978v1"]
+    }
+  }

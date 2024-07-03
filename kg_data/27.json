@@ -1,0 +1,116 @@
+{
+    "文档节点": {
+      "ID": "2401.14887v4",
+      "标题": "The Power of Noise: Redefining Retrieval for RAG Systems",
+      "作者": ["Florin Cuconasu", "Giovanni Trappolini", "Federico Siciliano", "Simone Filice", "Cesare Campagnano", "Yoelle Maarek", "Nicola Tonellotto", "Fabrizio Silvestri"],
+      "发表时间": "2024-05-01",
+      "来源": "arXiv",
+      "类型": "论文",
+      "关键词": ["Retrieval-Augmented Generation", "Large Language Models", "Information Retrieval", "Prompt Engineering"],
+      "摘要": "本文对检索增强生成(RAG)系统中检索组件的作用进行了首次全面系统的研究。研究重点关注RAG中应检索何种类型的文档片段以优化大语言模型的效果。分析考虑了多个因素,如提示中包含的文档片段的相关性、位置和数量。研究发现,检索器返回的与查询高度相关但不包含答案的文档会对语言模型的效果产生负面影响。更令人惊讶的是,在提示中添加随机文档可以将语言模型的准确率提高35%。这些结果突出了研究适当策略将检索与大语言模型集成的必要性,为该领域的未来研究奠定了基础。",
+      "DOI": "https://doi.org/10.1145/3626772.3657834",
+      "URL": "https://arxiv.org/abs/2401.14887v4",
+      "引用数": null,
+      "索引方法": "密集向量检索",
+      "检索方法": "Contriever, BM25",
+      "重排方法": null,
+      "生成方法": "Llama2, Falcon, Phi-2, MPT",
+      "评估指标": ["Accuracy", "Entropy"],
+      "向量表示": "BERT-based dense embeddings"
+    },
+    "作者节点": [
+      {
+        "ID": "author_florin_cuconasu",
+        "姓名": "Florin Cuconasu",
+        "所属机构": "Sapienza University of Rome",
+        "研究领域": ["Information Retrieval", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "author_giovanni_trappolini",
+        "姓名": "Giovanni Trappolini",
+        "所属机构": "Sapienza University of Rome",
+        "研究领域": ["Information Retrieval", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "author_fabrizio_silvestri",
+        "姓名": "Fabrizio Silvestri",
+        "所属机构": "Sapienza University of Rome",
+        "研究领域": ["Information Retrieval", "Large Language Models"],
+        "h指数": null,
+        "发表文章列表": ["2401.14887v4"]
+      }
+    ],
+    "关键词节点": [
+      {
+        "ID": "keyword_rag",
+        "名称": "Retrieval-Augmented Generation",
+        "使用频率": null,
+        "相关文档列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "keyword_llm",
+        "名称": "Large Language Models",
+        "使用频率": null,
+        "相关文档列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "keyword_ir",
+        "名称": "Information Retrieval",
+        "使用频率": null,
+        "相关文档列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "keyword_prompt_engineering",
+        "名称": "Prompt Engineering",
+        "使用频率": null,
+        "相关文档列表": ["2401.14887v4"]
+      }
+    ],
+    "RAG组件节点": [
+      {
+        "ID": "component_contriever",
+        "名称": "Contriever",
+        "类型": "检索",
+        "描述": "基于BERT的无监督密集检索器,使用对比损失进行训练",
+        "使用的算法或模型": ["BERT", "Contrastive Learning"],
+        "性能指标": null,
+        "相关文档列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "component_bm25",
+        "名称": "BM25",
+        "类型": "检索",
+        "描述": "经典的稀疏检索方法",
+        "使用的算法或模型": ["BM25"],
+        "性能指标": null,
+        "相关文档列表": ["2401.14887v4"]
+      },
+      {
+        "ID": "component_llama2",
+        "名称": "Llama2",
+        "类型": "生成",
+        "描述": "7B参数的大语言模型",
+        "使用的算法或模型": ["Transformer"],
+        "性能指标": null,
+        "相关文档列表": ["2401.14887v4"]
+      }
+    ],
+    "RAG流程节点": {
+      "ID": "flow_noise_enhanced_rag",
+      "名称": "Noise-Enhanced RAG",
+      "描述": "一种新的RAG方法,通过在检索结果中添加随机噪声文档来提高大语言模型的效果",
+      "索引构建组件ID": "component_contriever",
+      "检索组件ID": "component_contriever",
+      "重排组件ID": null,
+      "生成组件ID": "component_llama2",
+      "整体性能指标": {
+        "Accuracy": "提升35%"
+      },
+      "应用场景": ["Open-domain Question Answering"],
+      "相关文档列表": ["2401.14887v4"]
+    }
+  }

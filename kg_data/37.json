@@ -1,0 +1,236 @@
+{
+    "文档节点": {
+        "ID": "2405.15556v1",
+        "标题": "Certifiably Robust RAG against Retrieval Corruption",
+        "作者": [
+            "Chong Xiang",
+            "Tong Wu",
+            "Zexuan Zhong",
+            "David Wagner",
+            "Danqi Chen",
+            "Prateek Mittal"
+        ],
+        "发表时间": "2024-05-24",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Robustness",
+            "Certifiable Defense",
+            "Information Retrieval",
+            "Large Language Models"
+        ],
+        "摘要": "本文提出了RobustRAG,这是第一个针对检索结果被恶意篡改的防御框架。RobustRAG的核心思想是一种隔离-聚合策略:首先从每个检索段落单独获取LLM响应,然后安全地聚合这些隔离的响应。为实现RobustRAG,我们设计了基于关键词和基于解码的算法,用于安全聚合非结构化文本响应。值得注意的是,RobustRAG可以实现可证明的鲁棒性:我们可以形式化地证明并保证,对于某些查询,即使攻击者完全了解我们的防御机制并可以任意注入少量恶意段落,RobustRAG也能始终返回准确的响应。我们在开放域问答和长文本生成数据集上评估了RobustRAG,并证明了它在各种任务和数据集上的有效性和通用性。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.15556v1",
+        "引用数": 0,
+        "索引方法": null,
+        "检索方法": "Embedding-based Retrieval",
+        "重排方法": null,
+        "生成方法": "Mistral-7B-Instruct, Llama2-7B-Chat, GPT-3.5-turbo",
+        "评估指标": [
+            "Accuracy",
+            "LLM-judge score",
+            "BLEU",
+            "ROUGE",
+            "METEOR"
+        ],
+        "向量表示": "E5"
+    },
+    "作者节点": [
+        {
+            "ID": "author_chong_xiang",
+            "姓名": "Chong Xiang",
+            "所属机构": "Princeton University",
+            "研究领域": [
+                "Artificial Intelligence",
+                "Information Retrieval",
+                "Robustness"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "author_tong_wu",
+            "姓名": "Tong Wu",
+            "所属机构": "Princeton University",
+            "研究领域": [
+                "Artificial Intelligence",
+                "Information Retrieval",
+                "Robustness"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "author_zexuan_zhong",
+            "姓名": "Zexuan Zhong",
+            "所属机构": "Princeton University",
+            "研究领域": [
+                "Artificial Intelligence",
+                "Information Retrieval",
+                "Robustness"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "author_david_wagner",
+            "姓名": "David Wagner",
+            "所属机构": "University of California, Berkeley",
+            "研究领域": [
+                "Computer Security",
+                "Cryptography"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "author_danqi_chen",
+            "姓名": "Danqi Chen",
+            "所属机构": "Princeton University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "author_prateek_mittal",
+            "姓名": "Prateek Mittal",
+            "所属机构": "Princeton University",
+            "研究领域": [
+                "Computer Security",
+                "Privacy",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2405.15556v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "keyword_robustness",
+            "名称": "Robustness",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "keyword_certifiable_defense",
+            "名称": "Certifiable Defense",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "keyword_information_retrieval",
+            "名称": "Information Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_keyword_aggregation",
+            "名称": "Secure Keyword Aggregation",
+            "类型": "检索",
+            "描述": "提取每个响应的关键词,使用高频关键词提示LLM生成最终响应",
+            "使用的算法或模型": [
+                "Keyword Extraction",
+                "Frequency Analysis"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "component_decoding_aggregation",
+            "名称": "Secure Decoding Aggregation",
+            "类型": "生成",
+            "描述": "在每个解码步骤安全聚合来自不同隔离段落的下一个标记预测向量",
+            "使用的算法或模型": [
+                "Vector Aggregation",
+                "Threshold-based Decision"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        },
+        {
+            "ID": "component_e5",
+            "名称": "E5 Embedding",
+            "类型": "索引构建",
+            "描述": "用于文本嵌入的预训练模型",
+            "使用的算法或模型": [
+                "Contrastive Pre-training"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.15556v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_robustrag",
+        "名称": "RobustRAG",
+        "描述": "一种可证明鲁棒的检索增强生成框架,抵抗检索结果被恶意篡改",
+        "索引构建组件ID": [
+            "component_e5"
+        ],
+        "检索组件ID": [
+            "component_keyword_aggregation"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_decoding_aggregation"
+        ],
+        "整体性能指标": {
+            "Certifiable Accuracy": 0.71,
+            "Certifiable LLM-judge score": 51.2
+        },
+        "应用场景": [
+            "开放域问答",
+            "长文本生成"
+        ],
+        "相关文档列表": [
+            "2405.15556v1"
+        ]
+    }
+}

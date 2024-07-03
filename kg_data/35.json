@@ -1,0 +1,220 @@
+{
+    "文档节点": {
+        "ID": "2404.07220v1",
+        "标题": "Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy with Semantic Search and Hybrid Query-Based Retrievers",
+        "作者": [
+            "Kunal Sawarkar",
+            "Abhilasha Mangal",
+            "Shivam Raj Solanki"
+        ],
+        "发表时间": "2024-03-22",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Semantic Search",
+            "Hybrid Query",
+            "Information Retrieval",
+            "Large Language Models"
+        ],
+        "摘要": "本文提出了'Blended RAG'方法，利用密集向量索引和稀疏编码器索引等语义搜索技术，结合混合查询策略，以提高检索增强生成(RAG)系统的准确性。研究在NQ和TREC-COVID等信息检索数据集上取得了更好的检索结果，并在SQUAD等生成式问答数据集上展示了优于微调方法的性能。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2404.07220v1",
+        "引用数": 0,
+        "索引方法": "BM25, Dense Vector Index, Sparse Encoder Index",
+        "检索方法": "Hybrid Query Strategy",
+        "重排方法": null,
+        "生成方法": "FLAN-T5-XXL",
+        "评估指标": [
+            "F1",
+            "Exact Match (EM)",
+            "NDCG@10",
+            "Top-k Accuracy"
+        ],
+        "向量表示": "Dense Vector Representations, Sparse Vector Representations"
+    },
+    "作者节点": [
+        {
+            "ID": "author_kunal_sawarkar",
+            "姓名": "Kunal Sawarkar",
+            "所属机构": "IBM",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "author_abhilasha_mangal",
+            "姓名": "Abhilasha Mangal",
+            "所属机构": "IBM",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "author_shivam_raj_solanki",
+            "姓名": "Shivam Raj Solanki",
+            "所属机构": "IBM",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2404.07220v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "keyword_semantic_search",
+            "名称": "Semantic Search",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "keyword_hybrid_query",
+            "名称": "Hybrid Query",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "keyword_information_retrieval",
+            "名称": "Information Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "索引构建",
+            "描述": "基于词频-逆文档频率的文本相关性排序算法",
+            "使用的算法或模型": [
+                "Best Match 25"
+            ],
+            "性能指标": {
+                "Top-5 Accuracy": 85.05,
+                "Top-10 Accuracy": 86.26,
+                "Top-20 Accuracy": 87.12
+            },
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "component_dense_vector",
+            "名称": "Dense Vector Index",
+            "类型": "索引构建",
+            "描述": "使用句子转换器构建的密集向量索引",
+            "使用的算法或模型": [
+                "Sentence Transformers",
+                "k-Nearest Neighbors"
+            ],
+            "性能指标": {
+                "Top-5 Accuracy": 87.67,
+                "Top-10 Accuracy": 88.66,
+                "Top-20 Accuracy": 88.66
+            },
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "component_sparse_encoder",
+            "名称": "Sparse Encoder Index",
+            "类型": "索引构建",
+            "描述": "使用稀疏编码器构建的语义搜索索引",
+            "使用的算法或模型": [
+                "Elastic Learned Sparse Encoder (ELSER)"
+            ],
+            "性能指标": {
+                "Top-5 Accuracy": 88.22,
+                "Top-10 Accuracy": 88.77,
+                "Top-20 Accuracy": 88.88
+            },
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        },
+        {
+            "ID": "component_flant5xxl",
+            "名称": "FLAN-T5-XXL",
+            "类型": "生成",
+            "描述": "用于生成答案的大型语言模型",
+            "使用的算法或模型": [
+                "T5"
+            ],
+            "性能指标": {
+                "EM": 42.63,
+                "F1": 53.96
+            },
+            "相关文档列表": [
+                "2404.07220v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_blended_rag",
+        "名称": "Blended RAG",
+        "描述": "结合语义搜索和混合查询策略的检索增强生成方法",
+        "索引构建组件ID": [
+            "component_bm25",
+            "component_dense_vector",
+            "component_sparse_encoder"
+        ],
+        "检索组件ID": [
+            "component_bm25",
+            "component_dense_vector",
+            "component_sparse_encoder"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": "component_flant5xxl",
+        "整体性能指标": {
+            "NDCG@10": 0.87,
+            "F1": 53.96,
+            "EM": 42.63
+        },
+        "应用场景": [
+            "开放域问答",
+            "信息检索",
+            "生成式问答"
+        ],
+        "相关文档列表": [
+            "2404.07220v1"
+        ]
+    }
+}

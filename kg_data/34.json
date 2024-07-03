@@ -1,0 +1,258 @@
+{
+    "文档节点": {
+        "ID": "2403.05313v1",
+        "标题": "RAT: Retrieval Augmented Thoughts Elicit Context-Aware Reasoning in Long-Horizon Generation",
+        "作者": [
+            "Zihao Wang",
+            "Anji Liu",
+            "Haowei Lin",
+            "Jiaqi Li",
+            "Xiaojian Ma",
+            "Yitao Liang"
+        ],
+        "发表时间": "2024-03-08",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval Augmented Generation",
+            "Large Language Models",
+            "Chain of Thought",
+            "Long-Horizon Generation",
+            "Hallucination Mitigation"
+        ],
+        "摘要": "本文提出了检索增强思考(RAT)方法,通过信息检索迭代修订思维链,显著提高了大型语言模型在长期生成任务中的推理和生成能力,同时大大减少了幻觉。RAT在生成初始零样本CoT后,使用任务查询、当前和过去的思考步骤检索相关信息,逐步修订每个思考步骤。将RAT应用于GPT-3.5、GPT-4和CodeLLaMA-7b在代码生成、数学推理、创意写作和具身任务规划等长期生成任务上的表现显著提升,平均相对提高评分13.63%、16.96%、19.2%和42.78%。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2403.05313v1",
+        "引用数": 0,
+        "索引方法": "Contriever-MS MARCO",
+        "检索方法": "Dense Retrieval",
+        "重排方法": null,
+        "生成方法": "GPT-3.5, GPT-4, CodeLLaMA-7b",
+        "评估指标": [
+            "Pass@k",
+            "Accuracy",
+            "Executability",
+            "Plausibility",
+            "TrueSkill Rating"
+        ],
+        "向量表示": "text-embedding-ada-002"
+    },
+    "作者节点": [
+        {
+            "ID": "author_zihao_wang",
+            "姓名": "Zihao Wang",
+            "所属机构": "Peking University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "author_anji_liu",
+            "姓名": "Anji Liu",
+            "所属机构": "University of California, Los Angeles",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "author_haowei_lin",
+            "姓名": "Haowei Lin",
+            "所属机构": "Peking University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "author_jiaqi_li",
+            "姓名": "Jiaqi Li",
+            "所属机构": "Beijing Institute for General Artificial Intelligence",
+            "研究领域": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "author_xiaojian_ma",
+            "姓名": "Xiaojian Ma",
+            "所属机构": "Beijing Institute for General Artificial Intelligence",
+            "研究领域": [
+                "Natural Language Processing",
+                "Artificial Intelligence"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "author_yitao_liang",
+            "姓名": "Yitao Liang",
+            "所属机构": "Peking University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2403.05313v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_rag",
+            "名称": "Retrieval Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "keyword_cot",
+            "名称": "Chain of Thought",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "keyword_long_horizon_generation",
+            "名称": "Long-Horizon Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "keyword_hallucination_mitigation",
+            "名称": "Hallucination Mitigation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_contriever_msmarco",
+            "名称": "Contriever-MS MARCO",
+            "类型": "索引构建",
+            "描述": "用于构建文档索引的无监督密集检索模型",
+            "使用的算法或模型": [
+                "Dense Retrieval"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "component_gpt35",
+            "名称": "GPT-3.5",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "component_gpt4",
+            "名称": "GPT-4",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "component_codellama7b",
+            "名称": "CodeLLaMA-7b",
+            "类型": "生成",
+            "描述": "Meta开发的专门用于代码生成的大型语言模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        },
+        {
+            "ID": "component_textembeddingada002",
+            "名称": "text-embedding-ada-002",
+            "类型": "向量表示",
+            "描述": "OpenAI开发的文本嵌入模型",
+            "使用的算法或模型": [
+                "Transformer"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2403.05313v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_rat",
+        "名称": "Retrieval Augmented Thoughts (RAT)",
+        "描述": "通过信息检索迭代修订思维链的方法,提高长期生成任务的推理和生成能力",
+        "索引构建组件ID": "component_contriever_msmarco",
+        "检索组件ID": "component_contriever_msmarco",
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_gpt35",
+            "component_gpt4",
+            "component_codellama7b"
+        ],
+        "整体性能指标": {
+            "代码生成": "+13.63%",
+            "数学推理": "+16.96%",
+            "创意写作": "+19.2%",
+            "具身任务规划": "+42.78%"
+        },
+        "应用场景": [
+            "代码生成",
+            "数学推理",
+            "创意写作",
+            "具身任务规划"
+        ],
+        "相关文档列表": [
+            "2403.05313v1"
+        ]
+    }
+}
