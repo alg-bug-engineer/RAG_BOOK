@@ -1,0 +1,289 @@
+{
+    "文档节点": {
+        "ID": "2405.13021v1",
+        "标题": "IM-RAG: Multi-Round Retrieval-Augmented Generation Through Learning Inner Monologues",
+        "作者": [
+            "author_diji_yang",
+            "author_jinmeng_rao",
+            "author_kezhen_chen",
+            "author_xiaoyuan_guo",
+            "author_yawen_zhang",
+            "author_jie_yang",
+            "author_yi_zhang"
+        ],
+        "发表时间": "2024-05-15",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_inner_monologue",
+            "keyword_large_language_models",
+            "keyword_question_answering",
+            "keyword_multi_round_retrieval"
+        ],
+        "摘要": "虽然检索增强生成（RAG）范式可以利用外部知识来增强和巩固大型语言模型（LLMs）的输出，以缓解生成幻觉和静态知识库问题，但它们仍然在采用不同能力的信息检索（IR）系统、多轮检索过程的可解释性和端到端优化方面存在局限性。为了解决这些挑战，我们提出了一种新颖的以LLM为中心的方法IM-RAG，通过学习内部独白（IM，即叙述个人想法的人类内心声音）将IR系统与LLMs整合，以支持多轮RAG。在IM过程中，LLM作为核心推理模型（即推理器）要么提出查询通过检索器收集更多信息，要么根据对话上下文提供最终答案。我们还引入了一个优化器，用于改进检索器的输出，有效地弥合了推理器和具有不同能力的IR模块之间的差距，并促进了多轮通信。整个IM过程通过强化学习（RL）进行优化，其中引入了进度跟踪器来提供中间步骤奖励，而答案预测则通过监督微调（SFT）进一步单独优化。我们在HotPotQA数据集（一个流行的基于检索的多步问答基准）上进行了广泛的实验。结果表明，我们的方法在提供集成IR模块的高度灵活性以及在学习的内部独白中表现出强大的可解释性的同时，实现了最先进的（SOTA）性能。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": "https://doi.org/10.1145/3626772.3657760",
+        "URL": "https://arxiv.org/abs/2405.13021v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_sentence_transformer",
+            "component_faiss"
+        ],
+        "检索方法": [
+            "component_dense_passage_retrieval"
+        ],
+        "重排方法": [
+            "component_rank_vicuna"
+        ],
+        "生成方法": [
+            "component_vicuna"
+        ],
+        "评估指标": [
+            "Exact Match (EM)",
+            "F1 score"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_diji_yang",
+            "姓名": "Diji Yang",
+            "所属机构": "University of California Santa Cruz",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_jinmeng_rao",
+            "姓名": "Jinmeng Rao",
+            "所属机构": "Mineral.ai",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_kezhen_chen",
+            "姓名": "Kezhen Chen",
+            "所属机构": "Together AI",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_xiaoyuan_guo",
+            "姓名": "Xiaoyuan Guo",
+            "所属机构": "Google",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_yawen_zhang",
+            "姓名": "Yawen Zhang",
+            "所属机构": "Mineral.ai",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_jie_yang",
+            "姓名": "Jie Yang",
+            "所属机构": "Cybever",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "author_yi_zhang",
+            "姓名": "Yi Zhang",
+            "所属机构": "University of California Santa Cruz",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.13021v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "keyword_inner_monologue",
+            "名称": "Inner Monologue",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "keyword_question_answering",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "keyword_multi_round_retrieval",
+            "名称": "Multi-Round Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_sentence_transformer",
+            "名称": "Sentence-transformer",
+            "类型": "索引构建",
+            "描述": "用于生成语义搜索的文档嵌入",
+            "使用的算法或模型": [
+                "Sentence-BERT"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "component_faiss",
+            "名称": "FAISS",
+            "类型": "索引构建",
+            "描述": "用于快速相似性搜索的索引库",
+            "使用的算法或模型": [
+                "FAISS"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "component_dense_passage_retrieval",
+            "名称": "Dense Passage Retrieval",
+            "类型": "检索",
+            "描述": "基于密集向量的文档检索方法",
+            "使用的算法或模型": [
+                "DPR"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "component_rank_vicuna",
+            "名称": "RankVicuna",
+            "类型": "重排",
+            "描述": "基于Vicuna的文档重排模型",
+            "使用的算法或模型": [
+                "Vicuna"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        },
+        {
+            "ID": "component_vicuna",
+            "名称": "Vicuna",
+            "类型": "生成",
+            "描述": "基于LLaMA-2微调的大型语言模型",
+            "使用的算法或模型": [
+                "Vicuna-7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.13021v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_im_rag",
+        "名称": "IM-RAG Flow",
+        "描述": "通过学习内部独白实现多轮检索增强生成的RAG流程",
+        "索引构建组件ID": [
+            "component_sentence_transformer",
+            "component_faiss"
+        ],
+        "检索组件ID": [
+            "component_dense_passage_retrieval"
+        ],
+        "重排组件ID": [
+            "component_rank_vicuna"
+        ],
+        "生成组件ID": [
+            "component_vicuna"
+        ],
+        "整体性能指标": {
+            "HotPotQA": {
+                "EM": "68.4",
+                "F1": "82.5"
+            }
+        },
+        "应用场景": [
+            "开放域问答",
+            "多跳推理",
+            "长上下文理解"
+        ],
+        "相关文档列表": [
+            "2405.13021v1"
+        ]
+    }
+}

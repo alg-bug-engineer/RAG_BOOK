@@ -1,0 +1,204 @@
+{
+    "文档节点": {
+        "ID": "2405.20139v1",
+        "标题": "GNN-RAG: Graph Neural Retrieval for Large Language Model Reasoning",
+        "作者": [
+            "author_costas_mavromatis",
+            "author_george_karypis"
+        ],
+        "发表时间": "2024-05-30",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_knowledge_graphs",
+            "keyword_question_answering",
+            "keyword_large_language_models",
+            "keyword_graph_neural_networks",
+            "keyword_retrieval_augmented_generation"
+        ],
+        "摘要": "本文提出了GNN-RAG,一种新的方法,结合了大型语言模型(LLMs)的语言理解能力和图神经网络(GNNs)的推理能力,用于基于知识图谱的问答任务。GNN-RAG首先使用GNN在密集的知识图谱子图上推理,为给定问题检索答案候选。然后,提取连接问题实体和答案候选的最短路径,作为知识图谱推理路径。这些路径被转化为自然语言,作为LLM推理的输入。实验结果表明,GNN-RAG在两个广泛使用的知识图谱问答基准测试(WebQSP和CWQ)上达到了最先进的性能,使用7B参数的微调LLM就能超越或匹配GPT-4的表现。此外,GNN-RAG在多跳和多实体问题上的表现特别出色,比竞争方法提高了8.9-15.5个百分点的F1分数。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.20139v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_pagerank_nibble"
+        ],
+        "检索方法": [
+            "component_gnn_retrieval",
+            "component_llm_retrieval"
+        ],
+        "重排方法": [],
+        "生成方法": [
+            "component_llama2_chat_7b"
+        ],
+        "评估指标": [
+            "Hit",
+            "Hits@1 (H@1)",
+            "F1"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_costas_mavromatis",
+            "姓名": "Costas Mavromatis",
+            "所属机构": "University of Minnesota",
+            "研究领域": [
+                "Natural Language Processing",
+                "Graph Neural Networks",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "author_george_karypis",
+            "姓名": "George Karypis",
+            "所属机构": "University of Minnesota",
+            "研究领域": [
+                "Data Mining",
+                "Machine Learning",
+                "Graph Neural Networks"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.20139v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_knowledge_graphs",
+            "名称": "Knowledge Graphs",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "keyword_question_answering",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "keyword_graph_neural_networks",
+            "名称": "Graph Neural Networks",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_pagerank_nibble",
+            "名称": "PageRank Nibble",
+            "类型": "索引构建",
+            "描述": "使用PageRank Nibble算法从链接实体开始选择前m个实体构建子图",
+            "使用的算法或模型": [
+                "PageRank Nibble"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "component_gnn_retrieval",
+            "名称": "GNN Retrieval",
+            "类型": "检索",
+            "描述": "使用GNN在知识图谱子图上进行推理，检索答案候选",
+            "使用的算法或模型": [
+                "ReaRev"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "component_llm_retrieval",
+            "名称": "LLM Retrieval",
+            "类型": "检索",
+            "描述": "使用LLM生成关系路径进行检索",
+            "使用的算法或模型": [
+                "RoG"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        },
+        {
+            "ID": "component_llama2_chat_7b",
+            "名称": "LLaMA2-Chat-7B",
+            "类型": "生成",
+            "描述": "用于生成最终答案的大型语言模型",
+            "使用的算法或模型": [
+                "LLaMA2-Chat-7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.20139v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_gnn-rag",
+        "名称": "GNN-RAG Flow",
+        "描述": "结合GNN检索和LLM推理的知识图谱问答框架",
+        "索引构建组件ID": [
+            "component_pagerank_nibble"
+        ],
+        "检索组件ID": [
+            "component_gnn_retrieval",
+            "component_llm_retrieval"
+        ],
+        "重排组件ID": [],
+        "生成组件ID": [
+            "component_llama2_chat_7b"
+        ],
+        "整体性能指标": {
+            "WebQSP": {
+                "Hit": "90.7",
+                "H@1": "82.8",
+                "F1": "73.5"
+            },
+            "CWQ": {
+                "Hit": "68.7",
+                "H@1": "62.8",
+                "F1": "60.4"
+            }
+        },
+        "应用场景": [
+            "知识图谱问答",
+            "多跳推理",
+            "多实体问答"
+        ],
+        "相关文档列表": [
+            "2405.20139v1"
+        ]
+    }
+}

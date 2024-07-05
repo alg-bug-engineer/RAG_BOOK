@@ -1,0 +1,171 @@
+{
+    "文档节点": {
+        "ID": "2405.12035v1",
+        "标题": "KG-RAG: Bridging the Gap Between Knowledge and Creativity",
+        "作者": [
+            "author_diego_sanmartin"
+        ],
+        "发表时间": "2024-05-20",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_knowledge_graph",
+            "keyword_retrieval_augmented_generation",
+            "keyword_large_language_models",
+            "keyword_knowledge_graph_question_answering",
+            "keyword_chain_of_explorations"
+        ],
+        "摘要": "确保事实准确性的同时保持大型语言模型代理（LMAs）的创造能力在智能代理系统的开发中面临着重大挑战。LMAs在处理知识密集型任务时面临普遍的问题，如信息幻觉、灾难性遗忘和处理长上下文的限制。本文介绍了一种KG-RAG（知识图谱-检索增强生成）管道，这是一个新颖的框架，旨在通过将结构化知识图谱（KGs）与LLMs的功能相结合来增强LMAs的知识能力，从而显著减少对LLMs潜在知识的依赖。KG-RAG管道从非结构化文本构建KG，然后在新创建的图上执行信息检索以执行KGQA（知识图谱问答）。检索方法利用了一种名为探索链（CoE）的新算法，该算法利用LLMs的推理能力在KG中按顺序探索节点和关系。在ComplexWebQuestions数据集上的初步实验表明，在减少幻觉内容方面取得了显著改进，并为开发能够处理知识密集型任务的智能系统提供了一条有前景的道路。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.12035v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_nebulagraph"
+        ],
+        "检索方法": [
+            "component_chain_of_explorations"
+        ],
+        "重排方法": null,
+        "生成方法": [
+            "component_gpt4"
+        ],
+        "评估指标": [
+            "Exact Match (EM)",
+            "F1 Score",
+            "Accuracy",
+            "Hallucination Rate"
+        ],
+        "向量表示": "Sentence Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_diego_sanmartin",
+            "姓名": "Diego Sanmartín",
+            "所属机构": "IE University, Spain",
+            "研究领域": [
+                "Natural Language Processing",
+                "Knowledge Graphs",
+                "Artificial Intelligence"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.12035v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_knowledge_graph",
+            "名称": "Knowledge Graph",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "keyword_knowledge_graph_question_answering",
+            "名称": "Knowledge Graph Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "keyword_chain_of_explorations",
+            "名称": "Chain of Explorations",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_nebulagraph",
+            "名称": "NebulaGraph",
+            "类型": "索引构建",
+            "描述": "分布式图数据库，用于存储和查询知识图谱",
+            "使用的算法或模型": [
+                "NebulaGraph"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "component_chain_of_explorations",
+            "名称": "Chain of Explorations",
+            "类型": "检索",
+            "描述": "利用LLM推理能力在知识图谱中顺序探索节点和关系的算法",
+            "使用的算法或模型": [
+                "Chain of Explorations (CoE)"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        },
+        {
+            "ID": "component_gpt4",
+            "名称": "GPT-4",
+            "类型": "生成",
+            "描述": "OpenAI开发的大型语言模型，用于生成回答",
+            "使用的算法或模型": [
+                "GPT-4 Turbo 1106-Preview"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.12035v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_kg_rag",
+        "名称": "KG-RAG Flow",
+        "描述": "结合知识图谱和检索增强生成的RAG流程",
+        "索引构建组件ID": [
+            "component_nebulagraph"
+        ],
+        "检索组件ID": [
+            "component_chain_of_explorations"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_gpt4"
+        ],
+        "整体性能指标": {
+            "ComplexWebQuestions": {
+                "EM": "19",
+                "F1": "25",
+                "Accuracy": "32",
+                "Hallucination": "15"
+            }
+        },
+        "应用场景": [
+            "复杂问答",
+            "知识密集型任务",
+            "事实验证"
+        ],
+        "相关文档列表": [
+            "2405.12035v1"
+        ]
+    }
+}

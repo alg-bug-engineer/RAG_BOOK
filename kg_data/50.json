@@ -1,0 +1,265 @@
+{
+    "文档节点": {
+        "ID": "2405.03085v1",
+        "标题": "Compressing Long Context for Enhancing RAG with AMR-based Concept Distillation",
+        "作者": [
+            "author_kaize_shi",
+            "author_xueyao_sun",
+            "author_qing_li",
+            "author_guandong_xu"
+        ],
+        "发表时间": "2024-05-06",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_abstract_meaning_representation",
+            "keyword_concept_distillation",
+            "keyword_long_context_compression"
+        ],
+        "摘要": "大型语言模型(LLMs)在信息获取方面取得了重大进展。然而,它们过度依赖可能存在缺陷的参数化知识,导致幻觉和不准确,特别是在处理长尾、特定领域的查询时。检索增强生成(RAG)通过结合外部非参数化知识来解决这一限制。然而,检索到的长上下文文档通常包含嘈杂、不相关的信息和重要知识,这会对LLMs的注意力产生负面稀释作用。受到基本概念在个人阅读理解中的支持作用的启发,我们提出了一种基于概念的RAG框架,采用基于抽象意义表示(AMR)的概念蒸馏算法。该算法通过参考可靠的语言特征,将杂乱的原始检索文档压缩成从AMR信息节点中提取的关键概念的紧凑集合。这些概念明确地限制LLMs仅关注推理过程中的重要信息。我们在开放域问答数据集上进行了大量实验,以经验性地评估所提出方法的有效性。结果表明,基于概念的RAG框架优于其他基线方法,特别是随着支持文档数量的增加,同时在各种骨干LLMs中表现出稳健性。这强调了蒸馏概念通过过滤干扰信息来增强RAG过程的信息量。据我们所知,这是首次将AMR引入增强RAG的工作,为通过基于语义的上下文压缩来增强推理性能提供了潜在解决方案。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.03085v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_bm25"
+        ],
+        "检索方法": [
+            "component_concept_based_rag"
+        ],
+        "重排方法": null,
+        "生成方法": [
+            "component_llama2",
+            "component_gpt_neo",
+            "component_opt",
+            "component_bloom"
+        ],
+        "评估指标": [
+            "Accuracy",
+            "Integration"
+        ],
+        "向量表示": null
+    },
+    "作者节点": [
+        {
+            "ID": "author_kaize_shi",
+            "姓名": "Kaize Shi",
+            "所属机构": "University of Technology Sydney",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "author_xueyao_sun",
+            "姓名": "Xueyao Sun",
+            "所属机构": [
+                "University of Technology Sydney",
+                "The Hong Kong Polytechnic University"
+            ],
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "author_qing_li",
+            "姓名": "Qing Li",
+            "所属机构": "The Hong Kong Polytechnic University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "author_guandong_xu",
+            "姓名": "Guandong Xu",
+            "所属机构": [
+                "University of Technology Sydney",
+                "The Education University of Hong Kong"
+            ],
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.03085v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "keyword_abstract_meaning_representation",
+            "名称": "Abstract Meaning Representation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "keyword_concept_distillation",
+            "名称": "Concept Distillation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "keyword_long_context_compression",
+            "名称": "Long Context Compression",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "检索",
+            "描述": "经典的词频-逆文档频率检索算法",
+            "使用的算法或模型": [
+                "BM25"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "component_concept_based_rag",
+            "名称": "Concept-based RAG",
+            "类型": "检索",
+            "描述": "基于AMR的概念蒸馏算法进行检索增强生成",
+            "使用的算法或模型": [
+                "AMR",
+                "Concept Distillation"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "component_llama2",
+            "名称": "LLaMA-2",
+            "类型": "生成",
+            "描述": "Meta AI开发的大型语言模型",
+            "使用的算法或模型": [
+                "LLaMA-2-7b-chat",
+                "LLaMA-2-13b-chat"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "component_gpt_neo",
+            "名称": "GPT-Neo",
+            "类型": "生成",
+            "描述": "EleutherAI开发的开源大型语言模型",
+            "使用的算法或模型": [
+                "GPT-Neo-1.3B",
+                "GPT-Neo-2.7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "component_opt",
+            "名称": "OPT",
+            "类型": "生成",
+            "描述": "Meta AI开发的开放预训练Transformer语言模型",
+            "使用的算法或模型": [
+                "OPT-1.3b",
+                "OPT-2.7b"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        },
+        {
+            "ID": "component_bloom",
+            "名称": "BLOOM",
+            "类型": "生成",
+            "描述": "BigScience开发的开源大型语言模型",
+            "使用的算法或模型": [
+                "bloom-560m",
+                "bloom-1b1",
+                "bloom-1b7",
+                "bloom-3b"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.03085v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_concept_based_rag",
+        "名称": "Concept-based RAG Flow",
+        "描述": "使用AMR-based概念蒸馏算法进行长上下文压缩的RAG流程",
+        "索引构建组件ID": [
+            "component_bm25"
+        ],
+        "检索组件ID": [
+            "component_concept_based_rag"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_llama2",
+            "component_gpt_neo",
+            "component_opt",
+            "component_bloom"
+        ],
+        "整体性能指标": {
+            "PopQA": {
+                "Integration_normal": "738.82",
+                "Integration_longer": "357.56"
+            },
+            "EntityQuestions": {
+                "Integration_normal": "703.67",
+                "Integration_longer": "320.87"
+            }
+        },
+        "应用场景": [
+            "开放域问答",
+            "长上下文理解",
+            "特定领域查询"
+        ],
+        "相关文档列表": [
+            "2405.03085v1"
+        ]
+    }
+}

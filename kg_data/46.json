@@ -1,0 +1,209 @@
+{
+    "文档节点": {
+        "ID": "2406.14972v1",
+        "标题": "A Tale of Trust and Accuracy: Base vs. Instruct LLMs in RAG Systems",
+        "作者": [
+            "Florin Cuconasu",
+            "Giovanni Trappolini",
+            "Nicola Tonellotto",
+            "Fabrizio Silvestri"
+        ],
+        "发表时间": "2024-06-21",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Large Language Models",
+            "Base Models",
+            "Instruct Models",
+            "Question Answering"
+        ],
+        "摘要": "本研究挑战了在检索增强生成(RAG)任务中普遍认为指令型大型语言模型(LLMs)优于基础模型的观点。通过系统评估,我们发现在我们的实验设置下,基础模型在RAG任务中的表现平均超过指令型模型20%。这一发现质疑了指令型LLMs在RAG应用中的优越性假设。进一步研究揭示了更加复杂的情况,引发了对RAG基本方面的质疑,并建议需要就此主题展开更广泛的讨论。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.14972",
+        "URL": "https://arxiv.org/abs/2406.14972v1",
+        "引用数": 0,
+        "索引方法": "Dense Passage Retriever",
+        "检索方法": "Inner Product Similarity (FAISS IndexFlatIP)",
+        "重排方法": null,
+        "生成方法": "Llama 2, Llama 3, Falcon, Mistral",
+        "评估指标": [
+            "Accuracy",
+            "Negative Rejection Rate",
+            "Answer Coherence"
+        ],
+        "向量表示": "BERT-based Dense Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_florin_cuconasu",
+            "姓名": "Florin Cuconasu",
+            "所属机构": "Sapienza University of Rome",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "author_giovanni_trappolini",
+            "姓名": "Giovanni Trappolini",
+            "所属机构": "Sapienza University of Rome",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "author_nicola_tonellotto",
+            "姓名": "Nicola Tonellotto",
+            "所属机构": "University of Pisa",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "author_fabrizio_silvestri",
+            "姓名": "Fabrizio Silvestri",
+            "所属机构": "Sapienza University of Rome",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14972v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "keyword_base_models",
+            "名称": "Base Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "keyword_instruct_models",
+            "名称": "Instruct Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "keyword_question_answering",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_contriever",
+            "名称": "Contriever",
+            "类型": "检索",
+            "描述": "基于BERT的稠密检索模型,使用无监督对比学习训练",
+            "使用的算法或模型": [
+                "BERT",
+                "Unsupervised Contrastive Learning"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "component_faiss",
+            "名称": "FAISS IndexFlatIP",
+            "类型": "检索",
+            "描述": "使用内积相似度的FAISS索引,用于高效的相似度搜索",
+            "使用的算法或模型": [
+                "Inner Product Similarity"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        },
+        {
+            "ID": "component_llm_generator",
+            "名称": "LLM Generator",
+            "类型": "生成",
+            "描述": "用于生成答案的大型语言模型",
+            "使用的算法或模型": [
+                "Llama 2",
+                "Llama 3",
+                "Falcon",
+                "Mistral"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14972v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_base_vs_instruct_rag",
+        "名称": "Base vs Instruct RAG Comparison",
+        "描述": "比较基础模型和指令型模型在RAG任务中的表现",
+        "索引构建组件ID": [
+            "component_contriever"
+        ],
+        "检索组件ID": [
+            "component_faiss"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_llm_generator"
+        ],
+        "整体性能指标": {
+            "Accuracy": "Base models outperform instruct models by 20% on average",
+            "Negative Rejection Rate": "Instruct models generally show higher rates",
+            "Answer Coherence": "Base models often outperform their instruct counterparts"
+        },
+        "应用场景": [
+            "开放域问答",
+            "RAG系统性能评估"
+        ],
+        "相关文档列表": [
+            "2406.14972v1"
+        ]
+    }
+}

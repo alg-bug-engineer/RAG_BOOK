@@ -1,0 +1,223 @@
+{
+    "文档节点": {
+        "ID": "2406.14783v1",
+        "标题": "Evaluating RAG-Fusion with RAGElo: an Automated Elo-based Framework",
+        "作者": [
+            "Zackary Rackauckas",
+            "Arthur Câmara",
+            "Jakub Zavrel"
+        ],
+        "发表时间": "2024-06-20",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "RAG-Fusion",
+            "Evaluation Framework",
+            "LLM-as-a-judge",
+            "Elo Rating System"
+        ],
+        "摘要": "本文提出了一个综合评估框架RAGElo,用于评估检索增强生成(RAG)问答系统,特别是RAG-Fusion(RAGF)系统。该框架利用大型语言模型(LLM)生成大规模合成查询数据集,使用LLM作为评判来评估检索文档和答案的质量,并使用自动化的Elo评分系统对不同的RAG变体进行排名。实验结果表明,LLM评分与领域专家评分在相关性、准确性、完整性和精确性方面存在中等程度的正相关。RAGF在Elo评分上优于RAG,专家注释的显著性分析也表明RAGF在完整性方面明显优于RAG,但在精确性方面表现较差。此外,Infineon的RAGF助手在文档相关性方面表现略好,基于MRR@5分数。研究发现RAGElo与人类注释者的偏好正相关,但仍需谨慎使用。最后,RAGF方法基于专家注释产生更完整的答案,并且根据RAGElo的评估标准总体上产生更好的答案。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.14783",
+        "URL": "https://arxiv.org/abs/2406.14783v1",
+        "引用数": 0,
+        "索引方法": "Dense Passage Retriever",
+        "检索方法": "BM25, Dense Retriever, Hybrid Retriever",
+        "重排方法": "Reciprocal Rank Fusion (RRF)",
+        "生成方法": "GPT-4, Claude-3",
+        "评估指标": [
+            "MRR@5",
+            "Elo Score",
+            "Kendall's τ",
+            "Spearman's ρ"
+        ],
+        "向量表示": "multilingual-e5-base"
+    },
+    "作者节点": [
+        {
+            "ID": "author_zackary_rackauckas",
+            "姓名": "Zackary Rackauckas",
+            "所属机构": "Columbia University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "author_arthur_camara",
+            "姓名": "Arthur Câmara",
+            "所属机构": "Zeta Alpha",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "author_jakub_zavrel",
+            "姓名": "Jakub Zavrel",
+            "所属机构": "Zeta Alpha",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14783v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "keyword_rag_fusion",
+            "名称": "RAG-Fusion",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "keyword_evaluation_framework",
+            "名称": "Evaluation Framework",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "keyword_llm_as_a_judge",
+            "名称": "LLM-as-a-judge",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "keyword_elo_rating_system",
+            "名称": "Elo Rating System",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dense_passage_retriever",
+            "名称": "Dense Passage Retriever",
+            "类型": "检索",
+            "描述": "用于检索相关文档的稠密检索器",
+            "使用的算法或模型": [
+                "multilingual-e5-base"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "检索",
+            "描述": "基于关键词的检索方法",
+            "使用的算法或模型": [
+                "BM25"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "component_hybrid_retriever",
+            "名称": "Hybrid Retriever",
+            "类型": "检索",
+            "描述": "结合BM25和稠密检索的混合检索方法",
+            "使用的算法或模型": [
+                "BM25",
+                "Dense Retriever",
+                "Reciprocal Rank Fusion"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "component_rrf",
+            "名称": "Reciprocal Rank Fusion",
+            "类型": "重排",
+            "描述": "用于合并多个排序结果的方法",
+            "使用的算法或模型": [
+                "RRF"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        },
+        {
+            "ID": "component_llm_generator",
+            "名称": "LLM Generator",
+            "类型": "生成",
+            "描述": "用于生成答案的大型语言模型",
+            "使用的算法或模型": [
+                "GPT-4",
+                "Claude-3"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14783v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_ragelo",
+        "名称": "RAGElo",
+        "描述": "一个基于Elo评分系统的自动化RAG评估框架",
+        "索引构建组件ID": [
+            "component_dense_passage_retriever"
+        ],
+        "检索组件ID": [
+            "component_bm25",
+            "component_dense_passage_retriever",
+            "component_hybrid_retriever"
+        ],
+        "重排组件ID": [
+            "component_rrf"
+        ],
+        "生成组件ID": [
+            "component_llm_generator"
+        ],
+        "整体性能指标": {
+            "Kendall's τ": 0.56,
+            "Spearman's ρ": 0.59
+        },
+        "应用场景": [
+            "企业问答系统评估",
+            "RAG系统比较"
+        ],
+        "相关文档列表": [
+            "2406.14783v1"
+        ]
+    }
+}

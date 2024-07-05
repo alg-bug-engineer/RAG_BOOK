@@ -1,0 +1,248 @@
+{
+    "文档节点": {
+        "ID": "2405.19207v1",
+        "标题": "A Multi-Source Retrieval Question Answering Framework Based on RAG",
+        "作者": [
+            "author_ridong_wu",
+            "author_shuhong_chen",
+            "author_xiangbiao_su",
+            "author_yuankai_zhu",
+            "author_yifei_liao",
+            "author_jianming_wu"
+        ],
+        "发表时间": "2024-05-30",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_large_language_models",
+            "keyword_retrieval_augmented_generation",
+            "keyword_web_retrieval",
+            "keyword_gpt_retrieval",
+            "keyword_question_answering"
+        ],
+        "摘要": "本研究提出了一种基于RAG的多源检索问答框架MSRAG，旨在提高检索信息的相关性和准确性。该方法使用GPT-3.5替代传统检索器，并结合Web检索实现细粒度知识检索。为减轻GPT检索的幻觉影响和Web检索的噪声，MSRAG结合了GPT检索和Web检索。在多个知识密集型QA数据集上的实验表明，该框架在提高QA系统整体效率和准确性方面优于现有RAG框架。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.19207v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_gpt_retrieval",
+            "component_web_retrieval"
+        ],
+        "检索方法": [
+            "component_gpt_retrieval",
+            "component_web_retrieval"
+        ],
+        "重排方法": [],
+        "生成方法": [
+            "component_llama2_7b_chat"
+        ],
+        "评估指标": [
+            "F1 score",
+            "Exact Match (EM)",
+            "Accuracy (ACC)"
+        ],
+        "向量表示": "BERT-based embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_ridong_wu",
+            "姓名": "Ridong Wu",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "author_shuhong_chen",
+            "姓名": "Shuhong Chen",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "author_xiangbiao_su",
+            "姓名": "Xiangbiao Su",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "author_yuankai_zhu",
+            "姓名": "Yuankai Zhu",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "author_yifei_liao",
+            "姓名": "Yifei Liao",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "author_jianming_wu",
+            "姓名": "Jianming Wu",
+            "所属机构": "School of Computer Science and Network Engineering, Guangzhou University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.19207v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "keyword_web_retrieval",
+            "名称": "Web Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "keyword_gpt_retrieval",
+            "名称": "GPT Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "keyword_question_answering",
+            "名称": "Question-Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_gpt_retrieval",
+            "名称": "GPT Retrieval",
+            "类型": "检索",
+            "描述": "使用GPT-3.5替代传统检索器，生成与查询相关的检索信息",
+            "使用的算法或模型": [
+                "GPT-3.5"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "component_web_retrieval",
+            "名称": "Web Retrieval",
+            "类型": "检索",
+            "描述": "使用Web搜索引擎（Google）进行实时信息检索",
+            "使用的算法或模型": [
+                "Google Search Engine"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        },
+        {
+            "ID": "component_llama2_7b_chat",
+            "名称": "LLaMa2-7B-Chat",
+            "类型": "生成",
+            "描述": "用于生成最终答案的大型语言模型",
+            "使用的算法或模型": [
+                "LLaMa2-7B-Chat"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.19207v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_msrag",
+        "名称": "MSRAG Flow",
+        "描述": "基于RAG的多源检索问答框架，结合GPT检索和Web检索",
+        "索引构建组件ID": [
+            "component_gpt_retrieval",
+            "component_web_retrieval"
+        ],
+        "检索组件ID": [
+            "component_gpt_retrieval",
+            "component_web_retrieval"
+        ],
+        "重排组件ID": [],
+        "生成组件ID": [
+            "component_llama2_7b_chat"
+        ],
+        "整体性能指标": {
+            "2WikiMultiHopQA": {
+                "EM": "0.508",
+                "F1": "0.5646"
+            },
+            "HotpotQA": {
+                "EM": "0.303",
+                "F1": "0.3066"
+            },
+            "StrategyQA": {
+                "Accuracy": "0.863"
+            }
+        },
+        "应用场景": [
+            "开放域问答",
+            "多跳推理问答",
+            "常识推理问答"
+        ],
+        "相关文档列表": [
+            "2405.19207v1"
+        ]
+    }
+}

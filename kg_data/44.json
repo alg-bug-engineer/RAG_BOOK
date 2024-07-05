@@ -1,0 +1,197 @@
+{
+    "文档节点": {
+        "ID": "2406.14773v1",
+        "标题": "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+        "作者": [
+            "Shenglai Zeng",
+            "Jiankun Zhang",
+            "Pengfei He",
+            "Jie Ren", 
+            "Tianqi Zheng",
+            "Hanqing Lu",
+            "Han Xu",
+            "Hui Liu",
+            "Yue Xing",
+            "Jiliang Tang"
+        ],
+        "发表时间": "2024-06-20",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Privacy Protection",
+            "Synthetic Data",
+            "Large Language Models",
+            "Information Retrieval"
+        ],
+        "摘要": "本文提出了SAGE,一种新型的两阶段合成数据生成范式,用于解决检索增强生成(RAG)系统中的隐私问题。SAGE通过使用合成数据作为检索数据的替代方案来缓解RAG系统中的隐私风险。在第一阶段,SAGE采用基于属性的提取和生成方法来保留原始数据的关键上下文信息。在第二阶段,通过基于代理的迭代细化过程进一步增强合成数据的隐私属性。大量实验表明,使用SAGE生成的合成数据作为检索上下文可以实现与使用原始数据相当的性能,同时显著降低隐私风险。本研究为RAG系统的安全应用开辟了新的机会。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.14773",
+        "URL": "https://arxiv.org/abs/2406.14773v1",
+        "引用数": 0,
+        "索引方法": "Dense Passage Retriever",
+        "检索方法": "FAISS library",
+        "重排方法": null,
+        "生成方法": "Llama3-8b-chat, GPT-3.5-turbo, GPT-4",
+        "评估指标": [
+            "BLEU-1",
+            "ROUGE-L"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_shenglai_zeng",
+            "姓名": "Shenglai Zeng",
+            "所属机构": "Michigan State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Privacy Protection",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "author_jiankun_zhang",
+            "姓名": "Jiankun Zhang",
+            "所属机构": "Jilin University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Privacy Protection",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "author_jiliang_tang",
+            "姓名": "Jiliang Tang",
+            "所属机构": "Michigan State University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Privacy Protection",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.14773v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "keyword_privacy_protection",
+            "名称": "Privacy Protection",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "keyword_synthetic_data",
+            "名称": "Synthetic Data",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "keyword_information_retrieval",
+            "名称": "Information Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dense_passage_retriever",
+            "名称": "Dense Passage Retriever",
+            "类型": "检索",
+            "描述": "用于检索相关文档的稠密检索器",
+            "使用的算法或模型": [
+                "bge-large-en-v1.5"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "component_faiss",
+            "名称": "FAISS library",
+            "类型": "检索",
+            "描述": "用于存储和检索高维向量的库",
+            "使用的算法或模型": [
+                "L2-norm"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        },
+        {
+            "ID": "component_llm_generator",
+            "名称": "LLM Generator",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Llama3-8b-chat",
+                "GPT-3.5-turbo",
+                "GPT-4"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.14773v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_sage",
+        "名称": "SAGE",
+        "描述": "一种新型的两阶段合成数据生成范式,用于解决检索增强生成(RAG)系统中的隐私问题",
+        "索引构建组件ID": [
+            "component_dense_passage_retriever"
+        ],
+        "检索组件ID": [
+            "component_faiss"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_llm_generator"
+        ],
+        "整体性能指标": {
+            "BLEU-1": 0.113,
+            "ROUGE-L": 0.0943
+        },
+        "应用场景": [
+            "开放域问答",
+            "医疗对话"
+        ],
+        "相关文档列表": [
+            "2406.14773v1"
+        ]
+    }
+}

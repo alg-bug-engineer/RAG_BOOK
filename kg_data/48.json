@@ -1,0 +1,206 @@
+{
+    "文档节点": {
+        "ID": "2406.16828v1",
+        "标题": "Ragnarök: A Reusable RAG Framework and Baselines for TREC 2024 Retrieval-Augmented Generation Track",
+        "作者": [
+            "Ronak Pradeep",
+            "Nandan Thakur",
+            "Sahel Sharifymoghaddam",
+            "Eric Zhang",
+            "Ryan Nguyen",
+            "Daniel Campos",
+            "Nick Craswell",
+            "Jimmy Lin"
+        ],
+        "发表时间": "2024-06-24",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "RAG Framework",
+            "TREC 2024",
+            "Information Retrieval",
+            "Large Language Models"
+        ],
+        "摘要": "本文提出了Ragnarök,一个可重用的端到端检索增强生成(RAG)框架,为即将到来的TREC 2024 RAG挑战提供可复现的基线和Web用户界面。该框架包括经过去重处理的MS MARCO V2.1集合、来自TREC-DL 2021-2023查询和Researchy Questions的精心筛选主题,以及帮助用户使用RAG范式的I/O定义。此外,本文还确定了关键的行业基线(如Cohere的Command R+和OpenAI的GPT-4o),并对开发主题进行了定性分析。通过开源此框架,作者旨在为RAG应用建立标准。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.16828",
+        "URL": "https://arxiv.org/abs/2406.16828v1",
+        "引用数": 0,
+        "索引方法": "BM25",
+        "检索方法": "BM25, Dense Retriever",
+        "重排方法": "RankZephyr",
+        "生成方法": "GPT-4o, Cohere Command R+",
+        "评估指标": [
+            "Retrieval@k",
+            "Human Preference"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_ronak_pradeep",
+            "姓名": "Ronak Pradeep",
+            "所属机构": "University of Waterloo",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "author_nandan_thakur",
+            "姓名": "Nandan Thakur",
+            "所属机构": "University of Waterloo",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "author_jimmy_lin",
+            "姓名": "Jimmy Lin",
+            "所属机构": "University of Waterloo",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Large Language Models"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.16828v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "keyword_rag_framework",
+            "名称": "RAG Framework",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "keyword_trec_2024",
+            "名称": "TREC 2024",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "keyword_information_retrieval",
+            "名称": "Information Retrieval",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "检索",
+            "描述": "用于初始检索的经典词频-逆文档频率算法",
+            "使用的算法或模型": [
+                "BM25"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "component_rankzephyr",
+            "名称": "RankZephyr",
+            "类型": "重排",
+            "描述": "基于Zephyr模型的列表式重排器",
+            "使用的算法或模型": [
+                "Zephyr"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "component_gpt4o",
+            "名称": "GPT-4o",
+            "类型": "生成",
+            "描述": "OpenAI的GPT-4模型用于生成回答",
+            "使用的算法或模型": [
+                "GPT-4"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        },
+        {
+            "ID": "component_command_r_plus",
+            "名称": "Command R+",
+            "类型": "生成",
+            "描述": "Cohere公司的大型语言模型用于生成回答",
+            "使用的算法或模型": [
+                "Command R+"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.16828v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_ragnarok",
+        "名称": "Ragnarök",
+        "描述": "一个可重用的端到端RAG框架,用于TREC 2024 RAG挑战",
+        "索引构建组件ID": [
+            "component_bm25"
+        ],
+        "检索组件ID": [
+            "component_bm25"
+        ],
+        "重排组件ID": [
+            "component_rankzephyr"
+        ],
+        "生成组件ID": [
+            "component_gpt4o",
+            "component_command_r_plus"
+        ],
+        "整体性能指标": null,
+        "应用场景": [
+            "开放域问答",
+            "信息检索评估"
+        ],
+        "相关文档列表": [
+            "2406.16828v1"
+        ]
+    }
+}

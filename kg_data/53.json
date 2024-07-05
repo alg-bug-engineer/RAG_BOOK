@@ -1,0 +1,241 @@
+{
+    "文档节点": {
+        "ID": "2405.14431v1",
+        "标题": "RaFe: Ranking Feedback Improves Query Rewriting for RAG",
+        "作者": [
+            "author_shengyu_mao",
+            "author_yong_jiang",
+            "author_boli_chen",
+            "author_xiao_li",
+            "author_peng_wang",
+            "author_xinyu_wang",
+            "author_pengjun_xie",
+            "author_fei_huang",
+            "author_huajun_chen",
+            "author_ningyu_zhang"
+        ],
+        "发表时间": "2024-05-23",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_query_rewriting",
+            "keyword_ranking_feedback",
+            "keyword_reinforcement_learning",
+            "keyword_large_language_models"
+        ],
+        "摘要": "随着大型语言模型（LLMs）和检索增强生成（RAG）技术的发展，查询重写已被广泛应用于RAG系统中，用于开放域问答等下游任务。许多工作尝试使用强化学习而非昂贵的LLMs来改进查询重写。然而，当前的方法需要标注（如标记的相关文档或下游答案）或预设的奖励作为反馈，这缺乏泛化性，并且未能利用为查询重写量身定制的信号。在本文中，我们提出了RaFe，一个无需标注的查询重写模型训练框架。通过利用公开可用的重排器，RaFe提供与重写目标良好匹配的反馈。实验结果表明，RaFe可以获得比基线更好的性能。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.14431v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_dense_passage_retrieval"
+        ],
+        "检索方法": [
+            "component_search_engine"
+        ],
+        "重排方法": [
+            "component_bge_reranker"
+        ],
+        "生成方法": [
+            "component_qwen"
+        ],
+        "评估指标": [
+            "Exact Match (EM)",
+            "F1 Score",
+            "Precision@K",
+            "Mean Reciprocal Rank (MRR)"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_shengyu_mao",
+            "姓名": "Shengyu Mao",
+            "所属机构": "Zhejiang University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "author_yong_jiang",
+            "姓名": "Yong Jiang",
+            "所属机构": "Alibaba Group",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "author_ningyu_zhang",
+            "姓名": "Ningyu Zhang",
+            "所属机构": "Zhejiang University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.14431v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "keyword_query_rewriting",
+            "名称": "Query Rewriting",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "keyword_ranking_feedback",
+            "名称": "Ranking Feedback",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "keyword_reinforcement_learning",
+            "名称": "Reinforcement Learning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dense_passage_retrieval",
+            "名称": "Dense Passage Retrieval",
+            "类型": "索引构建",
+            "描述": "基于向量相似度的文档检索方法",
+            "使用的算法或模型": [
+                "DPR"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "component_search_engine",
+            "名称": "Search Engine",
+            "类型": "检索",
+            "描述": "用于检索相关文档的搜索引擎",
+            "使用的算法或模型": [
+                "Google Search",
+                "Internal Search Engine"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "component_bge_reranker",
+            "名称": "BGE Reranker",
+            "类型": "重排",
+            "描述": "用于对检索结果进行重新排序的模型",
+            "使用的算法或模型": [
+                "BGE-reranker-base"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        },
+        {
+            "ID": "component_qwen",
+            "名称": "Qwen",
+            "类型": "生成",
+            "描述": "用于生成回答的大型语言模型",
+            "使用的算法或模型": [
+                "Qwen-7B",
+                "Qwen-32B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.14431v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_rafe",
+        "名称": "RaFe Flow",
+        "描述": "利用排序反馈改进查询重写的RAG流程",
+        "索引构建组件ID": [
+            "component_dense_passage_retrieval"
+        ],
+        "检索组件ID": [
+            "component_search_engine"
+        ],
+        "重排组件ID": [
+            "component_bge_reranker"
+        ],
+        "生成组件ID": [
+            "component_qwen"
+        ],
+        "整体性能指标": {
+            "FreshQA": {
+                "EM": "64.85",
+                "F1": "33.72"
+            },
+            "NQ": {
+                "EM": "52.86",
+                "F1": "38.37"
+            },
+            "TriviaQA": {
+                "EM": "81.97",
+                "F1": "55.67"
+            },
+            "HotpotQA": {
+                "EM": "46.79",
+                "F1": "23.35"
+            },
+            "WebQA": {
+                "EM": "82.96",
+                "F1": "79.52"
+            }
+        },
+        "应用场景": [
+            "开放域问答",
+            "事实验证",
+            "信息检索"
+        ],
+        "相关文档列表": [
+            "2405.14431v1"
+        ]
+    }
+}

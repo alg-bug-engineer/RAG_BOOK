@@ -1,0 +1,198 @@
+{
+    "文档节点": {
+        "ID": "2406.05514v2",
+        "标题": "RAG-Enhanced Commit Message Generation",
+        "作者": [
+            "Linghao Zhang",
+            "Hongyi Zhang",
+            "Chong Wang",
+            "Peng Liang"
+        ],
+        "发表时间": "2024-06-14",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Commit Message Generation",
+            "Pre-trained Language Model",
+            "Large Language Model",
+            "Retrieval-Augmented Generation"
+        ],
+        "摘要": "本文提出了REACT,一种新型的检索增强框架用于提交消息生成。REACT有效地将先进的检索技术与不同的预训练语言模型和大型语言模型相结合,可以广泛提升各种模型在提交消息生成任务上的性能。具体来说,我们设计并构建了一个混合检索器,从代码库中检索最相关的代码差异和提交消息对作为'示例'。然后,通过微调和上下文学习,利用检索到的对来指导和增强PLMs和LLMs的提交消息生成。我们的方法在一个广泛使用的数据集上进行了评估。实验结果表明,REACT显著提升了各种模型在提交消息生成任务上的性能,将CodeT5的BLEU分数提高了55%,将Llama 3的BLEU分数提高了102%,大幅超越了所有基线方法,达到了新的SOTA。这证明了我们框架的有效性和广泛适用性,可以大幅提升提交消息生成的性能。",
+        "全文内容": "由于篇幅限制,此处省略全文内容。",
+        "DOI": "https://doi.org/10.1145/xxxxxxx.xxxxxxx",
+        "URL": "https://arxiv.org/abs/2406.05514v2",
+        "引用数": 0,
+        "索引方法": "Hybrid Retriever (BM25 + Dense Encoder)",
+        "检索方法": "Hybrid Retriever",
+        "重排方法": null,
+        "生成方法": "CodeT5, PLBART, UniXCoder, ChatGPT, Llama 3, Gemma",
+        "评估指标": [
+            "BLEU",
+            "Rouge-L",
+            "METEOR"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_linghao_zhang",
+            "姓名": "Linghao Zhang",
+            "所属机构": "Wuhan University",
+            "研究领域": [
+                "Software Engineering",
+                "Natural Language Processing"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "author_hongyi_zhang",
+            "姓名": "Hongyi Zhang",
+            "所属机构": "Wuhan University",
+            "研究领域": [
+                "Software Engineering",
+                "Natural Language Processing"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "author_chong_wang",
+            "姓名": "Chong Wang",
+            "所属机构": "Wuhan University",
+            "研究领域": [
+                "Software Engineering",
+                "Natural Language Processing"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "author_peng_liang",
+            "姓名": "Peng Liang",
+            "所属机构": "Wuhan University",
+            "研究领域": [
+                "Software Engineering",
+                "Natural Language Processing"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05514v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_commit_message_generation",
+            "名称": "Commit Message Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "keyword_pre_trained_language_model",
+            "名称": "Pre-trained Language Model",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_model",
+            "名称": "Large Language Model",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_hybrid_retriever",
+            "名称": "Hybrid Retriever",
+            "类型": "检索",
+            "描述": "结合BM25和密集编码器的混合检索方法",
+            "使用的算法或模型": [
+                "BM25",
+                "CodeT5+ Encoder"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "component_augmenter",
+            "名称": "Augmenter",
+            "类型": "数据增强",
+            "描述": "将查询差异和检索到的对组合为特定格式以增强输入",
+            "使用的算法或模型": [
+                "Concatenation",
+                "Prompt Template"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        },
+        {
+            "ID": "component_generator",
+            "名称": "Generator",
+            "类型": "生成",
+            "描述": "接收增强输入并生成最终提交消息的模型",
+            "使用的算法或模型": [
+                "CodeT5",
+                "PLBART",
+                "UniXCoder",
+                "ChatGPT",
+                "Llama 3",
+                "Gemma"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05514v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_react",
+        "名称": "REACT",
+        "描述": "一种新型的检索增强框架用于提交消息生成",
+        "索引构建组件ID": [
+            "component_hybrid_retriever"
+        ],
+        "检索组件ID": [
+            "component_hybrid_retriever"
+        ],
+        "重排组件ID": null,
+        "生成组件ID": [
+            "component_generator"
+        ],
+        "整体性能指标": {
+            "BLEU": 9.68,
+            "Rouge-L": 27.20,
+            "METEOR": 23.65
+        },
+        "应用场景": [
+            "提交消息生成"
+        ],
+        "相关文档列表": [
+            "2406.05514v2"
+        ]
+    }
+}

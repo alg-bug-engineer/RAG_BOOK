@@ -1,0 +1,172 @@
+{
+    "文档节点": {
+        "ID": "2406.05794v2",
+        "标题": "RE-RAG: Improving Open-Domain QA Performance and Interpretability with Relevance Estimator in Retrieval-Augmented Generation",
+        "作者": [
+            "Kiseung Kim",
+            "Jay-Yoon Lee"
+        ],
+        "发表时间": "2024-06-16",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Open-Domain Question Answering",
+            "Retrieval-Augmented Generation",
+            "Relevance Estimator",
+            "Large Language Models"
+        ],
+        "摘要": "本文提出了RE-RAG框架，通过引入一个相关性估计器(RE)来改进传统的检索增强生成(RAG)框架。RE不仅提供上下文之间的相对相关性，还提供置信度，可用于分类给定上下文是否有助于回答给定问题。我们提出了一种弱监督方法来训练RE，仅利用问答数据而无需正确上下文的标签。我们展示了用小型生成器(sLM)训练的RE不仅可以改善与RE一起微调的sLM，还可以改善以前未引用的大型语言模型(LLMs)。此外，我们研究了利用RE测量的置信度的新解码策略，如选择让用户知道给定检索上下文是"无法回答"，或选择依赖LLM的参数知识而不是不相关的上下文。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.05794",
+        "URL": "https://arxiv.org/abs/2406.05794v2",
+        "引用数": 0,
+        "索引方法": "DPR",
+        "检索方法": "DPR",
+        "重排方法": "Relevance Estimator (RE)",
+        "生成方法": "T5, Llama 2, Llama 3, ChatGPT",
+        "评估指标": [
+            "EM (Exact Match)",
+            "Recall@k",
+            "Precision",
+            "F1 score"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_kiseung_kim",
+            "姓名": "Kiseung Kim",
+            "所属机构": "Graduate School of Data Science, Seoul National University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "author_jay_yoon_lee",
+            "姓名": "Jay-Yoon Lee",
+            "所属机构": "Graduate School of Data Science, Seoul National University",
+            "研究领域": [
+                "Natural Language Processing",
+                "Question Answering",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.05794v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_open_domain_question_answering",
+            "名称": "Open-Domain Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "keyword_relevance_estimator",
+            "名称": "Relevance Estimator",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dpr",
+            "名称": "DPR",
+            "类型": "检索",
+            "描述": "Dense Passage Retriever，用于检索相关文档",
+            "使用的算法或模型": [
+                "Bi-encoder"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "component_relevance_estimator",
+            "名称": "Relevance Estimator",
+            "类型": "重排",
+            "描述": "评估问题和上下文之间的相关性和置信度",
+            "使用的算法或模型": [
+                "Sequence-to-sequence model"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        },
+        {
+            "ID": "component_generator",
+            "名称": "Generator",
+            "类型": "生成",
+            "描述": "生成最终答案的模型",
+            "使用的算法或模型": [
+                "T5",
+                "Llama 2",
+                "Llama 3",
+                "ChatGPT"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.05794v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_re_rag",
+        "名称": "RE-RAG",
+        "描述": "一种改进的检索增强生成框架，引入相关性估计器以提高性能和可解释性",
+        "索引构建组件ID": [
+            "component_dpr"
+        ],
+        "检索组件ID": [
+            "component_dpr"
+        ],
+        "重排组件ID": [
+            "component_relevance_estimator"
+        ],
+        "生成组件ID": [
+            "component_generator"
+        ],
+        "整体性能指标": {
+            "EM": 50.8,
+            "BLEU": null,
+            "Rouge-L": null,
+            "METEOR": null
+        },
+        "应用场景": [
+            "开放域问答"
+        ],
+        "相关文档列表": [
+            "2406.05794v2"
+        ]
+    }
+}

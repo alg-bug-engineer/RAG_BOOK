@@ -1,0 +1,249 @@
+{
+    "文档节点": {
+        "ID": "2405.18414v1",
+        "标题": "Don't Forget to Connect! Improving RAG with Graph-based Reranking",
+        "作者": [
+            "author_jialin_dong",
+            "author_bahare_fatemi",
+            "author_bryan_perozzi",
+            "author_lin_f_yang",
+            "author_anton_tsitsulin"
+        ],
+        "发表时间": "2024-05-28",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_open_domain_question_answering",
+            "keyword_graph_neural_networks",
+            "keyword_reranking",
+            "keyword_abstract_meaning_representation"
+        ],
+        "摘要": "本文介绍了G-RAG，一种基于图神经网络(GNNs)的重排器，用于改进检索增强生成(RAG)系统。G-RAG在检索器和阅读器之间引入了一个重排步骤，结合了文档之间的连接和语义信息(通过抽象意义表示图)，为RAG提供了一个上下文感知的排序器。实验结果表明，G-RAG在性能上优于现有方法，同时具有较小的计算开销。此外，作者还评估了PaLM 2作为重排器的性能，发现其显著低于G-RAG。这一结果强调了即使在使用大型语言模型时，重排对RAG的重要性。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.18414v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_amr_parsing"
+        ],
+        "检索方法": [
+            "component_dense_passage_retrieval"
+        ],
+        "重排方法": [
+            "component_g-rag"
+        ],
+        "生成方法": [
+            "component_palm_2"
+        ],
+        "评估指标": [
+            "Mean Tied Reciprocal Ranking (MTRR)",
+            "Tied Mean Hits@10 (TMHits@10)",
+            "Mean Reciprocal Rank (MRR)",
+            "Mean Hits@10 (MHits@10)"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_jialin_dong",
+            "姓名": "Jialin Dong",
+            "所属机构": "UCLA",
+            "研究领域": [
+                "Natural Language Processing",
+                "Information Retrieval",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "author_bahare_fatemi",
+            "姓名": "Bahare Fatemi",
+            "所属机构": "Google Research",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "author_bryan_perozzi",
+            "姓名": "Bryan Perozzi",
+            "所属机构": "Google Research",
+            "研究领域": [
+                "Machine Learning",
+                "Graph Neural Networks"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "author_lin_f_yang",
+            "姓名": "Lin F. Yang",
+            "所属机构": "UCLA",
+            "研究领域": [
+                "Machine Learning",
+                "Optimization"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "author_anton_tsitsulin",
+            "姓名": "Anton Tsitsulin",
+            "所属机构": "Google Research",
+            "研究领域": [
+                "Machine Learning",
+                "Graph Neural Networks"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.18414v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "keyword_open_domain_question_answering",
+            "名称": "Open Domain Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "keyword_graph_neural_networks",
+            "名称": "Graph Neural Networks",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "keyword_reranking",
+            "名称": "Reranking",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "keyword_abstract_meaning_representation",
+            "名称": "Abstract Meaning Representation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_amr_parsing",
+            "名称": "AMR Parsing",
+            "类型": "索引构建",
+            "描述": "使用AMRBART将问题和文档解析为AMR图",
+            "使用的算法或模型": [
+                "AMRBART"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "component_dense_passage_retrieval",
+            "名称": "Dense Passage Retrieval",
+            "类型": "检索",
+            "描述": "使用DPR检索相关文档",
+            "使用的算法或模型": [
+                "DPR"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "component_g-rag",
+            "名称": "G-RAG",
+            "类型": "重排",
+            "描述": "基于图神经网络的重排器，利用文档图和AMR信息进行重排",
+            "使用的算法或模型": [
+                "GCN",
+                "GAT",
+                "GraphSage",
+                "GIN"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        },
+        {
+            "ID": "component_palm_2",
+            "名称": "PaLM 2",
+            "类型": "生成",
+            "描述": "用于生成回答的大型语言模型",
+            "使用的算法或模型": [
+                "PaLM 2"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.18414v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_g-rag",
+        "名称": "G-RAG Flow",
+        "描述": "使用图神经网络进行重排的RAG流程",
+        "索引构建组件ID": [
+            "component_amr_parsing"
+        ],
+        "检索组件ID": [
+            "component_dense_passage_retrieval"
+        ],
+        "重排组件ID": [
+            "component_g-rag"
+        ],
+        "生成组件ID": [
+            "component_palm_2"
+        ],
+        "整体性能指标": {
+            "NQ": {
+                "MTRR": "27.7",
+                "TMHits@10": "50.0"
+            },
+            "TQA": {
+                "MTRR": "19.4",
+                "TMHits@10": "41.4"
+            }
+        },
+        "应用场景": [
+            "开放域问答",
+            "信息检索",
+            "文本生成"
+        ],
+        "相关文档列表": [
+            "2405.18414v1"
+        ]
+    }
+}

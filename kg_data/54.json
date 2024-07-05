@@ -1,0 +1,362 @@
+{
+    "文档节点": {
+        "ID": "2405.16420v1",
+        "标题": "M-RAG: Reinforcing Large Language Model Performance through Retrieval-Augmented Generation with Multiple Partitions",
+        "作者": [
+            "author_zheng_wang",
+            "author_shu_xian_teo",
+            "author_jieer_ouyang",
+            "author_yongjun_xu",
+            "author_wei_shi"
+        ],
+        "发表时间": "2024-05-26",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_large_language_models",
+            "keyword_multi_agent_reinforcement_learning",
+            "keyword_multiple_partitions",
+            "keyword_text_generation"
+        ],
+        "摘要": "本文介绍了一种名为M-RAG的新方法，用于增强大型语言模型(LLMs)的性能。M-RAG采用多分区范式进行检索增强生成(RAG)，每个数据库分区作为RAG执行的基本单位。该方法利用多智能体强化学习来显式优化不同的语言生成任务。在七个数据集上进行的实验涵盖了三个语言生成任务和三种不同的语言模型架构，结果表明M-RAG在文本摘要、机器翻译和对话生成任务上分别实现了11%、8%和12%的性能提升。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": null,
+        "URL": "https://arxiv.org/abs/2405.16420v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_randomization",
+            "component_clustering",
+            "component_indexing",
+            "component_category"
+        ],
+        "检索方法": [
+            "component_aknn_search"
+        ],
+        "重排方法": [],
+        "生成方法": [
+            "component_mixtral_8x7b",
+            "component_llama2_13b",
+            "component_phi2_2.7b",
+            "component_gemma_7b",
+            "component_mistral_7b"
+        ],
+        "评估指标": [
+            "ROUGE (R-1/2/L)",
+            "BLEU",
+            "Distinct (D-1/2)",
+            "BLEURT",
+            "COMET"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_zheng_wang",
+            "姓名": "Zheng Wang",
+            "所属机构": "Huawei Technologies, Co., Ltd.",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "author_shu_xian_teo",
+            "姓名": "Shu Xian Teo",
+            "所属机构": "Huawei Technologies, Co., Ltd.",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "author_jieer_ouyang",
+            "姓名": "Jieer Ouyang",
+            "所属机构": "Huawei Technologies, Co., Ltd.",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "author_yongjun_xu",
+            "姓名": "Yongjun Xu",
+            "所属机构": "Huawei Technologies, Co., Ltd.",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "author_wei_shi",
+            "姓名": "Wei Shi",
+            "所属机构": "Huawei Technologies, Co., Ltd.",
+            "研究领域": [
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.16420v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "keyword_multi_agent_reinforcement_learning",
+            "名称": "Multi-Agent Reinforcement Learning",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "keyword_multiple_partitions",
+            "名称": "Multiple Partitions",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "keyword_text_generation",
+            "名称": "Text Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_randomization",
+            "名称": "Randomization",
+            "类型": "索引构建",
+            "描述": "使用概率放大技术（如局部敏感哈希）将相似项目以高概率哈希到同一桶中",
+            "使用的算法或模型": [
+                "Locality-Sensitive Hashing (LSH)"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_clustering",
+            "名称": "Clustering",
+            "类型": "索引构建",
+            "描述": "使用K-means对数据向量进行聚类，广泛应用于倒排文件索引（IVF）",
+            "使用的算法或模型": [
+                "K-means"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_indexing",
+            "名称": "Indexing",
+            "类型": "索引构建",
+            "描述": "使用可导航图索引（如HNSW或NSW）来促进对矢量数据库不同区域的简单遍历",
+            "使用的算法或模型": [
+                "HNSW",
+                "NSW"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_category",
+            "名称": "Category",
+            "类型": "索引构建",
+            "描述": "根据数据向量的类别将其分配到分区",
+            "使用的算法或模型": [
+                "Category-based Partitioning"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_aknn_search",
+            "名称": "AKNN Search",
+            "类型": "检索",
+            "描述": "使用近似k-最近邻搜索进行检索",
+            "使用的算法或模型": [
+                "Approximate k-Nearest Neighbor Search"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_mixtral_8x7b",
+            "名称": "Mixtral 8x7B",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Mixtral 8x7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_llama2_13b",
+            "名称": "Llama 2 13B",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Llama 2 13B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_phi2_2.7b",
+            "名称": "Phi-2 2.7B",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Phi-2 2.7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_gemma_7b",
+            "名称": "Gemma 7B",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Gemma 7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        },
+        {
+            "ID": "component_mistral_7b",
+            "名称": "Mistral 7B",
+            "类型": "生成",
+            "描述": "用于生成文本的大型语言模型",
+            "使用的算法或模型": [
+                "Mistral 7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.16420v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_m-rag",
+        "名称": "M-RAG Flow",
+        "描述": "使用多分区和多智能体强化学习的RAG流程",
+        "索引构建组件ID": [
+            "component_randomization",
+            "component_clustering",
+            "component_indexing",
+            "component_category"
+        ],
+        "检索组件ID": [
+            "component_aknn_search"
+        ],
+        "重排组件ID": [],
+        "生成组件ID": [
+            "component_mixtral_8x7b",
+            "component_llama2_13b",
+            "component_phi2_2.7b",
+            "component_gemma_7b",
+            "component_mistral_7b"
+        ],
+        "整体性能指标": {
+            "文本摘要": {
+                "XSum": {
+                    "R-1": "48.13",
+                    "R-2": "24.66",
+                    "R-L": "39.43"
+                },
+                "BigPatent": {
+                    "R-1": "71.34",
+                    "R-2": "42.24",
+                    "R-L": "47.22"
+                }
+            },
+            "机器翻译": {
+                "Es→En": {
+                    "BLEU": "39.98"
+                },
+                "En→Es": {
+                    "BLEU": "32.70"
+                },
+                "De→En": {
+                    "BLEU": "48.15"
+                },
+                "En→De": {
+                    "BLEU": "50.75"
+                }
+            },
+            "对话生成": {
+                "DailyDialog": {
+                    "B-1": "42.61",
+                    "B-2": "32.97",
+                    "D-1": "88.82",
+                    "D-2": "95.74"
+                }
+            }
+        },
+        "应用场景": [
+            "文本摘要",
+            "机器翻译",
+            "对话生成"
+        ],
+        "相关文档列表": [
+            "2405.16420v1"
+        ]
+    }
+}

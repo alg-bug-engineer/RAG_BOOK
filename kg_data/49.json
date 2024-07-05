@@ -1,0 +1,184 @@
+{
+    "文档节点": {
+        "ID": "2405.02816v1",
+        "标题": "Stochastic RAG: End-to-End Retrieval-Augmented Generation through Expected Utility Maximization",
+        "作者": [
+            "author_hamed_zamani",
+            "author_michael_bendersky"
+        ],
+        "发表时间": "2024-05-05",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "keyword_retrieval_augmented_generation",
+            "keyword_expected_utility_maximization",
+            "keyword_stochastic_sampling",
+            "keyword_end_to_end_optimization"
+        ],
+        "摘要": "本文介绍了Stochastic RAG——一种新颖的端到端优化检索增强生成(RAG)模型的方法，它放松了大多数先前工作中的边缘化和文档独立性的简化假设。Stochastic RAG将RAG中的检索过程视为一个无替换的随机抽样过程。通过这种公式，我们采用了straight-through Gumbel-top-k，它为无替换抽样提供了可微分近似，并实现了RAG的有效端到端优化。我们在七个不同的数据集上进行了广泛的实验，涵盖了从开放域问答到事实验证到关系提取的槽填充再到对话系统等广泛任务。通过将这种优化方法应用于最近有效的RAG模型，我们在七个数据集中的六个上推进了最先进的结果。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": "https://doi.org/10.1145/3626772.3657923",
+        "URL": "https://arxiv.org/abs/2405.02816v1",
+        "引用数": 0,
+        "索引方法": [
+            "component_bm25"
+        ],
+        "检索方法": [
+            "component_stochastic_rag"
+        ],
+        "重排方法": [
+            "component_stochastic_rag"
+        ],
+        "生成方法": [
+            "component_t5"
+        ],
+        "评估指标": [
+            "KILT-EM",
+            "KILT-AC",
+            "KILT-F1"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_hamed_zamani",
+            "姓名": "Hamed Zamani",
+            "所属机构": "University of Massachusetts Amherst",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "author_michael_bendersky",
+            "姓名": "Michael Bendersky",
+            "所属机构": "Google",
+            "研究领域": [
+                "Information Retrieval",
+                "Natural Language Processing",
+                "Machine Learning"
+            ],
+            "h指数": null,
+            "发表文章列表": [
+                "2405.02816v1"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "keyword_expected_utility_maximization",
+            "名称": "Expected Utility Maximization",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "keyword_stochastic_sampling",
+            "名称": "Stochastic Sampling",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "keyword_end_to_end_optimization",
+            "名称": "End-to-End Optimization",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_bm25",
+            "名称": "BM25",
+            "类型": "检索",
+            "描述": "经典的词频-逆文档频率检索算法",
+            "使用的算法或模型": [
+                "BM25"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "component_stochastic_rag",
+            "名称": "Stochastic RAG",
+            "类型": "检索,重排",
+            "描述": "基于无替换随机抽样的端到端RAG优化方法",
+            "使用的算法或模型": [
+                "Straight-through Gumbel-top-k",
+                "Expected Utility Maximization"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        },
+        {
+            "ID": "component_t5",
+            "名称": "T5",
+            "类型": "生成",
+            "描述": "Text-to-Text Transfer Transformer模型",
+            "使用的算法或模型": [
+                "T5-Base",
+                "T5-XL"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2405.02816v1"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_stochastic_rag",
+        "名称": "Stochastic RAG Flow",
+        "描述": "使用Stochastic RAG进行端到端优化的RAG流程",
+        "索引构建组件ID": [
+            "component_bm25"
+        ],
+        "检索组件ID": [
+            "component_stochastic_rag"
+        ],
+        "重排组件ID": [
+            "component_stochastic_rag"
+        ],
+        "生成组件ID": [
+            "component_t5"
+        ],
+        "整体性能指标": {
+            "NQ": "KILT-EM: 53.0",
+            "HotpotQA": "KILT-EM: 31.1",
+            "TriviaQA": "KILT-EM: 64.7",
+            "FEVER": "KILT-AC: 84.8",
+            "T-REx": "KILT-AC: 78.3",
+            "zsRE": "KILT-AC: 87.0",
+            "WOW": "KILT-F1: 14.2"
+        },
+        "应用场景": [
+            "开放域问答",
+            "事实验证",
+            "关系提取",
+            "对话系统"
+        ],
+        "相关文档列表": [
+            "2405.02816v1"
+        ]
+    }
+}

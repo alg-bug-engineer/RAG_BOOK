@@ -1,0 +1,222 @@
+{
+    "文档节点": {
+        "ID": "2406.11497v2",
+        "标题": "CrAM: Credibility-Aware Attention Modification in LLMs for Combating Misinformation in RAG",
+        "作者": [
+            "Boyi Deng",
+            "Wenjie Wang",
+            "Fengbin Zhu",
+            "Qifan Wang",
+            "Fuli Feng"
+        ],
+        "发表时间": "2024-06-27",
+        "来源": "arXiv",
+        "类型": "论文",
+        "关键词": [
+            "Retrieval-Augmented Generation",
+            "Large Language Models",
+            "Misinformation",
+            "Credibility-aware Attention",
+            "Question Answering"
+        ],
+        "摘要": "本文提出了一种名为CrAM的即插即用方法，用于解决检索增强生成(RAG)中的错误信息问题。CrAM通过识别LLMs中有影响力的注意力头，并根据文档的可信度调整其注意力权重，从而减少低可信度文档的影响。在Natural Questions和TriviaQA数据集上使用Llama2-13B、Llama3-8B和Qwen-7B进行的实验表明，CrAM显著提高了LLMs在面对错误信息污染时的RAG性能，提升超过20%，甚至优于监督微调方法。",
+        "全文内容": "由于篇幅限制，此处省略全文内容。",
+        "DOI": "https://doi.org/10.48550/arXiv.2406.11497",
+        "URL": "https://arxiv.org/abs/2406.11497v2",
+        "引用数": 0,
+        "索引方法": "Dense Passage Retriever (DPR)",
+        "检索方法": "Dense Passage Retriever (DPR)",
+        "重排方法": "Credibility-aware Attention Modification (CrAM)",
+        "生成方法": "Llama2-13B, Llama3-8B, Qwen-7B",
+        "评估指标": [
+            "Exact Match (EM)",
+            "F1 score"
+        ],
+        "向量表示": "Dense Vector Embeddings"
+    },
+    "作者节点": [
+        {
+            "ID": "author_boyi_deng",
+            "姓名": "Boyi Deng",
+            "所属机构": "University of Science and Technology of China",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "author_wenjie_wang",
+            "姓名": "Wenjie Wang",
+            "所属机构": "National University of Singapore",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "author_fengbin_zhu",
+            "姓名": "Fengbin Zhu",
+            "所属机构": "National University of Singapore",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "author_qifan_wang",
+            "姓名": "Qifan Wang",
+            "所属机构": "Meta AI",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "author_fuli_feng",
+            "姓名": "Fuli Feng",
+            "所属机构": "University of Science and Technology of China",
+            "研究领域": [
+                "Natural Language Processing",
+                "Large Language Models",
+                "Retrieval-Augmented Generation"
+            ],
+            "h指数": 0,
+            "发表文章列表": [
+                "2406.11497v2"
+            ]
+        }
+    ],
+    "关键词节点": [
+        {
+            "ID": "keyword_retrieval_augmented_generation",
+            "名称": "Retrieval-Augmented Generation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "keyword_large_language_models",
+            "名称": "Large Language Models",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "keyword_misinformation",
+            "名称": "Misinformation",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "keyword_credibility_aware_attention",
+            "名称": "Credibility-aware Attention",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "keyword_question_answering",
+            "名称": "Question Answering",
+            "使用频率": 1,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        }
+    ],
+    "RAG组件节点": [
+        {
+            "ID": "component_dpr",
+            "名称": "Dense Passage Retriever",
+            "类型": "检索",
+            "描述": "用于从外部语料库中检索相关文档的稠密检索器",
+            "使用的算法或模型": [
+                "Bi-encoder"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "component_cram",
+            "名称": "Credibility-aware Attention Modification",
+            "类型": "重排",
+            "描述": "根据文档可信度调整LLM注意力权重的方法",
+            "使用的算法或模型": [
+                "Causal Tracing",
+                "Attention Weight Modification"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        },
+        {
+            "ID": "component_llm_generator",
+            "名称": "LLM Generator",
+            "类型": "生成",
+            "描述": "用于生成最终答案的大型语言模型",
+            "使用的算法或模型": [
+                "Llama2-13B",
+                "Llama3-8B",
+                "Qwen-7B"
+            ],
+            "性能指标": null,
+            "相关文档列表": [
+                "2406.11497v2"
+            ]
+        }
+    ],
+    "RAG流程节点": {
+        "ID": "flow_cram",
+        "名称": "CrAM",
+        "描述": "一种用于对抗RAG中错误信息的可信度感知注意力修改方法",
+        "索引构建组件ID": [
+            "component_dpr"
+        ],
+        "检索组件ID": [
+            "component_dpr"
+        ],
+        "重排组件ID": [
+            "component_cram"
+        ],
+        "生成组件ID": [
+            "component_llm_generator"
+        ],
+        "整体性能指标": {
+            "EM": 36.9,
+            "F1 score": 48.45
+        },
+        "应用场景": [
+            "开放域问答"
+        ],
+        "相关文档列表": [
+            "2406.11497v2"
+        ]
+    }
+}
